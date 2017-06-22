@@ -1,0 +1,41 @@
+mixin module__notification(data)
+  - var bemClass = 'module__notification'
+  <!-- Notifi -->
+  .module__notification&attributes(attributes).jsVisible
+    .notifi.notifi_check.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('check')
+      p Данные успешно <br> сохранены
+    .notifi.notifi_check.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('check')
+      p ВАШ ЗАКАЗ 
+        span #3229356
+        | принят в обработку
+    .notifi.notifi_check.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('check')
+      p ваше письмо отправлено, скоро с вами свяжется менеджер по работе с клиентами
+    .notifi.notifi_error.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('exclame')
+      p пользователь с такими данными не зарегистрирован в системе
+    .notifi.notifi_success.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('exclame')
+      p успешная регистрация, перейдите в кабинет для заполнения профиля пользователя
+    .notifi.notifi_warning.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('exclame')
+      p проверьте правильность введенных вами данных
+    .notifi.notifi_information.animated.fadeIn
+      .close.jsClose
+        +icon('cross')
+      +icon('exclame')
+      p на ваш email адрес отправлено уведомление от магазина    

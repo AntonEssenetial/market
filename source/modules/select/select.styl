@@ -1,19 +1,20 @@
 .select
+  cursor pointer
    
   &_custom
     background: white
-    font-size 13px
-    bold()
+    font-size 14px
+    semi()
     display: block;
-    height: 47px;
-    text-transform: uppercase
-    color #656d78
+    height: 46px;
+    color $text
+    min-width 245px
   
   &_custom.opened
   &_custom:hover
     color #434a54
     .jq-selectbox__select
-      border-color #7c848e
+      border-color $pink
       trs()
     // .jq-selectbox__trigger
     //   trs()
@@ -26,29 +27,29 @@
 
   .jq-selectbox__dropdown
     box-shadow: 0px 0px 3px rgba(0,0,0, 0.2);
-    background: #7c848e
+    background: white
     width 100% !important
     
   .jq-selectbox__select-text
-    height 47px 
+    height 46px 
     line-height @height
-    padding-left: 25px;
+    padding-left: 20px;
     
   .jq-selectbox__trigger
-    border-left: 1px solid #d1d1d1
+    border-left: none
     
   .jq-selectbox__dropdown li
     height 47px
     line-height @height
-    color white
+    color $text
     white-space nowrap
-    padding 0 25px
+    padding 0 20px
     &:hover
-      background: #6b737c
+      background: #f2f2f2
       
   .jq-selectbox__dropdown li.selected
-    background: #6b737c
-    color white
+    background: #f2f2f2
+    color $dark
   
   .jq-selectbox.disabled
     background: #f9f8f6;
@@ -59,8 +60,23 @@
   .jq-selectbox__select
     border 1px solid #d1d2db;
     overflow hidden
+    border-radius(2px)
     trs()
     
   .jq-selectbox.focused .jq-selectbox__select
     border-color $dark-aqua
     trs()
+    
+.jq-selectbox__trigger
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 100%;
+  broder-left none
+  display flex
+.jq-selectbox__trigger-arrow
+  width 15px 
+  margin auto
+  height 15px
+  background url('../images/inputs/2.png') no-repeat center

@@ -1,0 +1,45 @@
+mixin module__main-review(data)
+  - var bemClass = 'module__main-review'
+  section.module__main-review&attributes(attributes)
+    .container 
+      div(class=bemClass + '__row').row.between
+        div(class=bemClass + '__item')
+          div(class=bemClass + '__layer' style='background-image: url("assets/images/background/1.jpg")') 
+          div(class=bemClass + '__content') 
+            img(class=bemClass + '__img' src="assets/images/user/1.jpg", alt="JohnDoe")
+            span(class=bemClass + '__date') 08.04.2017  16:45
+            div(class=bemClass + '__heading')
+              span(class=bemClass + '__name') JohnDoe о магазине
+              span(class=bemClass + '__shop') INTIMISSIMI
+            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        div(class=bemClass + '__item')
+          div(class=bemClass + '__layer' style='background-image: url("assets/images/background/1.jpg")') 
+          div(class=bemClass + '__content') 
+            img(class=bemClass + '__img' src="assets/images/user/1.jpg", alt="JohnDoe")
+            span(class=bemClass + '__date') 08.04.2017  16:45
+            div(class=bemClass + '__heading')
+              span(class=bemClass + '__name') Maria Carry о магазине
+              span(class=bemClass + '__shop') INTIMISSIMI
+            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+        div(class=bemClass + '__slider')
+          .jsSlick2
+            div(class=bemClass + '__slide')
+              div(class=bemClass + '__cont') 
+                +icon('icon1')
+                span(class=bemClass + '__str') Всего отзывов
+                span(class=bemClass + '__str-2') 58000
+            div(class=bemClass + '__slide')
+              div(class=bemClass + '__cont') 
+                +icon('icon2')
+                span(class=bemClass + '__str') Всего заказов
+                span(class=bemClass + '__str-2') 58000
+            div(class=bemClass + '__slide')
+              div(class=bemClass + '__cont') 
+                +icon('icon3')
+                span(class=bemClass + '__str') Всего магазинов
+                span(class=bemClass + '__str-2') 58000
+            div(class=bemClass + '__slide')
+              div(class=bemClass + '__cont') 
+                +icon('icon4')
+                span(class=bemClass + '__str') Всего пользователей
+                span(class=bemClass + '__str-2') 58000

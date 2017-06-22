@@ -1,4 +1,18 @@
+include ../module__logo/module__logo
+include ../module__header-location/module__header-location
+include ../main-menu/main-menu
+
 mixin header(data)
   - var bemClass = 'header'
-  .header&attributes(attributes)
-    
+  header.header&attributes(attributes)
+    .container
+      .row.center
+        +module__logo()   
+        +module__header-location()
+
+        if data.account
+        if data.shop
+        else
+          div(class=bemClass + '__row').row 
+            a(href="#" data-remodal-target="modal-2").button Вход
+            a(href="#" data-remodal-target="modal-1").button.button_tr Регистрация

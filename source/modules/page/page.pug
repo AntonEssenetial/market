@@ -12,9 +12,11 @@ mixin page(data)
       .page__wrapper
 
         //- Header
+        <!-- Header -->
         +if('header')
           +use('header')
-
+        
+        <!-- Main -->
         main.main
 
           //- Main page 
@@ -61,6 +63,7 @@ mixin page(data)
             +use('page__registration')
 
         //- Footer
+        <!-- Footer -->
         +if('footer')
           +use('footer')
   
@@ -68,6 +71,11 @@ mixin page(data)
         +if('module__notification')
           +use('module__notification')
 
+      <!-- Scripts -->
       +scripts()
-      //- +popup()
-      //- +notification()
+
+      +if('module__registration')
+        +use('module__registration')
+
+      +if('module__location')
+        +use('module__location')

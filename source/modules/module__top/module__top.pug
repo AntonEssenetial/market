@@ -1,0 +1,18 @@
+mixin module__top(data)
+  - var bemClass = 'module__top'
+  section.module__top&attributes(attributes)
+    div(class=bemClass + '__slider')
+      .jsSlick
+        -for (var x = 0 ; x < 3 ; x ++ )
+          div(class=bemClass + '__slide' style='background-image: url("assets/images/slider/1.jpg")').slide 
+            .container.center-t.column
+              div(class=bemClass + '__wrapper') 
+                div(class=bemClass + '__col')
+                  img(src='assets/images/background/1.png')
+                  span(class=bemClass + '__str') Более 1000 брендов и магазинов на 1 сайте
+                a(href="").button.button_lg Поиск по магазинам
+      div(class=bemClass + '__nav') 
+        span.slick-prev
+          +icon('left')
+        span.slick-next
+          +icon('right')

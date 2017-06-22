@@ -30,61 +30,558 @@
     <div class="container">
       <div class="col__40">
         <br>
-        <button class="button">button 1 </button>
+        <a href="#" data-remodal-target="modal-1">Registration </a>
         <br>
+        <a href="#" data-remodal-target="modal-2">Enter </a>
         <br>
-        <button class="button button_lg">button big </button>
+        <a href="#" data-remodal-target="modal-3">Enter 2 </a>
         <br>
+        <a href="#" data-remodal-target="modal-4">Recover </a>
         <br>
-        <button class="button button_md">button medium </button>
+        <a href="#" data-remodal-target="modal-5">Location </a>
         <br>
+        <div class="modal modal_reg" data-remodal-id="modal-1">
+          <button class="button_close" data-remodal-action="close">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal-wrapper">
+            <div class="modal__content">
+              <div class="module__registration">
+                <div class="module__registration__popup">
+                  <h2>Регистрация</h2>
+                  <div class="module__registration__form">
+                    <form action="">
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Имя" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="E-mail" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Пароль" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Номер телефона" /> </label>
+                      <label class="label__checkbox">
+                        <input class="input__checkbox" type="checkbox" />
+                        <i></i>Я принимаю условия </label>
+                      <a class="module__registration__link pink" href="">Пользовательского соглашения </a>
+                      <button class="button button_lg">Зарегестрироваться</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="module__registration__bottom">
+                  <div class="row">
+                    <div class="col__50 col__50_border">
+                      <div class="module__registration__str">Регистрация через</div>
+                      <div class="row center module__registration__row">
+                        <a href="">
+                          <svg class="icon icon_fb">
+                            <use xlink:href="assets/images/icons.svg#fb"></use>
+                          </svg>
+                        </a>
+                        <a href="">
+                          <svg class="icon icon_vk">
+                            <use xlink:href="assets/images/icons.svg#vk"></use>
+                          </svg>
+                        </a>
+                        <a href="">
+                          <svg class="icon icon_ru">
+                            <use xlink:href="assets/images/icons.svg#ru"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col__50">
+                      <div class="module__registration__str">Есть аккаунт?</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-2">Войти</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal_reg" data-remodal-id="modal-2">
+          <button class="button_close" data-remodal-action="close">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal-wrapper">
+            <div class="modal__content">
+              <div class="module__registration">
+                <div class="module__registration__popup">
+                  <h2>Войти</h2>
+                  <div class="module__registration__form">
+                    <form action="">
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Имя" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Пароль" /> </label>
+                      <button class="button button_lg">Войти</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="module__registration__bottom">
+                  <div class="row">
+                    <div class="col__50 col__50_border">
+                      <div class="module__registration__str">Регистрация через</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-4">Забыли пароль?</span>
+                    </div>
+                    <div class="col__50">
+                      <div class="module__registration__str">Есть аккаунт?</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-1">Регистрация</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal_reg" data-remodal-id="modal-3">
+          <button class="button_close" data-remodal-action="close">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal-wrapper">
+            <div class="modal__content">
+              <div class="module__registration">
+                <div class="module__registration__popup">
+                  <h2>Войти</h2>
+                  <div class="module__registration__form">
+                    <form action="">
+                      <label class="form__label form__label_disabled">
+                        <input class="form__input" type="text" disabled="disabled" value="Disabled" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Код из e-mail" /> </label>
+                      <div class="row between">
+                        <span class="module__registration__str-2">Не пришел код?</span>
+                        <span class="module__registration__str-2">60 сек</span>
+                      </div>
+                      <div class="row between module__registration__row-2">
+                        <span class="module__registration__str-2">Не пришел код?</span>
+                        <a class="module__registration__link pink" href="#">Отправить заново</a>
+                      </div>
+                      <button class="button button_lg" disabled="disabled">Войти</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="module__registration__bottom">
+                  <div class="row">
+                    <div class="col__50 col__50_border">
+                      <div class="module__registration__str">Регистрация через</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-4">Забыли пароль?</span>
+                    </div>
+                    <div class="col__50">
+                      <div class="module__registration__str">Есть аккаунт?</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-1">Регистрация</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal_reg" data-remodal-id="modal-4">
+          <button class="button_close" data-remodal-action="close">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal-wrapper">
+            <div class="modal__content">
+              <div class="module__registration">
+                <div class="module__registration__popup">
+                  <h2>Восстановить</h2>
+                  <div class="module__registration__form">
+                    <form action="">
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Email" /> </label>
+                      <span class="module__registration__str-3">Инструкция для восстановления доступа к аккаунту будет отправлена на указанный E-mail адрес</span>
+                      <button class="button button_lg">Восстановить</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="module__registration__bottom">
+                  <div class="row">
+                    <div class="col__50 col__50_border">
+                      <div class="module__registration__str">Вспомнили пароль?</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-2">Войти</span>
+                    </div>
+                    <div class="col__50">
+                      <div class="module__registration__str">Нет аккаунта?</div>
+                      <span class="module__registration__ent pink" data-remodal-target="modal-1">Регистрация</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal_location" data-remodal-id="modal-5">
+          <button class="button_close" data-remodal-action="close">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal-wrapper">
+            <div class="modal__content">
+              <div class="module__location">
+                <div class="module__location__top">
+                  <div class="module__location__search row center">
+                    <h2>Вша город</h2>
+                    <label class="form__label form__label_search">
+                      <input class="form__input" type="text" /> </label>
+                  </div>
+                </div>
+                <div class="module__location__content row">
+                  <div class="module__location__col">
+                    <span class="module__location__str">А</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Архангельск</a>
+                        <a class="module__location__link" href="#">Астрахань</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Б</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Барнаул</a>
+                        <a class="module__location__link" href="#">Белгород</a>
+                        <a class="module__location__link" href="#">Брянс</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">В</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Великий Новгород</a>
+                        <a class="module__location__link" href="#">Владивосток</a>
+                        <a class="module__location__link" href="#">Владимир</a>
+                        <a class="module__location__link" href="#">Волгоград</a>
+                        <a class="module__location__link" href="#">Вологда</a>
+                        <a class="module__location__link" href="#">Воронеж</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Е</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Екатеринбург</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">И</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Иваново</a>
+                        <a class="module__location__link" href="#">Ижевск</a>
+                        <a class="module__location__link" href="#">Иркутск</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="module__location__col">
+                    <span class="module__location__str">й</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Йошкар-Ола</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">к</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Казань</a>
+                        <a class="module__location__link" href="#">Калининград</a>
+                        <a class="module__location__link" href="#">Калуга</a>
+                        <a class="module__location__link" href="#">Кемерово</a>
+                        <a class="module__location__link" href="#">Киров</a>
+                        <a class="module__location__link" href="#">Кострома</a>
+                        <a class="module__location__link" href="#">Краснодар</a>
+                        <a class="module__location__link" href="#">Красноярск</a>
+                        <a class="module__location__link" href="#">Курск</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Л</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Липецк</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">М</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Москва</a>
+                        <a class="module__location__link" href="#">Магнитогорск</a>
+                        <a class="module__location__link" href="#">Мурманск</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="module__location__col">
+                    <span class="module__location__str">Н</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Набережные Челны</a>
+                        <a class="module__location__link" href="#">Нижневартовск</a>
+                        <a class="module__location__link" href="#">Нижний Новгород</a>
+                        <a class="module__location__link" href="#">Нижний Тагил</a>
+                        <a class="module__location__link" href="#">Новокузнецк</a>
+                        <a class="module__location__link" href="#">Новосибирск</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">О</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Омск</a>
+                        <a class="module__location__link" href="#">Оренбург</a>
+                        <a class="module__location__link" href="#">Орёл</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">П</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Пенза</a>
+                        <a class="module__location__link" href="#">Пермь</a>
+                        <a class="module__location__link" href="#">Петрозаводск</a>
+                        <a class="module__location__link" href="#">Псков</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Р</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Ростов-на-Дону</a>
+                        <a class="module__location__link" href="#">Рыбинск</a>
+                        <a class="module__location__link" href="#">Рязань</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="module__location__col">
+                    <span class="module__location__str">С</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Самара</a>
+                        <a class="module__location__link" href="#">Саранск</a>
+                        <a class="module__location__link" href="#">Саратов / Энгельс</a>
+                        <a class="module__location__link" href="#">Северодвинск</a>
+                        <a class="module__location__link" href="#">Смоленск</a>
+                        <a class="module__location__link" href="#">Сочи</a>
+                        <a class="module__location__link" href="#">Ставрополь</a>
+                        <a class="module__location__link" href="#">Сургут</a>
+                        <a class="module__location__link" href="#">Сыктывкар</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Т</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Тверь</a>
+                        <a class="module__location__link" href="#">Тольятти</a>
+                        <a class="module__location__link" href="#">Томск</a>
+                        <a class="module__location__link" href="#">Тула</a>
+                        <a class="module__location__link" href="#">Тюмень</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">У</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Ульяновск</a>
+                        <a class="module__location__link" href="#">Уфа</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="module__location__col">
+                    <span class="module__location__str">X</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Хабаровск</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Ч</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Чебоксары</a>
+                        <a class="module__location__link" href="#">Челябинск</a>
+                        <a class="module__location__link" href="#">Череповец</a>
+                      </li>
+                    </ul>
+                    <span class="module__location__str">Я</span>
+                    <ul class="module__location__lists">
+                      <li class="module__location__item">
+                        <a class="module__location__link" href="#">Ярославль</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <br>
-        <button class="button button_tr">button tranpsparent </button>
+        <div class="row">
+          <button class="button">button </button>
+          <button class="button" disabled>button</button>
+          <button class="button button_loader"></button>
+        </div>
         <br>
+        <div class="row">
+          <button class="button button_tr">button</button>
+          <button class="button button_tr" disabled>button</button>
+          <button class="button button_tr button_loader"></button>
+        </div>
         <br>
-        <button class="button" disabled>Button disabled </button>
+        <div class="row">
+          <button class="button button_lg">button big </button>
+          <button class="button button_lg" disabled>button big </button>
+          <button class="button button_lg button_loader"></button>
+        </div>
         <br>
+        <div class="row">
+          <button class="button button_lg button_tr">button big </button>
+          <button class="button button_lg button_tr" disabled>button big </button>
+          <button class="button button_lg button_tr button_loader"></button>
+        </div>
         <br>
-        <button class="button button_loader"></button>
+        <div class="row">
+          <button class="button button_md">button medium </button>
+          <button class="button button_md" disabled>button medium </button>
+          <button class="button button_md button_loader"></button>
+        </div>
         <br>
+        <div class="row">
+          <button class="button button_md button_tr">button medium </button>
+          <button class="button button_md button_tr" disabled>button medium </button>
+          <button class="button button_md button_tr button_loader"></button>
+        </div>
         <br>
         <a href="">link example</a>
+        <br>
         <h1>h1 heading</h1>
+        <h2>h2 heading</h2>
+        <h3>h3 heading</h3>
+        <h4>h4 heading</h4>
+        <h5>h5 heading</h5>
+        <h6>h6 heading</h6>
         <label class="form__label">
           <input class="form__input" type="text"> </label>
-        <label class="form__label">
+        <label class="form__label form__label_disabled">
           <input class="form__input" type="text" disabled value="Disabled"> </label>
         <label class="form__label">
           <input class="form__input" type="text" readonly value="Read only"> </label>
-        <label class="form__label">
-          <input class="form__input input_error" type="text" value="Error"> </label>
-        <label class="form__label">
-          <input class="form__input input_success" type="text" value="Success"> </label>
+        <label class="form__label input_error">
+          <input class="form__input" type="text" value="Error">
+          <span>Field must be in Email format</span>
+        </label>
+        <label class="form__label input_success">
+          <input class="form__input" type="text" value="Success">
+          <span>The password match</span>
+        </label>
         <label class="form__label">
           <select class="select select_custom">
             <option new>Select</option>
+            <option new>Selecc 2</option>
+            <option new>Selecc 3</option>
           </select>
         </label>
+        <lablel class="form__label form__label_search">
+          <input class="form__input" type="text" placeholder="Москва"> </lablel>
         <label class="label__checkbox">
           <input class="input__checkbox" type="checkbox">
           <i></i>Checkbox </label>
-        <label class="label__radio">
-          <input class="input__radio" type="radio">
-          <i></i>Radio </label>
-        <label class="label__switch">
-          <input class="input__switch" type="checkbox">
-          <i></i>Switch </label>
+        <label class="label__checkbox label__checkbox_disabled">
+          <input class="input__checkbox" type="checkbox" disabled>
+          <i></i>Disabled </label>
         <label class="form__label">
           <textarea class="form__area"></textarea>
         </label>
       </div>
     </div>
     <div class="page__wrapper">
-      <div class="header"></div>
+      <!-- Header -->
+      <!-- Main -->
       <main class="main"> </main>
+      <!-- Footer -->
       <footer class="footer"></footer>
+      <!-- Notifi -->
+      <div class="module__notification jsVisible">
+        <div class="notifi notifi_check animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_check">
+            <use xlink:href="assets/images/icons.svg#check"></use>
+          </svg>
+          <p>Данные успешно
+            <br> сохранены</p>
+        </div>
+        <div class="notifi notifi_check animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_check">
+            <use xlink:href="assets/images/icons.svg#check"></use>
+          </svg>
+          <p>ВАШ ЗАКАЗ
+            <span>#3229356</span>принят в обработку</p>
+        </div>
+        <div class="notifi notifi_check animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_check">
+            <use xlink:href="assets/images/icons.svg#check"></use>
+          </svg>
+          <p>ваше письмо отправлено, скоро с вами свяжется менеджер по работе с клиентами</p>
+        </div>
+        <div class="notifi notifi_error animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_exclame">
+            <use xlink:href="assets/images/icons.svg#exclame"></use>
+          </svg>
+          <p>пользователь с такими данными не зарегистрирован в системе</p>
+        </div>
+        <div class="notifi notifi_success animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_exclame">
+            <use xlink:href="assets/images/icons.svg#exclame"></use>
+          </svg>
+          <p>успешная регистрация, перейдите в кабинет для заполнения профиля пользователя</p>
+        </div>
+        <div class="notifi notifi_warning animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_exclame">
+            <use xlink:href="assets/images/icons.svg#exclame"></use>
+          </svg>
+          <p>проверьте правильность введенных вами данных</p>
+        </div>
+        <div class="notifi notifi_information animated fadeIn">
+          <div class="close jsClose">
+            <svg class="icon icon_cross">
+              <use xlink:href="assets/images/icons.svg#cross"></use>
+            </svg>
+          </div>
+          <svg class="icon icon_exclame">
+            <use xlink:href="assets/images/icons.svg#exclame"></use>
+          </svg>
+          <p>на ваш email адрес отправлено уведомление от магазина </p>
+        </div>
+      </div>
     </div>
+    <!-- Scripts -->
     <script src="assets/js/plugins/plugins.min.js"></script>
-    <script src="assets/js/main/main.min.js"></script>
+    <script src="assets/js/main/main.js"></script>
   </body>
 </html>

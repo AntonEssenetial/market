@@ -1,0 +1,103 @@
+include ../modals/modals
+
+mixin module__registration(data)
+  - var bemClass = 'module__registration'
+  +modal({"id": "modal-1", "close": true}).modal_reg
+    .module__registration&attributes(attributes)
+      div(class=bemClass + '__popup')
+        h2 Регистрация
+        div(class=bemClass + '__form')
+          form(action="")
+            label().form__label
+              input(type="text", placeholder='Имя').form__input
+            label().form__label
+              input(type="text", placeholder='E-mail').form__input
+            label().form__label
+              input(type="text", placeholder='Пароль').form__input
+            label().form__label
+              input(type="text", placeholder='Номер телефона').form__input
+            label().label__checkbox
+              input(type="checkbox").input__checkbox
+              i
+              | Я принимаю условия
+            a(href="" class=bemClass + '__link').pink Пользовательского соглашения 
+            button.button.button_lg Зарегестрироваться
+      div(class=bemClass + '__bottom') 
+        .row 
+          .col__50.col__50_border
+            div(class=bemClass + '__str') Регистрация через
+            .row.center(class=bemClass + '__row') 
+              a(href="")
+                +icon('fb')
+              a(href="")
+                +icon('vk')
+              a(href="")
+                +icon('ru')
+          .col__50
+            div(class=bemClass + '__str') Есть аккаунт?
+            span(class=bemClass + '__ent' data-remodal-target="modal-2").pink Войти
+
+  +modal({"id": "modal-2", "close": true}).modal_reg
+    .module__registration&attributes(attributes)
+      div(class=bemClass + '__popup')
+        h2 Войти
+        div(class=bemClass + '__form')
+          form(action="")
+            label().form__label
+              input(type="text", placeholder='Имя').form__input
+            label().form__label
+              input(type="text", placeholder='Пароль').form__input
+            button.button.button_lg Войти
+      div(class=bemClass + '__bottom') 
+        .row 
+          .col__50.col__50_border
+            div(class=bemClass + '__str') Регистрация через
+            span(class=bemClass + '__ent' data-remodal-target="modal-4").pink Забыли пароль?
+          .col__50
+            div(class=bemClass + '__str') Есть аккаунт?
+            span(class=bemClass + '__ent' data-remodal-target="modal-1").pink Регистрация
+
+  +modal({"id": "modal-3", "close": true}).modal_reg
+    .module__registration&attributes(attributes)
+      div(class=bemClass + '__popup')
+        h2 Войти
+        div(class=bemClass + '__form')
+          form(action="")
+            label().form__label.form__label_disabled
+              input(type="text" disabled value='Disabled').form__input 
+            label().form__label
+              input(type="text", placeholder='Код из e-mail').form__input
+            .row.between
+              span(class=bemClass + '__str-2') Не пришел код?
+              span(class=bemClass + '__str-2') 60 сек
+            .row.between(class=bemClass + '__row-2') 
+              span(class=bemClass + '__str-2') Не пришел код?
+              a(href='#' class=bemClass + '__link').pink Отправить заново
+            button.button.button_lg(disabled) Войти
+      div(class=bemClass + '__bottom') 
+        .row 
+          .col__50.col__50_border
+            div(class=bemClass + '__str') Регистрация через
+            span(class=bemClass + '__ent' data-remodal-target="modal-4").pink Забыли пароль?
+          .col__50
+            div(class=bemClass + '__str') Есть аккаунт?
+            span(class=bemClass + '__ent' data-remodal-target="modal-1").pink Регистрация
+
+  +modal({"id": "modal-4", "close": true}).modal_reg
+    .module__registration&attributes(attributes)
+      div(class=bemClass + '__popup')
+        h2 Восстановить
+        div(class=bemClass + '__form')
+          form(action="")
+            label().form__label
+              input(type="text", placeholder='Email').form__input
+            span(class=bemClass + '__str-3') Инструкция для восстановления доступа к аккаунту будет отправлена на указанный E-mail адрес
+            button.button.button_lg Восстановить
+      div(class=bemClass + '__bottom') 
+        .row 
+          .col__50.col__50_border
+            div(class=bemClass + '__str') Вспомнили пароль?
+            span(class=bemClass + '__ent' data-remodal-target="modal-2").pink Войти
+          .col__50
+            div(class=bemClass + '__str') Нет аккаунта?
+            span(class=bemClass + '__ent' data-remodal-target="modal-1").pink Регистрация

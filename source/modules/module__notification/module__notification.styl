@@ -1,0 +1,82 @@
+.module__notification
+  position fixed
+  top 0px 
+  right 0px
+  z-index 200
+  display none
+  padding 10px
+  
+.notifi
+  text-align: center
+  position relative
+  margin 0 auto 10px auto
+  width 260px
+  min-height 300px
+  padding 25px 30px
+  //background-image: image-url('not.png')
+  background-position: -99px 23px;
+  background-repeat: no-repeat
+  
+  .icon 
+    width 15px 
+    height @width
+    color white
+    
+  .icon_exclame
+  .icon_check
+    width 90px 
+    height @width
+    margin 40px 0 30px 0
+    
+  .close 
+    top 20px
+    right @top
+    position absolute
+    cursor pointer 
+    opacity 0.7
+    z-index 2
+    &:hover 
+      opacity: 1
+      trs()
+    
+  p 
+    font-size 12px
+    color white
+    text-transform: uppercase
+    bold()
+    padding-bottom 0px
+    line-height 26px
+    
+    span 
+      display: block
+      font-size 22px
+      color white
+      margin 2px 0
+    
+.notifi-wrapper
+  width 1200px 
+  margin 0 auto
+  padding 10px 0
+  text-align: center
+  
+.notifi__msg
+  font-size 14px
+  display block
+  
+.notifi_error 
+  background-color: $error
+  
+.notifi_success 
+  background-color: $success
+  
+.notifi_warning
+  background-color: $warning
+  
+.notifi_information
+  background-color: $information
+  
+.notifi_check 
+  background-color: $pink
+  
+.module__notification.jsVisible 
+  display block

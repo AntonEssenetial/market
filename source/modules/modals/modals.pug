@@ -1,0 +1,8 @@
+mixin modal(data)
+  .modal(data-remodal-id=data.id)&attributes(attributes)
+    if data.close
+      button.button_close(data-remodal-action="close")
+        +icon('cross')
+    .modal-wrapper
+      .modal__content
+        block

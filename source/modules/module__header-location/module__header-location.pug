@@ -1,0 +1,7 @@
+mixin module__header-location(data)
+  - var bemClass = 'module__header-location'
+  .module__header-location&attributes(attributes)
+    .row.center
+      span(class=bemClass + '__str') Ваш город: 
+      +icon('marker')
+      a(href="#" data-remodal-target="modal-5" class=bemClass + '__link') Москва

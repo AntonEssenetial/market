@@ -1,0 +1,108 @@
+.module__main-review
+  background: white
+  padding 60px 0px
+  
+  &__str 
+    color white
+    font-size 18px
+    display: block
+    margin 20px 0
+    
+  &__str-2 
+    color white
+    font-size 48px
+  
+  &__slider
+    width 31.5%
+    background-color $pink
+  
+  &__item 
+    background-color #fafafa
+    padding 30px 30px 50px 30px
+    position: relative
+    width 31.5%
+    
+    &:hover 
+      box-shadow 0px 0px 0px 1px $pink
+      trs()
+      
+  &__item:hover &__layer 
+    opacity 0.06
+
+  &__name 
+    font-size 19px
+    color $dark
+    
+  &__shop 
+    font-size 18px 
+    color $pink
+    bold()
+    
+  &__heading 
+    margin 0 0 20px 0
+    
+  &__date 
+    display: block
+    margin 0 auto 20px auto
+    text-align: center
+    font-size 13px
+    
+  &__img 
+    width 128px 
+    height @width
+    border-radius(50%)
+    margin 20px auto 20px auto
+    display: block
+    
+  &__layer 
+    position absolute 
+    width 100% 
+    height 100% 
+    top 0px 
+    left 0px
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    opacity: 0
+    z-index: 0
+    trs()
+    
+  &__content 
+    position: relative
+    z-index 1
+    
+  .icon 
+    color white
+    width 90px
+    height 90px
+    
+  &__slide
+    display flex !important
+    flex-direction column
+  
+  &__cont
+    margin auto
+    text-align: center
+    
+  .slick-dots li button:before
+    color #e85795
+    font-size 48px
+    opacity 1
+    
+  .slick-dots
+    bottom 50px
+    
+  .slick-dots li button:hover:before, 
+  .slick-dots li button:focus:before,
+  .slick-dots li.slick-active button:before
+    color white
+    opacity 1
+  
+  .slick-dots li
+    margin 0px
+    
+  .jsSlick2
+  .slick-list
+  .slick-track 
+    height 100%
+    

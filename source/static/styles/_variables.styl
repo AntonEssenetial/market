@@ -1,12 +1,12 @@
 // Import plugins
 sprites(false)
-animate-css(false)
+animate-css(true)
 bxslider(false)
-slick(false)
+slick(true)
 customScrollbar(false)
 simpleLightBox(false)
 formstyler(false)
-remodal(false)
+remodal(true)
 lightslider(false)
 lightgallery(false)
 
@@ -46,29 +46,29 @@ semi()
   
 // Bdoy font 
 $body-font       = 'opensans-regular-webfont'
-$body-min-width  = 1240px 
-$body-max-width  = 1920px
+$body-min-width  = 320px 
+$body-max-width  = 100%
 $placeholderFont = 'opensans-regular-webfont';
 
 
 // Container-width 
-$container-width   = 1240px
+$container-width   = 1210px
 $container-padding = 0 20px
 
 
 // Link - var
 $link-size                  = 14px
-$link-color                 = $text
-$link-hover-color           = $blue
+$link-color                 = $dark
+$link-hover-color           = $pink
 $link-text-docoration       = none
-$link-text-docoration-hover = underline
+$link-text-docoration-hover = none
 
 
 // Text - var
-$text-size        = 14px
+$text-size        = 13px
 $text-color       = $text
 $text-padding     = 18px
-$text-line-height = 23px
+$text-line-height = 18px
 
 
 // Span - var
@@ -77,13 +77,13 @@ $span-color = $text
 
 
 // Heading - var
-$h1      = 44px
+$h1      = 30px
 $h2      = 24px
-$h3      = 20px
+$h3      = 22px
 $h4      = 18px
-$h5      = 16px
-$h6      = 14px
-$h-color = $blue
+$h5      = 14px
+$h6      = 13px
+$h-color = $dark
 $h-font  = false
 
 
@@ -92,23 +92,23 @@ $col-margin = 30px
 
 
 // Label - input
-$input-size           = 18px
-$input-color          = $dark
+$input-size           = 14px
+$input-color          = #aeadad
 $input-background     = white
-$input-border-radius  = 0
-$input-height         = 38px
+$input-border-radius  = 3px
+$input-height         = 47px
 $input-margin         = 7px 0 0 0 
 $label-margin         = 0 0 20px 0
 $label-color          = $dark 
 $label-size           = 11px
-$input-padding        = 10px 10px
+$input-padding        = 10px 20px
 $input-border-color   = $border
-$place-holder-default = grey2
+$place-holder-default = #aeadad
 input-border()
   border 1px solid $input-border-color
   trs()
   &:focus 
-    border-color $dark-aqua
+    border-color $pink
     color $dark
     trs()
 
@@ -119,28 +119,28 @@ $banner-link-color = $dark
 
 // Buttons
 $button-radius                 = 3px
-$button-height                 = 30px
+$button-height                 = 35px
 $button-padding                = 0 30px
-$button-size                   = 11px
+$button-size                   = 12px
 $button-text-transform         = uppercase
 $button-color                  = white
-$button-border                 = $red
-$button-background             = $red
+$button-border                 = $pink
+$button-background             = $pink
 $button-hover-color            = white
 $button-border-hover-color     = $button-hover
 $button-background-hover-color = $button-hover
 // Button xl
-$button-lg-width       = 240px
-$button-lg-height      = 48px
-$button-lg-font-size   = 14px
+$button-lg-width       = 250px
+$button-lg-height      = 53px
+$button-lg-font-size   = 16px
 $button-lg-font-weight = normal 
 $button-lg-padding     = 0px
 // Button xs
-$button-md-width       = 200px
-$button-md-height      = 40px
-$button-md-font-size   = 14px
+$button-md-width       = auto
+$button-md-height      = 42px
+$button-md-font-size   = 12px
 $button-md-font-weight = normal
-$button-md-padding     = 0px
+$button-md-padding     = 0px 30px
 
 
 // Box sizing
@@ -158,22 +158,24 @@ $button-md-padding     = 0px
 
 // Native - Colors
 $brown         =  #e0914c
-$dark          =  #3d3d3d
-$yellow        =  #f5aa00
+$dark          =  #282828
+$yellow        =  #ffc215
+$soft-yellow   =  #ffeebd
 $blue          =  #0052b4
 $aqua          =  #61dfdd
 $dark-aqua     =  #025958
 $soft-aqua     =  #518fa6
 $orange        =  #f17300
-$green         =  #408c09
+$green         =  #1ab06f
 $purple        =  purple 
-$pink          =  pink
+$pink          =  #ff74af
+$dark-pink     =  #90174b
 $red           =  #be1b2e
 $milk          =  #e5e1d0
-$gold          =  #d09700
-$soft          =  #f1f0ed
-$grey          =  #a6a6a6
-$grey2         =  #646669
+$gold          =  #daa100
+$soft          =  #fafafa
+$grey          =  #6a6969
+$grey2         =  #aeadad
 $grey3         =  #6f6f6f
 
 
@@ -183,21 +185,21 @@ $border-grey   =  #484848
 $dash-border   =  #ececec
 
 
-$hover         =  $gold
-$button-hover  =  #b31629
+$hover         =  #f4589a
+$button-hover  =  #f4589a
 
 
 // Input colors - readonly - disabled - succes - error
 $BGreadonly      =  #f9f8f6
-$BGdisabled      =  #f9f8f6
+$BGdisabled      =  #fafafa
 $border-disabled =  #d1d1d1
-$Dcolor          =  #9f9f9f
-$readonly        =  $grey2
+$Dcolor          =  #6a6969
+$readonly        =  #d1d1d1
 $disabled        =  $milk
-$success         =  #4ac3c1
-$error           =  #ed5565
-$information     =  #427c92
-$warning         =  #cdb933
+$success         =  #1ab06f
+$error           =  #e45252
+$information     =  #1a8eb0
+$warning         =  #ffc215
 
 
 // Color class
@@ -211,6 +213,9 @@ $warning         =  #cdb933
   color $green
 .yellow 
   color $yellow
+.pink 
+  color $pink 
+  hover()
 
 
 // Js class
@@ -248,9 +253,11 @@ trs()
 trs-slow()
   transition ease-in-out .4s
 hover()
+  trs()
   &:hover
-    color green
+    color $link-hover-color
     text-decoration: underline
+    trs()
 static()
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -287,24 +294,26 @@ img-width()
   &:hover 
     +before()
       display: none
+.button_tr.button_loader
+  background-image url('../images/loader/loader2.svg')
 
 button:disabled
-  background-color : $BGdisabled
-  border-color     : $BGdisabled
-  color            : $text
+  background-color : #d1d1d1
+  border-color     : #d1d1d1
+  color            : white
   cursor           : not-allowed
   &:hover 
-    background-color : $BGdisabled
-    border-color     : $BGdisabled
-    color            : $text
+    background-color : #d1d1d1
+    border-color     : #d1d1d1
+    color            : white
       
 input[type='text']:read-only
   box-shadow       : none !important
   background-color : $BGreadonly
   color            : $readonly
-  border           : 1px solid $BGreadonly
+  border           : 1px solid $readonly
   &:focus
-    border-color   : $BGreadonly
+    border-color   : $readonly
     color          : $readonly
 
 // Firefox
@@ -312,9 +321,9 @@ input[readonly]
   box-shadow       : none !important
   background-color : $BGreadonly
   color            : $readonly
-  border           : 1px solid $BGreadonly
+  border           : 1px solid $readonly
   &:focus
-    border-color   : $BGreadonly
+    border-color   : $readonly
     color          : $readonly
     
 input[type='button']:disabled,
@@ -339,13 +348,25 @@ input[type='submit']:disabled,
   color            : $Dcolor !important
   cursor           : not-allowed !important
 .input_error
+  input
   //box-shadow : inset -2px 0px 0px 0px $error !important
-  color            : $error !important
-  border-color     : $error !important
+    color            : $error !important
+    border-color     : $error !important
+  span 
+    color          : $error
+    font-size      : 12px
+    padding-left   : 20px
+    padding-top    : 3px
 .input_success 
+  input
   //box-shadow : inset -2px 0px 0px 0px $success !important
-  color            : $success !important
-  border-color     : $success !important
+    color            : $success !important
+    border-color     : $success !important
+  span 
+    color          : $success
+    font-size      : 12px
+    padding-left   : 20px
+    padding-top    : 3px
   
 
 // Input reset 
@@ -355,8 +376,10 @@ select
   -webkit-appearance: none;
   border-radius $input-border-radius
   appearance none
+  semi()
 input
 textarea
+  semi()
   border-radius $input-border-radius
   margin 0px 
   border none
@@ -422,7 +445,33 @@ select
 //   font-size 12px
 //   line-height 20px
 //   margin 8px 0 0 0
-  
+.form__label_disabled
+  position: relative
+  &:after
+    background: url('../images/inputs/1.png') no-repeat center
+    width 20px 
+    height @width
+    content ''
+    z-index 1
+    display block
+    position: absolute
+    right 15px
+    top 13px
+.form__label_search
+  position: relative
+  input 
+    height 43px
+    line-height @height
+  &:after
+    background: url('../images/inputs/3.png') no-repeat center
+    width 20px 
+    height @width
+    content ''
+    z-index 1
+    display block
+    position: absolute
+    right 15px
+    top 12px
     
 // Custom checkbox
 customCheckbox(customCheckbox = false)
@@ -430,12 +479,21 @@ customCheckbox(customCheckbox = false)
     input[type='checkbox']
     input[type='radio']
       display none
+    .label__checkbox_disabled 
+      &:hover  
+        cursor not-allowed !important
+        i 
+          border-color #f2f2f2 !important
+          cursor not-allowed
+      i
+        background-color #f2f2f2 !important
+        border-color #f2f2f2 !important
     .label__checkbox
     .label__radio
     .label__switch
       margin 8px 0 0 0 
-      color black
-      font-size 14px 
+      color $text
+      font-size 13px 
       display flex
       line-height 20px
       cursor pointer
@@ -479,37 +537,37 @@ customCheckbox(customCheckbox = false)
         display: none
     // Checkbox
     .label__checkbox i 
-      width 24px 
+      width 18px 
       height @width
       display inline-block
       position relative
-      border-radius (0px)
+      border-radius (2px)
       background: white
-      border 1px solid $dash-border
+      border 1px solid $border
       cursor pointer
       margin-right 10px
       trs()
+      overflow: hidden
       +after('')
         position: relative
-        left 8px
-        top 3px
+        left 5px
+        top 2px
         opacity 0
         margin-top -20px
         display block
-        border-bottom 1px solid white 
-        border-right 1px solid white
-        width 6px 
-        height 10px
+        border-bottom 1px solid $pink
+        border-right 1px solid $pink
+        width 5px 
+        height 8px
         trs()
     .label__checkbox  
     .label__radio
       &:hover i 
-        border-color $dark-aqua
+        border-color $button-hover
         trs()
     // Custom checkbox
     .label__checkbox .input__checkbox:checked + i
-      background: $green
-      border-color $green
+      border-color $pink
       +after()
         opacity 1
         trs()
@@ -595,6 +653,8 @@ button
   outline none
   background transparent
 .button
+  bold()
+  min-width 110px
   white-space: nowrap;
   background-color $button-background
   border-radius $button-radius
@@ -630,6 +690,7 @@ button
   font-size $button-md-font-size
   font-weight $button-md-font-weight
   padding $button-md-padding
+  min-width 125px
 .button_white
   // border-color white
   background-color white
@@ -659,12 +720,20 @@ button
   background: $grey 
   // color $dark
 .button_tr
-  border 1px solid $red
-  background: transparent
-  color $red
+  border 1px solid $pink
+  background-color: transparent
+  color $pink
   &:hover 
-    background: $red 
-    color white
+    border-color: $button-hover  
+    color $button-hover
+    background-color transparent
+.button_tr:disabled
+  border-color $border
+  background-color transparent
+  color $border
+  &:hover 
+    background-color transparent
+    color $border
 
 
 // col 
@@ -730,9 +799,11 @@ a
   display inline-block
   font-size $link-size
   color $link-color
+  trs()
   &:hover 
     color $link-hover-color
     text-decoration $link-text-docoration-hover
+    trs()
 h1, h2, h3, h4, h5, h6 
   font-weight normal
 .text 

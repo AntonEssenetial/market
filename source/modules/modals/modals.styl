@@ -1,0 +1,26 @@
+.modal 
+  padding 0px
+  margin 0px
+  text-align left
+  
+  &_reg 
+    width 370px
+    
+.remodal-overlay
+  background: rgba(23, 23, 23, 0.5);
+  
+.button_close 
+  right 30px 
+  top 25px
+  position: absolute
+  z-index: 1
+  svg
+    fill $dark
+    width 18px 
+    height @width
+    opacity: 0.6
+    trs()
+    &:hover 
+      opacity 1
+      trs()
+    

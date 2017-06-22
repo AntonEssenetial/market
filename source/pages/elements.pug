@@ -5,6 +5,10 @@ include ../modules/head/head
 include ../modules/header/header
 include ../modules/footer/footer
 include ../modules/select/select
+include ../modules/icon/icon
+include ../modules/module__notification/module__notification
+include ../modules/module__registration/module__registration
+include ../modules/module__location/module__location
 
 
 doctype html
@@ -14,55 +18,93 @@ html(lang=config.lang)
     +head(head.home)
 
   +page()
-    +inject('header')
-      +header()
 
     .container
       .col__40
-        <br>
-        button.button button 1 
-        <br><br>
-        button.button.button_lg button big 
-        <br><br>
-        button.button.button_md button medium 
-        <br><br>
-        button.button.button_tr button tranpsparent 
-        <br><br>
-        button.button(disabled) Button disabled 
-        <br><br>
-        button.button.button_loader
-        <br><br>
-    
+        br
+        a(href='#' data-remodal-target="modal-1") Registration 
+        br
+        a(href='#' data-remodal-target="modal-2") Enter 
+        br
+        a(href='#' data-remodal-target="modal-3") Enter 2 
+        br
+        a(href='#' data-remodal-target="modal-4") Recover 
+        br
+        a(href='#' data-remodal-target="modal-5") Location 
+        br
+        +module__registration()
+        +module__location()
+        br
+        .row
+          button.button button 
+          button(disabled).button button
+          button.button.button_loader
+        br
+        .row 
+          button.button.button_tr button
+          button(disabled).button.button_tr button
+          button.button.button_tr.button_loader
+        br
+        .row
+          button.button.button_lg button big 
+          button(disabled).button.button_lg button big 
+          button.button.button_lg.button_loader
+        br
+        .row
+          button.button.button_lg.button_tr button big 
+          button(disabled).button.button_lg.button_tr button big 
+          button.button.button_lg.button_tr.button_loader
+        br
+        .row
+          button.button.button_md button medium 
+          button(disabled).button.button_md button medium 
+          button.button.button_md.button_loader
+        br
+        .row
+          button.button.button_md.button_tr button medium 
+          button(disabled).button.button_md.button_tr button medium 
+          button.button.button_md.button_tr.button_loader
+        br
         a(href="") link example
+        br
         h1 h1 heading
-    
+        h2 h2 heading
+        h3 h3 heading
+        h4 h4 heading
+        h5 h5 heading
+        h6 h6 heading
         label().form__label
           input(type="text").form__input 
-        label().form__label
+        label().form__label.form__label_disabled
           input(type="text" disabled value='Disabled').form__input 
         label().form__label
           input(type="text" readonly value='Read only').form__input 
-        label().form__label
-          input(type="text" value='Error').form__input.input_error
-        label().form__label
-          input(type="text" value='Success').form__input.input_success
+        label().form__label.input_error
+          input(type="text" value='Error').form__input
+          span Field must be in Email format
+        label().form__label.input_success
+          input(type="text" value='Success').form__input
+          span The password match
         label().form__label
           +select('custom')
             option('new') Select
+            option('new') Selecc 2
+            option('new') Selecc 3
+        lablel().form__label.form__label_search
+          input(type="text", placeholder='Москва').form__input
         label().label__checkbox
           input(type="checkbox").input__checkbox
           i
           | Checkbox
-        label().label__radio
-          input(type="radio").input__radio
+        label().label__checkbox.label__checkbox_disabled
+          input(type="checkbox" disabled).input__checkbox
           i
-          | Radio
-        label().label__switch
-          input(type="checkbox").input__switch
-          i
-          | Switch
+          | Disabled
         label().form__label
           textarea.form__area
+        
+    +inject('module__notification')
+      +module__notification()
 
     +inject('footer')
       +footer()
