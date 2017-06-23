@@ -1,4 +1,17 @@
+include ../module__item/module__item
+
 mixin module__discount(data)
   - var bemClass = 'module__discount'
   section.module__discount&attributes(attributes)
-    
+    .container
+      div(class=bemClass + '__row').row.center.between
+        h2 Акции на бренды, товары и в магазинах
+        div(class=bemClass + '__nav').row
+          span.slick-prev-2
+            +icon('left')
+          span.slick-next-2
+            +icon('right')
+      div(class=bemClass + '__slider')
+        .jsSlick3
+          +module__item()
+          +module__item()

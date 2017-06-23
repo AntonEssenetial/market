@@ -13,6 +13,52 @@ $(function() {
 });
 
 
+// module__bottom-cart
+(function() {
+
+    var button = $('.jsCart'),
+        cart = $('.module__bottom-cart'),
+        wHeight = parseInt($(window).height())-148,
+        body = $('html');
+
+    button.click(function(event) {
+        $(this).toggleClass('active');
+        body.toggleClass('page_mobile-menu');
+        cart.toggleClass('opend');
+    });
+
+    if(body.hasClass('page_mobile-menu')) {
+        document.ontouchmove = function(event){
+            event.preventDefault();
+        }
+    }
+    else {
+        document.ontouchmove = function(e) {
+            e.stopPropagation();
+        };
+    }
+
+})();
+
+// module__discount
+(function() {
+
+    var topSlider = $('.jsSlick3');
+
+    topSlider.slick({
+        arrows: true,
+        fade: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        nextArrow: '.slick-next-2',
+        prevArrow: '.slick-prev-2'
+    });
+
+})();
+
 // module__main-review
 (function() {
 
@@ -54,8 +100,14 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 7000,
         nextArrow: '.slick-next',
-        prevArrow: '.slick-prev'
+        prevArrow: '.slick-prev',
+        centerPadding: '60px'
     });
+
+    $(window).on("load resize",function(e){
+        equalheight('.module__item');
+    });
+
 
 })();
 

@@ -1,4 +1,23 @@
 mixin module__subscribe(data)
   - var bemClass = 'module__subscribe'
   section.module__subscribe&attributes(attributes)
-    
+    .container
+      .row
+        .col__40.col__40_bg
+        .col__60
+          h2 Не пропустите выход <br> мобильного приложения 
+            span EROMALL
+          span(class=bemClass + '__str') Укажите ваш Email и мы отправим вам ссылку на приложение как только оно выйдет и получите скидку 10% на все товары
+          form(action="")
+            div(class=bemClass + '__f-row').row
+              div(class=bemClass + '__row') 
+                label().form__label
+                  input(type="text").form__input
+                div(class=bemClass + '__check-row').row.center  
+                  label().label__radio
+                    input(type="radio", name='device').input__radio
+                    +icon('apple')
+                  label().label__radio
+                    input(type="radio", name='device').input__radio
+                    +icon('android')
+              a(href="").button Уведомить

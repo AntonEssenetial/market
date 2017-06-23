@@ -1,2 +1,62 @@
 .module__subscribe
-  //
+  
+  .col__60
+    padding 150px 0
+  
+  .col__40
+    background: image-url('3.png') no-repeat center
+  
+  h2 
+    font-size 30px
+    line-height 33px
+    margin-bottom 25px
+  
+    span 
+      font-size 30px 
+      color $pink
+      
+  &__str
+    font-size 13px
+    color $dark
+
+  .label__radio .input__radio:checked + .icon 
+    color $pink
+    trs()
+    
+  .icon 
+    width 22px 
+    height 25px
+    color #dedddd
+    
+  &__check-row
+    position: absolute
+    right 10px
+    top 8px
+    border-left 1px solid $border
+    padding 1px 0px 1px 10px
+    
+    label
+      margin 0 4px 0 0
+    
+  &__row 
+    margin 0px
+    position: relative
+    width 326px
+    
+    .form__label 
+      margin 0px
+      
+    .form__input 
+      margin 0px
+    
+  input 
+    height 44px
+    
+  .button 
+    height 44px
+    line-height @height
+    margin-left 10px
+    
+  &__f-row 
+    margin-top 20px
+    

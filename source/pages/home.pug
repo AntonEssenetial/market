@@ -28,7 +28,9 @@ html(lang=config.lang)
       +page__main()
 
     +inject('footer')
-      +footer()
+      +footer({
+        cart: true
+      })
 
     +inject('module__registration')
       +module__registration()

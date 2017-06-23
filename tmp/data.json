@@ -128,20 +128,20 @@
 	"footerNav": {
 		"default": [
 			{
-				"title": "Окомпании",
+				"title": "О нас",
 				"url": "about"
 			},
 			{
-				"title": "Правила компании",
+				"title": "Информация для СМИ",
+				"url": "information"
+			},
+			{
+				"title": "Информация для партнеров",
+				"url": "partners"
+			},
+			{
+				"title": "Правила и акции",
 				"url": "rules"
-			},
-			{
-				"title": "Политика конфиденциальности",
-				"url": "policy"
-			},
-			{
-				"title": "FAQ",
-				"url": "faq"
 			},
 			{
 				"title": "Новости",
@@ -154,16 +154,28 @@
 		],
 		"serv": [
 			{
-				"title": "Инвесторам",
-				"url": "investments"
+				"title": "Все магазины",
+				"url": "shops"
 			},
 			{
-				"title": "Партнерам",
-				"url": "referral-program"
+				"title": "Секс-игрушки",
+				"url": "toyes"
 			},
 			{
-				"title": "Гарантии",
+				"title": "Белье и костюмы",
 				"url": "guarantees"
+			},
+			{
+				"title": "Полезные интим товары",
+				"url": "items"
+			},
+			{
+				"title": "BDSM",
+				"url": "dbsm"
+			},
+			{
+				"title": "Интим подарки",
+				"url": "presents"
 			}
 		]
 	},

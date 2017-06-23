@@ -1,5 +1,30 @@
 include ../footer-nav/footer-nav
+include ../module__logo/module__logo
+include ../module__socials/module__socials
+include ../module__bottom-cart/module__bottom-cart
 
 mixin footer(data)
   - var bemClass = 'footer'
   footer.footer&attributes(attributes)
+    .container
+      div(class=bemClass + '__row').row 
+        +module__logo()
+        div(class=bemClass + '__loc')
+          .row.center
+            span(class=bemClass + '__str') © 2017 
+            a(href="" class=bemClass + '__link').margin Eromall. 
+            span(class=bemClass + '__str').block Секс-товары в городе
+            +icon('marker')
+            a(href="#" class=bemClass + '__link' data-remodal-target="modal-5") Москва
+          span(class=bemClass + '__str') Все права защищены.
+          a(href='#' class=bemClass + '__link').block Пользовательское соглашение.
+
+        div(class=bemClass + '__menu')
+          .row 
+            +footer-nav(footerNav.default)
+            +footer-nav(footerNav.serv)
+      div(class=bemClass + '__soc')
+        +module__socials()
+
+    if data.cart
+      +module__bottom-cart()
