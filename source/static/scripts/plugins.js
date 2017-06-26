@@ -68,6 +68,11 @@
 //= require slick/slick.min.js
 
 
+// Nicescroll
+// ---------------------------------------------------------------------------
+//= require nicescroll/jquery.nicescroll.min.js
+
+
 // From styler
 // ---------------------------------------------------------------------------
 //= require formstyler/jquery.formstyler.min.js

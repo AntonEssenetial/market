@@ -1,15 +1,18 @@
+include ../sandwitch/sandwitch
 include ../module__logo/module__logo
 include ../module__header-location/module__header-location
 include ../main-menu/main-menu
+include ../module__mobile-cart/module__mobile-cart
 
 mixin header(data)
   - var bemClass = 'header'
   header.header&attributes(attributes)
     .container
       .row.center
+        +sandwitch()
         +module__logo()   
         +module__header-location()
-
+        +module__mobile-cart()
         if data.account
         if data.shop
         else

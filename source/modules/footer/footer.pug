@@ -10,12 +10,14 @@ mixin footer(data)
       div(class=bemClass + '__row').row 
         +module__logo()
         div(class=bemClass + '__loc')
-          .row.center
-            span(class=bemClass + '__str') © 2017 
-            a(href="" class=bemClass + '__link').margin Eromall. 
-            span(class=bemClass + '__str').block Секс-товары в городе
-            +icon('marker')
-            a(href="#" class=bemClass + '__link' data-remodal-target="modal-5") Москва
+          .row.center(class=bemClass + '__b-row') 
+            .row
+              span(class=bemClass + '__str') © 2017 
+              a(href="" class=bemClass + '__link').margin Eromall. 
+            .row.center
+              span(class=bemClass + '__str').block Секс-товары в городе
+              +icon('marker')
+              a(href="#" class=bemClass + '__link' data-remodal-target="modal-5") Москва
           span(class=bemClass + '__str') Все права защищены.
           a(href='#' class=bemClass + '__link').block Пользовательское соглашение.
 
@@ -28,3 +30,5 @@ mixin footer(data)
 
     if data.cart
       +module__bottom-cart()
+
+  

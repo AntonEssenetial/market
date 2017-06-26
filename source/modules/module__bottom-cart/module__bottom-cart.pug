@@ -3,23 +3,27 @@ include ../module__cart/module__cart
 mixin module__bottom-cart(data)
   - var bemClass = 'module__bottom-cart'
   section.module__bottom-cart&attributes(attributes)
-    .container
-      .row.between
-        .col__left
-          .row 
-            +icon('cart')
-            div(class=bemClass + '__row').row
-              span(class=bemClass + '__str') Товаров в корзине:
-              a(href='' class=bemClass + '__link') 4
-              p(class=bemClass + '__str-2') на сумму 
-                span(class=bemClass + '__str-3') 27360 Р
-                | , из
-                a(href='' class=bemClass + '__link') 2 
-                | магазинов
-        .col__right
-          span(class=bemClass + '__up').jsCart 
-            +icon('up')
-          a(href="").button.button_md Оформить заказ
-      div(class=bemClass + '__cart-wrapper') 
-
-        +module__cart()
+    div(class=bemClass + '__top') 
+      .container
+        .row.between
+          .col__left
+            .row 
+              +icon('cart')
+              div(class=bemClass + '__row').row
+                span(class=bemClass + '__str') Товаров в корзине:
+                a(href='' class=bemClass + '__link') 4
+                p(class=bemClass + '__str-2') на сумму 
+                  span(class=bemClass + '__str-3') 27360 Р
+                  | , из
+                  a(href='' class=bemClass + '__link') 2 
+                  | магазинов
+          .col__right
+            span(class=bemClass + '__up').jsCart 
+              +icon('up')
+            a(href="").button.button_md Оформить заказ
+    div(class=bemClass + '__bottom') 
+      .container  
+        div(class=bemClass + '__items') 
+          div(class=bemClass + '__custom-scroll').jsScrollContainer
+            div(class=bemClass + '__wrapper') 
+              +module__cart()

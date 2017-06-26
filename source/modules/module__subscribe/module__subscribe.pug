@@ -2,7 +2,7 @@ mixin module__subscribe(data)
   - var bemClass = 'module__subscribe'
   section.module__subscribe&attributes(attributes)
     .container
-      .row
+      div(class=bemClass + '__r-row').row
         .col__40.col__40_bg
         .col__60
           h2 Не пропустите выход <br> мобильного приложения 

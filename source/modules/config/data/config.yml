@@ -1,6 +1,6 @@
 ---
   config:
-    projectName: Ellington
+    projectName: Eromall
     lang: en
     path:
       favicons: assets/favicons

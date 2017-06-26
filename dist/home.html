@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home :: Ellington</title>
+    <title>Home :: Eromall</title>
     <meta content="Murat Khatypov" name="author" />
     <meta content="Put value here" name="description" />
     <meta content="Put value here" name="keywords" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="robots" content="noodp, noydir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <meta property="og:title" content="Home" />
     <meta property="og:url" content="https://" />
@@ -32,6 +37,13 @@
       <header class="header">
         <div class="container">
           <div class="row center">
+            <button class="toggle-menu jsMobileDropdown sandwitch">
+              <div class="sandwitch">
+                <span class="sw-topper"></span>
+                <span class="sw-bottom"></span>
+                <span class="sw-footer"></span>
+              </div>
+            </button>
             <div class="module__logo">
               <a class="module__logo__link" href="home.html"></a>
             </div>
@@ -44,6 +56,7 @@
                 <a class="module__header-location__link" href="#" data-remodal-target="modal-5">Москва</a>
               </div>
             </div>
+            <div class="module__mobile-cart"></div>
             <div class="header__row row">
               <a class="button" href="#" data-remodal-target="modal-2">Вход</a>
               <a class="button button_tr" href="#" data-remodal-target="modal-1">Регистрация</a>
@@ -106,68 +119,72 @@
         </section>
         <section class="module__main-review">
           <div class="container">
-            <div class="module__main-review__row row between">
-              <div class="module__main-review__item">
-                <div class="module__main-review__layer" style="background-image: url(&quot;assets/images/background/1.jpg&quot;);"> </div>
-                <div class="module__main-review__content">
-                  <img class="module__main-review__img" src="assets/images/user/1.jpg" alt="JohnDoe" />
-                  <span class="module__main-review__date">08.04.2017 16:45</span>
-                  <div class="module__main-review__heading">
-                    <span class="module__main-review__name">JohnDoe о магазине</span>
-                    <span class="module__main-review__shop">INTIMISSIMI</span>
+            <div class="module__main-review__desktop">
+              <div class="module__main-review__row row">
+                <div class="jsSlick4 row between">
+                  <div class="module__main-review__item module__main-review__slide_responsive">
+                    <div class="module__main-review__layer" style="background-image: url(&quot;assets/images/background/1.jpg&quot;);"> </div>
+                    <div class="module__main-review__content">
+                      <img class="module__main-review__img" src="assets/images/user/1.jpg" alt="JohnDoe" />
+                      <span class="module__main-review__date">08.04.2017 16:45</span>
+                      <div class="module__main-review__heading">
+                        <span class="module__main-review__name">JohnDoe о магазине</span>
+                        <span class="module__main-review__shop">INTIMISSIMI</span>
+                      </div>
+                      <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+                    </div>
                   </div>
-                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+                  <div class="module__main-review__item module__main-review__slide_responsive">
+                    <div class="module__main-review__layer" style="background-image: url(&quot;assets/images/background/1.jpg&quot;);"> </div>
+                    <div class="module__main-review__content">
+                      <img class="module__main-review__img" src="assets/images/user/1.jpg" alt="JohnDoe" />
+                      <span class="module__main-review__date">08.04.2017 16:45</span>
+                      <div class="module__main-review__heading">
+                        <span class="module__main-review__name">Maria Carry о магазине</span>
+                        <span class="module__main-review__shop">INTIMISSIMI</span>
+                      </div>
+                      <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров
+                        и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="module__main-review__item">
-                <div class="module__main-review__layer" style="background-image: url(&quot;assets/images/background/1.jpg&quot;);"> </div>
-                <div class="module__main-review__content">
-                  <img class="module__main-review__img" src="assets/images/user/1.jpg" alt="JohnDoe" />
-                  <span class="module__main-review__date">08.04.2017 16:45</span>
-                  <div class="module__main-review__heading">
-                    <span class="module__main-review__name">Maria Carry о магазине</span>
-                    <span class="module__main-review__shop">INTIMISSIMI</span>
-                  </div>
-                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм
-                    шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-                </div>
-              </div>
-              <div class="module__main-review__slider">
-                <div class="jsSlick2">
-                  <div class="module__main-review__slide">
-                    <div class="module__main-review__cont">
-                      <svg class="icon icon_icon1">
-                        <use xlink:href="assets/images/icons.svg#icon1"></use>
-                      </svg>
-                      <span class="module__main-review__str">Всего отзывов</span>
-                      <span class="module__main-review__str-2">58000</span>
+                <div class="module__main-review__slider">
+                  <div class="jsSlick2">
+                    <div class="module__main-review__slide">
+                      <div class="module__main-review__cont">
+                        <svg class="icon icon_icon1">
+                          <use xlink:href="assets/images/icons.svg#icon1"></use>
+                        </svg>
+                        <span class="module__main-review__str">Всего отзывов</span>
+                        <span class="module__main-review__str-2">58000</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="module__main-review__slide">
-                    <div class="module__main-review__cont">
-                      <svg class="icon icon_icon2">
-                        <use xlink:href="assets/images/icons.svg#icon2"></use>
-                      </svg>
-                      <span class="module__main-review__str">Всего заказов</span>
-                      <span class="module__main-review__str-2">58000</span>
+                    <div class="module__main-review__slide">
+                      <div class="module__main-review__cont">
+                        <svg class="icon icon_icon2">
+                          <use xlink:href="assets/images/icons.svg#icon2"></use>
+                        </svg>
+                        <span class="module__main-review__str">Всего заказов</span>
+                        <span class="module__main-review__str-2">58000</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="module__main-review__slide">
-                    <div class="module__main-review__cont">
-                      <svg class="icon icon_icon3">
-                        <use xlink:href="assets/images/icons.svg#icon3"></use>
-                      </svg>
-                      <span class="module__main-review__str">Всего магазинов</span>
-                      <span class="module__main-review__str-2">58000</span>
+                    <div class="module__main-review__slide">
+                      <div class="module__main-review__cont">
+                        <svg class="icon icon_icon3">
+                          <use xlink:href="assets/images/icons.svg#icon3"></use>
+                        </svg>
+                        <span class="module__main-review__str">Всего магазинов</span>
+                        <span class="module__main-review__str-2">58000</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="module__main-review__slide">
-                    <div class="module__main-review__cont">
-                      <svg class="icon icon_icon4">
-                        <use xlink:href="assets/images/icons.svg#icon4"></use>
-                      </svg>
-                      <span class="module__main-review__str">Всего пользователей</span>
-                      <span class="module__main-review__str-2">58000</span>
+                    <div class="module__main-review__slide">
+                      <div class="module__main-review__cont">
+                        <svg class="icon icon_icon4">
+                          <use xlink:href="assets/images/icons.svg#icon4"></use>
+                        </svg>
+                        <span class="module__main-review__str">Всего пользователей</span>
+                        <span class="module__main-review__str-2">58000</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -334,7 +351,7 @@
         </section>
         <section class="module__subscribe">
           <div class="container">
-            <div class="row">
+            <div class="module__subscribe__r-row row">
               <div class="col__40 col__40_bg"></div>
               <div class="col__60">
                 <h2>Не пропустите выход
@@ -378,14 +395,18 @@
               <a class="module__logo__link" href="home.html"></a>
             </div>
             <div class="footer__loc">
-              <div class="row center">
-                <span class="footer__str">© 2017 </span>
-                <a class="footer__link margin" href="">Eromall. </a>
-                <span class="footer__str block">Секс-товары в городе</span>
-                <svg class="icon icon_marker">
-                  <use xlink:href="assets/images/icons.svg#marker"></use>
-                </svg>
-                <a class="footer__link" href="#" data-remodal-target="modal-5">Москва</a>
+              <div class="row center footer__b-row">
+                <div class="row">
+                  <span class="footer__str">© 2017 </span>
+                  <a class="footer__link margin" href="">Eromall. </a>
+                </div>
+                <div class="row center">
+                  <span class="footer__str block">Секс-товары в городе</span>
+                  <svg class="icon icon_marker">
+                    <use xlink:href="assets/images/icons.svg#marker"></use>
+                  </svg>
+                  <a class="footer__link" href="#" data-remodal-target="modal-5">Москва</a>
+                </div>
               </div>
               <span class="footer__str">Все права защищены.</span>
               <a class="footer__link block" href="#">Пользовательское соглашение.</a>
@@ -473,162 +494,311 @@
           </div>
         </div>
         <section class="module__bottom-cart">
-          <div class="container">
-            <div class="row between">
-              <div class="col__left">
-                <div class="row">
-                  <svg class="icon icon_cart">
-                    <use xlink:href="assets/images/icons.svg#cart"></use>
-                  </svg>
-                  <div class="module__bottom-cart__row row">
-                    <span class="module__bottom-cart__str">Товаров в корзине:</span>
-                    <a class="module__bottom-cart__link" href="">4</a>
-                    <p class="module__bottom-cart__str-2">на сумму
-                      <span class="module__bottom-cart__str-3">27360 Р</span>, из
-                      <a class="module__bottom-cart__link" href="">2 </a>магазинов</p>
+          <div class="module__bottom-cart__top">
+            <div class="container">
+              <div class="row between">
+                <div class="col__left">
+                  <div class="row">
+                    <svg class="icon icon_cart">
+                      <use xlink:href="assets/images/icons.svg#cart"></use>
+                    </svg>
+                    <div class="module__bottom-cart__row row">
+                      <span class="module__bottom-cart__str">Товаров в корзине:</span>
+                      <a class="module__bottom-cart__link" href="">4</a>
+                      <p class="module__bottom-cart__str-2">на сумму
+                        <span class="module__bottom-cart__str-3">27360 Р</span>, из
+                        <a class="module__bottom-cart__link" href="">2 </a>магазинов</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col__right">
-                <span class="module__bottom-cart__up jsCart">
-                  <svg class="icon icon_up">
-                    <use xlink:href="assets/images/icons.svg#up"></use>
-                  </svg>
-                </span>
-                <a class="button button_md" href="">Оформить заказ</a>
+                <div class="col__right">
+                  <span class="module__bottom-cart__up jsCart">
+                    <svg class="icon icon_up">
+                      <use xlink:href="assets/images/icons.svg#up"></use>
+                    </svg>
+                  </span>
+                  <a class="button button_md" href="">Оформить заказ</a>
+                </div>
               </div>
             </div>
-            <div class="module__bottom-cart__cart-wrapper">
-              <div class="module__cart">
-                <div class="module__cart__custom-scroll">
-                  <div class="module__cart__heading row between center">
-                    <div class="module__cart__shop">
-                      <span class="module__cart__str">Магазин </span>
-                      <a class="module__cart__str-2" href="">SVAKOM PURE</a>
+          </div>
+          <div class="module__bottom-cart__bottom">
+            <div class="container">
+              <div class="module__bottom-cart__items">
+                <div class="module__bottom-cart__custom-scroll jsScrollContainer">
+                  <div class="module__bottom-cart__wrapper">
+                    <div class="module__cart">
+                      <div class="module__cart__heading row between center">
+                        <div class="module__cart__shop">
+                          <span class="module__cart__str">Магазин </span>
+                          <a class="module__cart__str-2" href="">SVAKOM PURE</a>
+                        </div>
+                        <a class="module__cart__close" href="#">
+                          <svg class="icon icon_cross">
+                            <use xlink:href="assets/images/icons.svg#cross"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="module__cart__table">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <svg class="icon icon_icon2">
+                                  <use xlink:href="assets/images/icons.svg#icon2"></use>
+                                </svg>
+                                <span class="module__cart__str-3">Стоимость доставки</span>
+                              </div>
+                            </td>
+                            <td></td>
+                            <td>
+                              <span class="module__cart__str-6">0 Р</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr class="total">
+                            <td class="total_left">
+                              <span class="module__cart__str-7">Всего:</span>
+                            </td>
+                            <td class="center-t">
+                              <span class="module__cart__count">3</span>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">20520 Р</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="module__cart__heading row between center">
+                        <div class="module__cart__shop">
+                          <span class="module__cart__str">Магазин </span>
+                          <a class="module__cart__str-2" href="">SVAKOM PURE</a>
+                        </div>
+                        <a class="module__cart__close" href="#">
+                          <svg class="icon icon_cross">
+                            <use xlink:href="assets/images/icons.svg#cross"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="module__cart__table">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
+                                <div class="col">
+                                  <span class="module__cart__str-3">Вибратор </span>
+                                  <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
+                                  <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="row center-c center">
+                                <span class="module__cart__decr">-</span>
+                                <span class="module__cart__count">1</span>
+                                <span class="module__cart__incr">+</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">6840 Р</span>
+                            </td>
+                            <td>
+                              <a class="module__cart__close" href="#">
+                                <svg class="icon icon_cross">
+                                  <use xlink:href="assets/images/icons.svg#cross"></use>
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="row center">
+                                <svg class="icon icon_icon2">
+                                  <use xlink:href="assets/images/icons.svg#icon2"></use>
+                                </svg>
+                                <span class="module__cart__str-3">Стоимость доставки</span>
+                              </div>
+                            </td>
+                            <td></td>
+                            <td>
+                              <span class="module__cart__str-6">0 Р</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr class="total">
+                            <td class="total_left">
+                              <span class="module__cart__str-7">Всего:</span>
+                            </td>
+                            <td class="center-t">
+                              <span class="module__cart__count">3</span>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">20520 Р</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr class="total total_t">
+                            <td class="total_left">
+                              <span class="module__cart__str-7">Итого:</span>
+                            </td>
+                            <td class="center-t">
+                              <span class="module__cart__count">3</span>
+                            </td>
+                            <td>
+                              <span class="module__cart__str-6">20520 Р</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
-                    <a class="module__cart__close" href="#">
-                      <svg class="icon icon_cross">
-                        <use xlink:href="assets/images/icons.svg#cross"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="module__cart__table">
-                    <table>
-                      <tr>
-                        <td>
-                          <div class="row center">
-                            <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
-                            <div class="col">
-                              <span class="module__cart__str-3">Вибратор </span>
-                              <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
-                              <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="row center-c center">
-                            <span class="module__cart__decr">-</span>
-                            <span class="module__cart__count">1</span>
-                            <span class="module__cart__incr">+</span>
-                          </div>
-                        </td>
-                        <td>
-                          <span class="module__cart__str-6">6840 Р</span>
-                        </td>
-                        <td>
-                          <a class="module__cart__close" href="#">
-                            <svg class="icon icon_cross">
-                              <use xlink:href="assets/images/icons.svg#cross"></use>
-                            </svg>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="row center">
-                            <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
-                            <div class="col">
-                              <span class="module__cart__str-3">Вибратор </span>
-                              <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
-                              <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="row center-c center">
-                            <span class="module__cart__decr">-</span>
-                            <span class="module__cart__count">1</span>
-                            <span class="module__cart__incr">+</span>
-                          </div>
-                        </td>
-                        <td>
-                          <span class="module__cart__str-6">6840 Р</span>
-                        </td>
-                        <td>
-                          <a class="module__cart__close" href="#">
-                            <svg class="icon icon_cross">
-                              <use xlink:href="assets/images/icons.svg#cross"></use>
-                            </svg>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="row center">
-                            <img class="module__cart__img" src="assets/images/shop/4.jpg" alt="Волшебная пиписька!" />
-                            <div class="col">
-                              <span class="module__cart__str-3">Вибратор </span>
-                              <a class="module__cart__str-4" href="">SVAKOM BERRY PURE</a>
-                              <span class="module__cart__str-5">Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="row center-c center">
-                            <span class="module__cart__decr">-</span>
-                            <span class="module__cart__count">1</span>
-                            <span class="module__cart__incr">+</span>
-                          </div>
-                        </td>
-                        <td>
-                          <span class="module__cart__str-6">6840 Р</span>
-                        </td>
-                        <td>
-                          <a class="module__cart__close" href="#">
-                            <svg class="icon icon_cross">
-                              <use xlink:href="assets/images/icons.svg#cross"></use>
-                            </svg>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="row center">
-                            <svg class="icon icon_icon2">
-                              <use xlink:href="assets/images/icons.svg#icon2"></use>
-                            </svg>
-                            <span class="module__cart__str-3">Стоимость доставки</span>
-                          </div>
-                        </td>
-                        <td></td>
-                        <td>
-                          <span class="module__cart__str-6">0 Р</span>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr class="total">
-                        <td class="total_left">
-                          <span class="module__cart__str-7">Всего:</span>
-                        </td>
-                        <td class="center-t">
-                          <span class="module__cart__count">3</span>
-                        </td>
-                        <td>
-                          <span class="module__cart__str-6">20520 Р</span>
-                        </td>
-                        <td></td>
-                      </tr>
-                    </table>
                   </div>
                 </div>
               </div>
@@ -637,9 +807,6 @@
         </section>
       </footer>
     </div>
-    <!-- Scripts -->
-    <script src="assets/js/plugins/plugins.min.js"></script>
-    <script src="assets/js/main/main.js"></script>
     <div class="modal modal_reg" data-remodal-id="modal-1">
       <button class="button_close" data-remodal-action="close">
         <svg class="icon icon_cross">
@@ -1012,5 +1179,8 @@
         </div>
       </div>
     </div>
+    <!-- Scripts -->
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/main/main.js"></script>
   </body>
 </html>

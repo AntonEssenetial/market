@@ -95,6 +95,17 @@
 			}
 		]
 	},
+	"config": {
+		"projectName": "Eromall",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
+	},
 	"breadCrumbs": {
 		"default": [
 			{
@@ -113,17 +124,6 @@
 				"title": "Page"
 			}
 		]
-	},
-	"config": {
-		"projectName": "Ellington",
-		"lang": "en",
-		"path": {
-			"favicons": "assets/favicons",
-			"styles": "assets/css",
-			"scripts": "assets/javascripts",
-			"images": "assets/images",
-			"fonts": "assets/fonts"
-		}
 	},
 	"footerNav": {
 		"default": [
@@ -182,7 +182,7 @@
 	"head": {
 		"default": {
 			"title": "Default title",
-			"mobile": false,
+			"mobile": true,
 			"meta": {
 				"author": "Murat Khatypov",
 				"description": "Put value here",
@@ -201,61 +201,61 @@
 		},
 		"index": {
 			"title": "Список",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"home": {
 			"title": "Home",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"investments": {
 			"title": "Investments",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"about": {
 			"title": "About",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"security": {
 			"title": "Security",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"partnership": {
 			"title": "Partnership",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"faq": {
 			"title": "Faq",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"support": {
 			"title": "Support",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"registration": {
 			"title": "Registration",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"cabinet": {
 			"title": "Cabinet",
-			"mobile": false,
+			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		}

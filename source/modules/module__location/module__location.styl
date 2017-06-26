@@ -26,6 +26,14 @@
     
   &__content 
     padding 20px 30px 30px 30px
+  &__content::-webkit-scrollbar
+    width:3px;
+      
+  &__content::-webkit-scrollbar-track
+    background:white
+      
+  &__content::-webkit-scrollbar-thumb
+    background: $pink
   
   &__lists 
     margin 12px 0
@@ -37,6 +45,8 @@
     flex 1
     flex-basis 240px
     padding-right 20px
+    
+
     
     
 .modal_location
