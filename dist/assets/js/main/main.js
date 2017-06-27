@@ -13,12 +13,49 @@ $(function() {
 });
 
 
+// module__about-odds
+(function() {
+
+    // Add offer slider
+    var $loadSlider = $(".jsSlick5");
+    
+    function createSlick(){  
+        $loadSlider.not('.slick-initialized').slick({
+            arrows: false,
+            fade: false,
+            dots: true,
+            slidetoshow: 2,
+            slidertoscroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 752,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
+        }); 
+    };
+
+    $(window).on("load resize",function(e){
+        createSlick();
+    });
+
+})();
+
 // module__bottom-cart
 (function() {
 
     var button = $('.jsCart'),
         cart = $('.module__bottom-cart'),
-        wHeight = parseInt($(window).height())-106,
+        wHeight = parseInt($(window).height())-146,
         container = $('.jsScrollContainer'),
         body = $('html');
 
@@ -41,7 +78,7 @@ $(function() {
 
     function initCartScroll() {
         container.css( 
-            'height', (parseInt($(window).height())-106) + "px"
+            'height', (parseInt($(window).height())-146) + "px"
         );
         container.niceScroll({
             cursorcolor: "#ff74af",
@@ -111,7 +148,7 @@ $(function() {
     $(window).on('load resize', function(){
         if($(window).width() <= 868) {
             container.css( 
-                'height', (parseInt($(window).height())-136) + "px"
+                'height', (parseInt($(window).height())-128) + "px"
             );
         }
     });
@@ -204,12 +241,50 @@ $(function() {
 // module__order
 (function() {
 
-    $('.module__order').css( 
-        'height', $('.main').height()
-    );
-    $('.module__order__form').css( 
-        'height', $('.main').height()
-    );
+    if($(window).width() >= 752) {
+        $('.module__order').css( 
+            'height', $('.main').height()
+        );
+        $('.module__order__form').css( 
+            'height', $('.main').height()
+        );
+    }
+
+})();
+
+// module__stat
+(function() {
+
+    var $loadSlider = $(".jsSlick6");
+    
+    function createSlick(){  
+        $loadSlider.not('.slick-initialized').slick({
+            arrows: false,
+            fade: false,
+            dots: true,
+            slidetoshow: 2,
+            slidertoscroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 752,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
+        }); 
+    };
+
+    $(window).on("load resize",function(e){
+        createSlick();
+    });
 
 })();
 

@@ -2,40 +2,32 @@
   mainMenu:
     default:
       -
-        title: Home
-        url: home
-        submenu: false
-      -
-        title: Investments
-        url: investments
-        submenu: false
-      -
-        title: About
+        title: О нас
         url: about
         submenu: false
-      - 
-        title: Referral program
-        url: referral-program
+      -
+        title: Информация для СМИ
+        url: info
         submenu: false
       - 
-        title: Guarantees
-        url: guarantees
+        title: Информация для партнеров
+        url: partner
+        submenu: false
+      - 
+        title: Правила и акции
+        url: rules
         submenu: false
       -
-        title: Faq
-        url: faq
+        title: Пользовательское соглашение
+        url: terms
         submenu: false
       -
-        title: News
+        title: Новости
         url: news 
         submenu: false
       -
-        title: Contacts
+        title: Контакты
         url: contacts
-        submenu: false
-      - 
-        title: Rules 
-        url: rules
         submenu: false
 
     account: 

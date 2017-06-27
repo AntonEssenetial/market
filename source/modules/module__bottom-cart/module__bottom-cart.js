@@ -3,7 +3,7 @@
 
     var button = $('.jsCart'),
         cart = $('.module__bottom-cart'),
-        wHeight = parseInt($(window).height())-106,
+        wHeight = parseInt($(window).height())-146,
         container = $('.jsScrollContainer'),
         body = $('html');
 
@@ -26,7 +26,7 @@
 
     function initCartScroll() {
         container.css( 
-            'height', (parseInt($(window).height())-106) + "px"
+            'height', (parseInt($(window).height())-146) + "px"
         );
         container.niceScroll({
             cursorcolor: "#ff74af",

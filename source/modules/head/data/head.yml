@@ -23,25 +23,25 @@
       og: default
 
     home:
-      title: Home
+      title: Главная
       mobile: true
       meta: default
       og: default
 
-    investments:
-      title: Investments
+    info:
+      title: Информация для сми
       mobile: true
       meta: default
       og: default
 
     about:
-      title: About
+      title: О нас
       mobile: true
       meta: default
       og: default
 
-    security:
-      title: Security
+    partner:
+      title: Информация для партнеров
       mobile: true
       meta: default
       og: default

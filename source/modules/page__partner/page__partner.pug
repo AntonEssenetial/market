@@ -1,0 +1,20 @@
+include ../module__top/module__top
+include ../module__nav/module__nav
+include ../module__info-odds/module__info-odds
+
+mixin page__partner(data)
+    
+  +module__top().desktop
+
+  +module__nav()
+    .module__contanier
+      h2.title Кто мы такие?
+      .row
+        .col__50.col_margin
+          p <span>EROMALL</span> — это независимый клубный проект, объединивший сотни служб доставки еды и продуктов в Единую Систему Заказов.
+          p <span>Цель проекта</span> — обеспечить своим пользователям наилучшие условия для быстрого, удобнhого и выгодного осуществления заказов. Услуги сайта абсолютно бесплатны, а условия доставки очень простые. Все цены на сайте идентичны действующим ценам служб-партнеров.
+        .col__50
+          .iframe-wrapper
+            <iframe  src="https://www.youtube.com/embed/pss5hicFM7w" frameborder="0" allowfullscreen></iframe>
+      
+      +module__info-odds()

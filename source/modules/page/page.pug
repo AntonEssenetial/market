@@ -5,7 +5,7 @@ include ../../helpers/variables
 
 
 mixin page(data) 
-    body.page&attributes(attributes)
+    body.page
       
       +injected: block
 
@@ -17,7 +17,7 @@ mixin page(data)
           +use('header')
         
         <!-- Main -->
-        main.main
+        main.main&attributes(attributes)
 
           //- Main page 
           +if('page__main')
@@ -31,17 +31,17 @@ mixin page(data)
           +if('page__about')
             +use('page__about')
 
-          //- Investments
-          +if('page__investments')
-            +use('page__investments')
+          //- Info
+          +if('page__info')
+            +use('page__info')
 
           //- News
           +if('page__news')
             +use('page__news')
 
-          //- Affiliate
-          +if('page__affiliate')
-            +use('page__affiliate')
+          //- Partner
+          +if('page__partner')
+            +use('page__partner')
 
           //- Representives
           +if('page__representatives')

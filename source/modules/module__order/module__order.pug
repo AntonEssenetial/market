@@ -11,5 +11,8 @@ mixin module__order(data)
           div(class=bemClass + '__container') 
             +module__cart-2()
         div(class=bemClass + '__form').static
-          +module__order-form()
-          
+          +module__order-form().module__order-form_height
+      div(class=bemClass + '__bottom').hidden
+        .row 
+          a(href="").col__50 Назад к покупкам
+          a(href="" data-remodal-target="modal-6").col__50 Оформить заказ

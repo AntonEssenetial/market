@@ -1,5 +1,5 @@
 // Import plugins
-sprites(false)
+sprites(true)
 animate-css(true)
 bxslider(false)
 slick(true)
@@ -1030,19 +1030,18 @@ breadCrumbs(breadCrumbs = false)
         
 
 // Responsive iframe
-responsiveIframe(responsiveIframe = false)
-  if responsiveIframe
-    .iframe-rapper
-      position relative
-      padding-bottom 56.25% /* 16:9 */
-      padding-top 25px
-      height 0
-    .iframe-rapper iframe
-      position absolute
-      top 0
-      left 0
-      width 100%
-      height 100%    
+.iframe-wrapper
+  position relative
+  padding-bottom 56.25% /* 16:9 */
+  padding-top 25px
+  height 0
+.iframe-wrapper iframe
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%   
+  display: block 
       
 
 // Sandwitch and responsive menu

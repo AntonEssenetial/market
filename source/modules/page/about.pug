@@ -1,0 +1,45 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+
+include ../modules/heading/heading
+include ../modules/icon/icon
+
+include ../modules/module__registration/module__registration
+include ../modules/module__notification/module__notification
+include ../modules/module__location/module__location
+include ../modules/module__mobile-blocks/module__mobile-blocks
+include ../modules/page__about/page__about
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.about)
+
+  +page()
+    +inject('header')
+      +header({
+        account: true
+      })
+
+    +inject('page__about')
+      +page__about()
+
+    +inject('module__registration')
+      +module__registration()
+
+    +inject('module__location')
+      +module__location()
+
+    //-+inject('module__notification')
+    //-  +module__notification()
+
+    +inject('module__mobile-blocks')
+      +module__mobile-blocks({
+        mobAccount: false
+      })
+

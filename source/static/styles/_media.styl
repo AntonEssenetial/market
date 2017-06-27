@@ -8,7 +8,26 @@
 // +width-max(1366px)
 
 
++width-max(1170px)
+  .module__about-subscribe >.container
+    background-image none
+
+
 +width-max(1024px)
+  .module__stat__col
+  .module__about-odds_padding
+    margin 0px
+  .module__nav
+    padding 20px 0
+  .module__subscribe_pink > .container
+  .module__info-odds__col
+    padding 0px
+  .module__nav__content
+  .module__subscribe__sub
+    margin 0px
+    width 100%
+  .module__contanier
+    padding-left 0px
   .module__main-review__item
     width 50%
   .page__wrapper 
@@ -29,6 +48,7 @@
   .footer-nav
   .module__header-location
   .header__row
+  .module__nav__side
     display: none
   .module__bottom-cart__str
   .module__bottom-cart__str-2
@@ -128,12 +148,131 @@
 
 
 +width-max(752px)
+  .module__info-odds h4
+    margin 10px 0
+  .module__info-odds .button
+    margin-top 0px
+    font-size 13px
+  .module__info-odds__form h2
+    margin-bottom 15px
+  .module__info-odds__content h4
+    margin 10px 0
+  .module__info-odds__form
+    margin 0 -20px !important
+    width calc(100% + 40px)
+    padding 15px 20px 20px 20px
+  .module__info-odds__content
+    padding 10px 0 0 0
+  .module__info-odds__row
+    flex-direction column
+    padding-top 0px
+  .module__info-odds
+    border-top 1px solid #d6d6d6
+    padding-top 15px
+  .module__info-odds__slider-row
+    padding-bottom 20px
+    border-bottom 1px solid #d6d6d6
+    margin 0 0 30px 0
+  .module__stat
+    padding 1px 0
+  .module__about-odds__content
+    padding 10px 0 0 0
+  .module__about-odds__row
+    padding 20px 0px
+  .module__about-subscribe > .container
+    padding-top 20px
+    padding-bottom 20px
+  .title 
+    margin 15px 0
+  .module__nav
+    padding 0px
+  .module__contanier 
+    > .row 
+      flex-direction column-reverse
+    .col__50 
+      width 100%
+      margin 0px
+    .iframe-wrapper
+      margin-bottom 20px
+  .jsSlick4
+  .jsSlick5
+  .jsSlick6
+    display: block
+  .jsSlick6
+  .jsSlick5 
+    .slick-dots
+      position: relative
+      bottom auto
+      padding-right 5px
+  .jsSlick6
+    .slick-dots
+      bottom 20px
+    .slick-dots li.slick-active button:before
+    .module__main-review .slick-dots li.slick-active button:before
+      color white
+  .modal__order h2
+    margin-bottom 20px
+  .module__cart .delivery.total td
+    padding-bottom 0px
+    padding-top 0px
+  .module__cart .delivery
+    display table-row
+  .module__cart .total_t .module__cart__count 
+  .module__cart .total_t .module__cart__str-6
+  .module__cart .total_t .module__cart__str-7
+    font-size 16px
+  .total .module__cart__count
+    margin-right auto
+    margin-left 20px
+  .total_t .module__cart__count
+    margin-left 10px
+  td
+    .col 
+      width 100%
+    .center 
+      align-items: flex-start;
+  .module__cart .total_left
+    text-align left
+  .module__cart__close
+    margin-right 0px
+  .module__order .icon_cross
+    width 12px 
+    height @width
+  .module__cart .hidden
+    display: block
+  h2 
+    font-size 18px
+  .module__cart__str-4
+    position: relative;
+    top: -3px;
+    margin 2px 0
+  .module__cart__str
+  .module__cart__str-2
+    font-size 16px
+  .module__cart__str-3
+  .module__cart__str-4
+  .module__cart__str-7
+    font-size 14px
+  .module__cart__heading
+    padding 8px 0 15px 0
+  .module__cart__table
+    padding-bottom 0px
+  .module__cart .total_t td
+    padding 15px 0
+  .module__cart .total td
+    padding-bottom 15px
+  .module__order
+  .module__order__cart
+    background: white
+  .module__order__cart
+    padding-right 0px
   .module__bottom-cart
     padding-top 10px
     padding-bottom 10px
     height auto
     min-height auto
-    transform: translateY(0px);
+    transform: none;
+    min-height: 0px;
     .button 
       padding 0 10px
   .module__bottom-cart__mobile
@@ -145,6 +284,8 @@
   .module__discount__row
   .module__bottom-cart__bottom
   .module__bottom-cart__top
+  .module__order__form
+  .desktop
     display: none
   .module__discount .jsSlick3
   .module__discount__slider
@@ -172,6 +313,8 @@
     color #c6c6c6 !important
   .jsSlick4 .slick-dots li.slick-active button:before 
     color $pink !important
+  .hidden 
+    display: block
 
 +width-max(660px)
   .module__location__col
@@ -271,15 +414,43 @@
   .module__subscribe
     height 479px
     background image-url('3.png') no-repeat center bottom
-    background-position-y: 155px;
+    background-position-y: 170px;
     background-color white
   .module__registration__str-3
     font-size 13px
+  .module__subscribe__apps
+    margin-top 105px
+    justify-content: center;
+  .module__subscribe_pink 
+    background-color transparent
+    background-position bottom
+    height 590px
+  .module__about-subscribe 
+    > .container
+      padding 0px
+    .module__subscribe__sub
+      padding 20px 20px 0 20px
+  .module__about-odds__content
+    padding 10px 0 0 0
 
 
 
 // iPhone 6
 +width-max(375px)
+  .modal_ord 
+    .button_close
+      top 24px
+  .module__order-form__str
+    font-size 13px
+  .module__order .label__checkbox
+    margin 20px 0
+  .modal__order
+    padding 20px 20px 0 20px
+    .button 
+      border-radius 0px
+      margin 0 -20px
+      width calc(100%+40px)
+      font-size 12px
   .modal_reg
     width 100%
 

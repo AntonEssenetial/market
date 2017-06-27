@@ -21,3 +21,33 @@ mixin module__subscribe(data)
                     input(type="radio", name='device').input__radio
                     +icon('android')
               a(href="").button Уведомить
+          div(class=bemClass + '__apps').row 
+            a(href="").app
+            a(href="").google
+
+
+mixin module__subscribe-2(data)
+  - var bemClass = 'module__subscribe'
+  section.module__subscribe&attributes(attributes)
+    .container
+      div(class=bemClass + '__r-row').row
+        div(class=bemClass + '__sub') 
+          h2 Совсем скоро
+          h3 Все товары будут доступны и на мобильном приложении! <br> Не пропустите выход мобильного приложения EROMALL
+          span(class=bemClass + '__str') Укажите ваш Email и мы отправим вам ссылку на приложение <br> как только оно выйдет и получите скидку 10% на все товары
+          form(action="")
+            div(class=bemClass + '__f-row').row
+              div(class=bemClass + '__row') 
+                label().form__label
+                  input(type="text").form__input
+                div(class=bemClass + '__check-row').row.center  
+                  label().label__radio
+                    input(type="radio", name='device').input__radio
+                    +icon('apple')
+                  label().label__radio
+                    input(type="radio", name='device').input__radio
+                    +icon('android')
+              a(href="").button Уведомить
+          div(class=bemClass + '__apps').row 
+            a(href="").app
+            a(href="").google

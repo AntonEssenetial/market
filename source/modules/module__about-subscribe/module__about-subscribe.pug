@@ -1,0 +1,8 @@
+include ../module__subscribe/module__subscribe
+
+mixin module__about-subscribe(data)
+  - var bemClass = 'module__about-subscribe'
+  .module__about-subscribe&attributes(attributes)
+    .container
+      .row 
+        +module__subscribe-2().module__subscribe_pink

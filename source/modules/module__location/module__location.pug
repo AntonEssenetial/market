@@ -1,3 +1,5 @@
+include ../module__order-form/module__order-form
+
 mixin module__location(data)
   - var bemClass = 'module__location'
   +modal({id:"modal-5", close:true}).modal_location
@@ -140,3 +142,7 @@ mixin module__location(data)
           ul(class=bemClass + '__lists')
             li(class=bemClass + '__item') 
               a(href='#' class=bemClass + '__link') Ярославль
+
+  +modal({id:"modal-6", close:true}).modal_reg.modal_ord
+    .modal__order.module__order_mobile
+      +module__order-form()

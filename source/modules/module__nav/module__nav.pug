@@ -1,0 +1,13 @@
+include ../main-menu/main-menu
+
+mixin module__nav(data)
+  - var bemClass = 'module__nav'
+  .module__nav&attributes(attributes)
+    .container
+      div(class=bemClass + '__row').row.between
+        div(class=bemClass + '__side')
+          span(class=bemClass + '__str') Категории меню
+          +main-menu(mainMenu.default)
+        div(class=bemClass + '__content').auto__width 
+          block
+

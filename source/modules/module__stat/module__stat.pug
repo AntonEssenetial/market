@@ -1,0 +1,27 @@
+mixin module__stat(data)
+  - var bemClass = 'module__stat'
+  .module__stat&attributes(attributes)
+    .container
+      div(class=bemClass + '__col') 
+        h2.title Наша статистика
+        div(class=bemClass + '__row').row.wrap.jsSlick6
+          div(class=bemClass + '__item').row.center 
+            +icon('icon4')
+            .col
+              span(class=bemClass + '__str') Постоянных клиентов
+              span(class=bemClass + '__str-2') 58 000
+          div(class=bemClass + '__item').row.center 
+            +icon('icon3')
+            .col
+              span(class=bemClass + '__str') Постоянных клиентов
+              span(class=bemClass + '__str-2') 5 000
+          div(class=bemClass + '__item').row.center 
+            +icon('shoping')
+            .col
+              span(class=bemClass + '__str') Постоянных клиентов
+              span(class=bemClass + '__str-2') 500 000
+          div(class=bemClass + '__item').row.center 
+            +icon('customer')
+            .col
+              span(class=bemClass + '__str') Постоянных клиентов
+              span(class=bemClass + '__str-2') 580 000

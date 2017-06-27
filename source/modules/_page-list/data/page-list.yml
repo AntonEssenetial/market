@@ -10,11 +10,11 @@ pageList:
       title: About 
       url: about
     -
-      title: Investments
-      url: investments
+      title: Информация для сми
+      url: info
     - 
-      title: Partnership
-      url: partnership
+      title: Информация для партнеров
+      url: partner
     -
       title: Faq
       url: faq
