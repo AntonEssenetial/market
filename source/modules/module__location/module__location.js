@@ -6,7 +6,7 @@
     $(window).on('load resize', function(){
         if($(window).width() <= 868) {
             container.css( 
-                'height', (parseInt($(window).height())-148) + "px"
+                'height', (parseInt($(window).height())-136) + "px"
             );
         }
     });

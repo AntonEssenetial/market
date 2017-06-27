@@ -60,7 +60,7 @@
         } 
         if($(window).width() <= 414) {
             var sliderHeight = $('.module__main-review__slide, .jsSlick4').css( 
-                'height', (parseInt($(window).height())-47) + "px"
+                'height', (parseInt($(window).height())-0) + "px"
             );
         } else {
             var sliderHeight = $('.module__main-review__slide, .jsSlick4').css( 

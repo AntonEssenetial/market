@@ -27,3 +27,10 @@ mixin module__bottom-cart(data)
           div(class=bemClass + '__custom-scroll').jsScrollContainer
             div(class=bemClass + '__wrapper') 
               +module__cart()
+    div(class=bemClass + '__mobile')
+      .container
+        .row.center.between
+          .col
+            span(class=bemClass + '__it') Товаров в корзине:
+            span(class=bemClass + '__total') 4 на сумму 27360 Р
+          a(href="order.html" ).button Оформить

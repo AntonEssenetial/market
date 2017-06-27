@@ -11,45 +11,44 @@
   padding 0px
   margin 0px
 .sandwitch
-  width 31px
-  height 21px
+  width 35px
+  height 16px
   left 0
   right 0
-  margin auto
   z-index 200
   > span
-    width 31px
-    height 4px
-    background black
+    width 22px
+    height 2px
+    background $pink
     border none
     border-radius 0px
     display block
     position relative
 .sw-topper
-  top 5px
+  top 0px
   transition: transform 0.5s, top 0.2s
   display block 
 .sw-bottom 
-  top: 10px
+  top: 5px
   transition: transform 0.5s, top 0.2s
   transition-delay: 0.2s, 0s 
 .sw-footer 
-  top: 15px
+  top: 10px
   transition: all 0.5s
   transition-delay: 0.1s 
 .toggle-menu.active .sw-topper 
 .button__sub.active .sw-topper 
-  background $brown
-  top: 13px
+  background $pink
+  top: 6px
   transform: rotate(-45deg) 
 .toggle-menu.active .sw-bottom 
 .button__sub.active .sw-bottom 
-  background $brown
-  top: 10px
+  background $pink
+  top: 4px
   transform: rotate(45deg) 
 .toggle-menu.active .sw-footer 
 .button__sub.active .sw-footer 
-  background $brown
+  background $pink
   opacity: 0
   top: 0
   transform: rotate(180deg)

@@ -9,6 +9,14 @@
 
 
 +width-max(1024px)
+  .module__main-review__item
+    width 50%
+  .page__wrapper 
+    trs()
+  .header 
+    position: relative
+  .module__mobile-cart
+    display: block
   .module__top__nav
   .module__discount__row
   .footer__soc
@@ -41,7 +49,7 @@
     width 34px 
     height 58px
     margin-right 10px
-  .footer .icon_cross
+  .module__bottom-cart .icon_cross
     width 15px 
     height 15px
   .module__main-review .jsSlick4
@@ -53,13 +61,13 @@
   .header
     padding 1px 0
   .main
-    margin-top 47px
+    margin-top 0px
   .module__logo__link
-    background-size 110px 35px
+    background-size 110px 35px !important
     position: relative 
     top 2px
   .opend
-    transform: translateY(calc(0% + 47px));
+    transform: translateY(calc(0% + 0px));
   .module__subscribe__r-row
     flex-direction column
   .module__subscribe .col__60
@@ -77,7 +85,7 @@
     width 100%
     display: block
   .module__main-review__slide
-    padding 60px 0
+    padding 60px 0 80px 0
   .module__main-review__cont
     margin 30px auto 0 auto
   .slick-dotted.slick-slider
@@ -120,10 +128,23 @@
 
 
 +width-max(752px)
+  .module__bottom-cart
+    padding-top 10px
+    padding-bottom 10px
+    height auto
+    min-height auto
+    transform: translateY(0px);
+    .button 
+      padding 0 10px
+  .module__bottom-cart__mobile
+    display: block
+  .footer__soc
+    padding: 20px 0;
   .module__discount
     border-bottom 1px solid $pink
-  .module__bottom-cart
   .module__discount__row
+  .module__bottom-cart__bottom
+  .module__bottom-cart__top
     display: none
   .module__discount .jsSlick3
   .module__discount__slider
@@ -180,6 +201,34 @@
 
 // iPohne 6+
 +width-max(414px)
+  .notifi .icon_exclame
+  .notifi .icon_check
+    margin-top 65%
+  .module__notification
+    width 100%
+    padding 0px
+  .notifi
+    width 100%
+    height 100%
+    position absolute
+    min-height: 100vh;
+  .button_close svg
+    width 15px 
+    height 15px
+  .button_close
+    right 15px
+    top 31px
+  .module__registration h2
+    margin-bottom 20px
+  .module__registration .col__50
+    padding: 20px 20px 20px 20px
+  .module__registration__popup
+    padding 20px
+  .remodal-wrapper
+    padding 0px 
+  .module__main-review .icon
+    width 80px
+    height 80px
   .footer > .container 
     padding 0px
   .footer__link
@@ -199,7 +248,7 @@
   .module__top__col
     padding 70px 20px
   .module__main-review__cont
-    margin: 35% auto 0 auto;
+    margin: 40% auto 0 auto;
   .module__main-review__str-2
     font-size 30px
   .jsSlick4
@@ -223,12 +272,19 @@
     height 479px
     background image-url('3.png') no-repeat center bottom
     background-position-y: 155px;
+    background-color white
+  .module__registration__str-3
+    font-size 13px
 
 
 
 // iPhone 6
-// +width-max(375px)
++width-max(375px)
+  .modal_reg
+    width 100%
 
 
 // iPhone 4 5 and 4s 5S
-// +width-max(320px)
++width-max(320px)
+  .module__registration .col__50
+    padding: 20px 15px 20px 15px

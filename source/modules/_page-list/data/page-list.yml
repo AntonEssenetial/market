@@ -4,8 +4,8 @@ pageList:
       title: Home
       url: home
     -
-      title: Security
-      url: security
+      title: Заказ
+      url: order
     -
       title: About 
       url: about

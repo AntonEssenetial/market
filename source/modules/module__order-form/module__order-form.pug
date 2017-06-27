@@ -1,0 +1,40 @@
+mixin module__order-form(data)
+  - var bemClass = 'module__order-form'
+  .module__order-form&attributes(attributes)
+    h2 Оформление заказа
+    form(action="")
+      label().form__label
+        input(type="text", placeholder='Имя').form__input
+      label().form__label
+        input(type="text", placeholder='Номер телефона').form__input
+      label().form__label
+        input(type="text", placeholder='Город').form__input
+      label().form__label
+        input(type="text", placeholder='Улица').form__input
+      label().form__label
+        .row 
+          input(type="text", placeholder='Дом').form__input.input__adr.input__adr_left
+          input(type="text", placeholder='Корп/стр').form__input.input__adr.input__adr_center
+          input(type="text", placeholder='Кв/офис').form__input.input__adr.input__adr_right
+      label().form__label
+        textarea(placeholder='Комментарий').form__area
+      div(class=bemClass + '__form-row').row
+        label().label__radio.label__radio_right
+          input(checked type="radio", name='pay').input__radio
+          i Наличными
+        label().label__radio.label__radio_left
+          input(type="radio", name='pay').input__radio
+          i Картой онлайн
+      div(class=bemClass + '__form-row').row
+        label().label__radio.label__radio_right
+          input(checked type="radio", name='delivery').input__radio
+          i Курьером
+        label().label__radio.label__radio_left
+          input(type="radio", name='delivery').input__radio
+          i Самовывоз
+      span(class=bemClass + '__str') нажав кнопку "заказать товар" вы будете автоматически зарегистрированы в сервисе и блаблабла)
+      label().label__checkbox
+        input(type="checkbox").input__checkbox
+        i
+        | Оплатить бонусами
+      button.button.button_lg Заказать товар

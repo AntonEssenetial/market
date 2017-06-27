@@ -97,3 +97,101 @@ mixin module__cart(data)
           td 
             span(class=bemClass + '__str-6') 20520 Р
           td
+
+mixin module__cart-2(data)
+  - var bemClass = 'module__cart'
+  .module__cart&attributes(attributes) 
+    div(class=bemClass + '__heading').row.between.center
+      div(class=bemClass + '__shop')
+        span(class=bemClass + '__str') Магазин 
+        a(href='' class=bemClass + '__str-2') SVAKOM PURE
+      a(href="#" class=bemClass + '__close')
+        +icon('cross')
+    div(class=bemClass + '__table')
+        table 
+          -for(var x = 0; x < 1; x++)
+            tr 
+              td
+                .row.center
+                  img(class=bemClass + '__img' src="assets/images/shop/4.jpg", alt="Волшебная пиписька!")
+                  .col
+                    span(class=bemClass + '__str-3') Вибратор 
+                    a(href="" class=bemClass + '__str-4') SVAKOM BERRY PURE
+              td 
+                .row.center-c.center
+                  span(class=bemClass + '__decr') -
+                  span(class=bemClass + '__count') 1
+                  span(class=bemClass + '__incr') +
+              td 
+                span(class=bemClass + '__str-6') 6840 Р
+              td 
+                a(href="#" class=bemClass + '__close')
+                  +icon('cross')
+          tr 
+            td
+              .row.center 
+                +icon('icon2')
+                span(class=bemClass + '__str-3') Стоимость доставки
+            td
+            td
+              span(class=bemClass + '__str-6') 0 Р
+            td
+          tr.total
+            td.total_left 
+              span(class=bemClass + '__str-7') Всего:
+            td.center-t
+              span(class=bemClass + '__count') 3
+            td 
+              span(class=bemClass + '__str-6') 20520 Р
+            td
+    div(class=bemClass + '__heading').row.between.center
+      div(class=bemClass + '__shop') 
+        span(class=bemClass + '__str') Магазин 
+        a(href='' class=bemClass + '__str-2') SVAKOM PURE
+      a(href="#" class=bemClass + '__close')
+        +icon('cross')
+    div(class=bemClass + '__table')
+      table 
+        -for(var x = 0; x < 1; x++)
+          tr 
+            td
+              .row.center
+                img(class=bemClass + '__img' src="assets/images/shop/4.jpg", alt="Волшебная пиписька!")
+                .col
+                  span(class=bemClass + '__str-3') Вибратор 
+                  a(href="" class=bemClass + '__str-4') SVAKOM BERRY PURE
+            td 
+              .row.center-c.center
+                span(class=bemClass + '__decr') -
+                span(class=bemClass + '__count') 1
+                span(class=bemClass + '__incr') +
+            td 
+              span(class=bemClass + '__str-6') 6840 Р
+            td 
+              a(href="#" class=bemClass + '__close')
+                +icon('cross')
+        tr 
+          td
+            .row.center 
+              +icon('icon2')
+              span(class=bemClass + '__str-3') Стоимость доставки
+          td
+          td
+            span(class=bemClass + '__str-6') 0 Р
+          td
+        tr.total
+          td.total_left 
+            span(class=bemClass + '__str-7') Всего:
+          td.center-t
+            span(class=bemClass + '__count') 3
+          td 
+            span(class=bemClass + '__str-6') 20520 Р
+          td
+        tr.total.total_t
+          td.total_left 
+            span(class=bemClass + '__str-7') Итого:
+          td.center-t
+            span(class=bemClass + '__count') 3
+          td 
+            span(class=bemClass + '__str-6') 20520 Р
+          td

@@ -23,9 +23,9 @@ mixin page(data)
           +if('page__main')
             +use('page__main')
 
-          //- Get staretd
-          +if('page__get-started')
-            +use('page__get-started')
+          //- Get order
+          +if('page__order')
+            +use('page__order')
 
           //- About
           +if('page__about')
@@ -77,6 +77,9 @@ mixin page(data)
 
       +if('module__location')
         +use('module__location')
+
+      +if('module__mobile-blocks')
+        +use('module__mobile-blocks')
         
       <!-- Scripts -->
       +scripts()

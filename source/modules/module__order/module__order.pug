@@ -1,0 +1,15 @@
+include ../module__cart/module__cart
+include ../module__order-form/module__order-form
+
+mixin module__order(data)
+  - var bemClass = 'module__order'
+  section.module__order&attributes(attributes)
+    .container 
+      div(class=bemClass + '__row').row
+        div(class=bemClass + '__cart').auto__width
+          h2 Ваши товары
+          div(class=bemClass + '__container') 
+            +module__cart-2()
+        div(class=bemClass + '__form').static
+          +module__order-form()
+          

@@ -18,13 +18,13 @@ $(function() {
 
     var button = $('.jsCart'),
         cart = $('.module__bottom-cart'),
-        wHeight = parseInt($(window).height())-148,
+        wHeight = parseInt($(window).height())-106,
         container = $('.jsScrollContainer'),
         body = $('html');
 
     button.click(function(event) {
         $(this).toggleClass('active');
-        body.toggleClass('page_mobile-menu');
+        body.toggleClass('cart-opend');
         cart.toggleClass('opend');
     });
 
@@ -41,7 +41,7 @@ $(function() {
 
     function initCartScroll() {
         container.css( 
-            'height', (parseInt($(window).height())-148) + "px"
+            'height', (parseInt($(window).height())-106) + "px"
         );
         container.niceScroll({
             cursorcolor: "#ff74af",
@@ -57,6 +57,11 @@ $(function() {
 
     $(window).on('load resize', function(){
         initCartScroll();
+        if($(window).width() <= 752){
+            body.removeClass('cart-opend');
+            cart.removeClass('opend');
+            button.removeClass('active')
+        }
     });
 
 })();
@@ -106,7 +111,7 @@ $(function() {
     $(window).on('load resize', function(){
         if($(window).width() <= 868) {
             container.css( 
-                'height', (parseInt($(window).height())-148) + "px"
+                'height', (parseInt($(window).height())-136) + "px"
             );
         }
     });
@@ -175,7 +180,7 @@ $(function() {
         } 
         if($(window).width() <= 414) {
             var sliderHeight = $('.module__main-review__slide, .jsSlick4').css( 
-                'height', (parseInt($(window).height())-47) + "px"
+                'height', (parseInt($(window).height())-0) + "px"
             );
         } else {
             var sliderHeight = $('.module__main-review__slide, .jsSlick4').css( 
@@ -193,6 +198,18 @@ $(function() {
         $('.module__notification').removeClass('jsVisible');
         $('.module__popup').removeClass('jsVisible');
     });
+
+})();
+
+// module__order
+(function() {
+
+    $('.module__order').css( 
+        'height', $('.main').height()
+    );
+    $('.module__order__form').css( 
+        'height', $('.main').height()
+    );
 
 })();
 
@@ -232,12 +249,25 @@ $(function() {
 // Sandwitch
 (function() {
 
+    var menu = $('.module__mobile-blocks'),
+        body = $('html');
+
     $('.jsMobileDropdown').click(function(event) {
-        var menu = $('.main-menu');
         $(this).toggleClass('active');
         menu.toggleClass('active');
-        $('body').toggleClass('page_mobile-menu');
+        body.toggleClass('page_mobile-menu');
     });
+
+    if(body.hasClass('page_mobile-menu')) {
+        document.ontouchmove = function(event){
+            event.preventDefault();
+        }
+    }
+    else {
+        document.ontouchmove = function(e) {
+            e.stopPropagation();
+        };
+    }
 
 })();
 

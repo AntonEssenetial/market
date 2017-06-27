@@ -3,13 +3,13 @@
 
     var button = $('.jsCart'),
         cart = $('.module__bottom-cart'),
-        wHeight = parseInt($(window).height())-148,
+        wHeight = parseInt($(window).height())-106,
         container = $('.jsScrollContainer'),
         body = $('html');
 
     button.click(function(event) {
         $(this).toggleClass('active');
-        body.toggleClass('page_mobile-menu');
+        body.toggleClass('cart-opend');
         cart.toggleClass('opend');
     });
 
@@ -26,7 +26,7 @@
 
     function initCartScroll() {
         container.css( 
-            'height', (parseInt($(window).height())-148) + "px"
+            'height', (parseInt($(window).height())-106) + "px"
         );
         container.niceScroll({
             cursorcolor: "#ff74af",
@@ -42,6 +42,11 @@
 
     $(window).on('load resize', function(){
         initCartScroll();
+        if($(window).width() <= 752){
+            body.removeClass('cart-opend');
+            cart.removeClass('opend');
+            button.removeClass('active')
+        }
     });
 
 })();

@@ -12,10 +12,15 @@
   transition all 1s ease-in-out
   
   .icon_cart 
+    color $pink
     width 60px 
     height 60px 
     position: relative 
     margin-right 30px
+    
+  .icon_cross 
+    width 20px 
+    height 20px
     
   .icon_up
     color $grey
@@ -56,6 +61,8 @@
     
   &__row 
     align-items: baseline;
+    position: relative 
+    top 9px
     
   &__wrapper 
     padding-right 20px
@@ -68,6 +75,17 @@
     
   &__bottom 
     background: #fafafa;
+    
+  &__mobile 
+    display: none
+    
+  &__it 
+    font-size 13px
+    display: block
+  
+  &__total 
+    color $dark
+    display: block
     
 .opend
   transform translateY(calc(0% + 68px))

@@ -1,0 +1,22 @@
+include ../footer-nav/footer-nav
+
+mixin module__mobile-blocks(data)
+  - var bemClass = 'module__mobile-blocks'
+  <!-- For mobile devices -->
+  .module__mobile-blocks&attributes(attributes)
+    div(class=bemClass + '__menu') 
+      if data.mobAccount
+      else if data.mobShop
+      else
+        div(class=bemClass + '__reg').row
+          a(href="" data-remodal-target="modal-2").button Вход
+          a(href="" data-remodal-target="modal-1").button.button_tr Регистрация
+        div(class=bemClass + '__loc')
+          div(class=bemClass + '__loc-row').row.center
+            +icon('marker')
+            a(hrfe='' class=bemClass + '__link' data-remodal-target="modal-5") Москва
+        div(class=bemClass + '__nav')
+          span(class=bemClass + '__str') Меню проекта
+          +footer-nav(footerNav.default).footer-nav_border
+          span(class=bemClass + '__str') Каталог
+          +footer-nav(footerNav.serv)
