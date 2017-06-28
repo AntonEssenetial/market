@@ -12,22 +12,30 @@ include ../modules/module__registration/module__registration
 include ../modules/module__notification/module__notification
 include ../modules/module__location/module__location
 include ../modules/module__mobile-blocks/module__mobile-blocks
-include ../modules/page__about/page__about
+include ../modules/page__news/page__news
+
+- var pageId = 5;
+- var subId = 5;
 
 doctype html
 html(lang=config.lang)
 
   head
-    +head(head.about)
+    +head(head.news)
 
-  +page()
+  +page().main_bg
     +inject('header')
       +header({
         account: true
       })
 
-    +inject('page__about')
-      +page__about()
+    +inject('page__news')
+      +page__news()
+
+    +inject('footer')
+      +footer({
+        cart: true
+      })
 
     +inject('module__registration')
       +module__registration()

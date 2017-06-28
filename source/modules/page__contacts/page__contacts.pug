@@ -1,0 +1,43 @@
+include ../module__nav/module__nav
+include ../module__news-item/module__news-item
+
+
+mixin page__contacts(data)
+
+  +module__nav()
+    .module__contanier
+      h2.title Контакты
+    .module__nav__contacts.row
+      .col__50.col_margin-40
+        span(class='module__nav__str-3') ООО «ЭРОМОЛЛ» 
+        .module__nav__col
+          span(class='module__nav__str-4') г. Москва, Варшавское шоссе 86а, офис 1324,
+          span(class='module__nav__str-4') 6 этаж ТЦ «Капитал»
+        span(class='module__nav__str-3') По всем вопросам:
+        .module__nav__col
+          span(class='module__nav__str-4') 8 800 123 1010
+          span(class='module__nav__str-4') (Звонок по РФ бесплатный с мобильных телефонов)
+        span(class='module__nav__str-3') Юридические реквизиты:
+        .module__nav__col
+          span(class='module__nav__str-4') ИНН 111111111
+          span(class='module__nav__str-4') ОГРН 11111111111
+      .col__50.col__50_map
+        img(src="assets/images/background/6.jpg", alt="google map")
+    .module__nav__contacts.row
+      .col__50.col_margin-40 
+        h2 Обратная связь
+        form(action="")
+          label().form__label 
+            input(type="text" placeholder='Представьтесь').form__input
+          label().form__label 
+            input(type="text" placeholder='Контактный Email адрес').form__input
+          label().form__label 
+            input(type="text" placeholder='Номер телефона').form__input
+          label().form__label 
+            textarea(placeholder='Текст обращения').form__area
+          button.button.button_lg Отправить сообщение
+      .col__50.col_padding
+        p После отправки сообщения, менеджер компании ООО «ЭРОМОЛЛ», свяжется с Вами в течении 24 часов в рабочие дни (с ПН по ПТ, с 10 до 18)
+        p Если Вы, по каким то причинам, не получили ответа на Ваше сообщение в течении 24 часов, свяжитесь по телефону горячей линии, указанный ваше в контактах.
+        p На все вопросы о рекламе и сотрудничестве, есть 
+          a(href="") форма запроса для Партнеров.

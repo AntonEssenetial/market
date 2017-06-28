@@ -2485,6 +2485,7 @@ main
 
 .main-menu__link
 {
+    font-family: 'opensans-semibold-webfont';
     font-size: 15px;
 
     display: block;
@@ -3912,6 +3913,133 @@ main
     padding-bottom: 30px;
 }
 
+.module__nav__col
+{
+    margin: 0 0 20px 0;
+}
+
+.module__nav__loader
+{
+    padding-top: 10px;
+}
+
+.module__nav__str-3
+{
+    display: block;
+
+    margin: 0 0 10px 0;
+
+    color: #282828;
+}
+
+.module__nav__str-4
+{
+    display: block;
+}
+
+.module__nav .icon_loader
+{
+    width: 35px;
+    height: 35px;
+
+    -webkit-animation: spin 2s infinite ease-in;
+       -moz-animation: spin 2s infinite ease-in;
+        -ms-animation: spin 2s infinite ease-in;
+         -o-animation: spin 2s infinite ease-in;
+            animation: spin 2s infinite ease-in;
+
+    color: #605f60;
+}
+
+.module__nav .col__100 p span
+{
+    font-family: 'opensans-regular-webfont';
+}
+
+.module__nav .col__100 p a
+{
+    -webkit-transition: ease-in-out .2s;
+       -moz-transition: ease-in-out .2s;
+        -ms-transition: ease-in-out .2s;
+         -o-transition: ease-in-out .2s;
+            transition: ease-in-out .2s;
+
+    color: #605f60;
+}
+
+.module__nav .col__100 p a:hover
+{
+    -webkit-transition: ease-in-out .2s;
+       -moz-transition: ease-in-out .2s;
+        -ms-transition: ease-in-out .2s;
+         -o-transition: ease-in-out .2s;
+            transition: ease-in-out .2s;
+    text-decoration: underline;
+
+    color: #ff74af;
+}
+
+.module__nav .col__100 p a.pink
+{
+    color: #ff74af;
+}
+
+.module__nav .col__100 ul
+{
+    padding-left: 40px;
+}
+
+.module__nav .col__100 li
+{
+    font-size: 14px;
+    font-size: 13px;
+
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         box;
+    display:         flex;
+
+    margin-bottom: 5px;
+}
+
+.module__nav .col__100 li::before
+{
+    position: relative;
+    top: 8px;
+    left: -6px;
+
+    display: inline-block;
+
+    width: 3px;
+    height: 3px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #000;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.module__nav .col__100 li.none:before
+{
+    display: none;
+}
+
 .module__nav p a
 {
     text-decoration: underline;
@@ -3922,6 +4050,11 @@ main
 .module__nav p a:hover
 {
     text-decoration: none;
+}
+
+.module__nav p strong
+{
+    color: #282828;
 }
 
 .module__nav__str
@@ -3975,6 +4108,11 @@ main
     color: #282828;
 }
 
+.module__nav .module__contanier h4
+{
+    margin: 10px 0 20px 0;
+}
+
 .module__nav .iframe-wrapper
 {
     top: 3px;
@@ -3985,6 +4123,227 @@ main
 .module__contanier
 {
     padding-left: 30px;
+}
+
+.icon_pdf
+{
+    margin-right: 25px;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.module__nav .col__100 .module__nav__list
+{
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.module__nav .col__100 .module__nav__list li
+{
+    font-size: 13px;
+
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         box;
+    display:         flex;
+
+    margin-bottom: 5px;
+}
+
+.module__nav .col__100 .module__nav__list li::before
+{
+    position: relative;
+    top: 8px;
+    left: -6px;
+
+    display: inline-block;
+
+    width: 3px;
+    height: 3px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #000;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.module__nav .col__100 .module__nav__list a
+{
+    font-size: 13px;
+
+    text-decoration: underline;
+}
+
+.module__nav .col__100 .module__nav__list a:hover
+{
+    text-decoration: none;
+}
+
+.module__nav__small p
+{
+    font-size: 13px;
+}
+
+.module__nav__contacts
+{
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+}
+
+.module__nav__contacts input,
+.module__nav__contacts textarea
+{
+    background: transparent;
+}
+
+.module__nav__contacts textarea
+{
+    height: 105px;
+}
+
+.module__nav__contacts .button
+{
+    min-width: 300px;
+    margin-top: 10px;
+}
+
+.module__nav__contacts .col_margin-40
+{
+    margin-right: 40px;
+}
+
+.module__nav__contacts img
+{
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.module__nav__contacts h2
+{
+    margin-bottom: 20px;
+}
+
+.module__nav__contacts .col_padding
+{
+    padding-top: 50px;
+}
+
+.module__nav__contacts .col_padding p,
+.module__nav__contacts .col_padding a
+{
+    font-size: 13px;
+}
+
+.module__nav__contacts .col_padding a
+{
+    color: #282828;
+}
+
+.module__nav__contacts .col_padding a:hover
+{
+    opacity: .8;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';
+        filter: alpha(opacity=80);
+}
+
+.module__news-item
+{
+    margin-bottom: 20px;
+    padding: 30px;
+
+    background: #fff;
+}
+
+.module__news-item__row
+{
+    margin-bottom: 20px;
+}
+
+.module__news-item__str,
+.module__news-item__str-2
+{
+    font-size: 18px;
+
+    color: #282828;
+}
+
+.module__news-item__str-2
+{
+    font-family: 'opensans-semibold-webfont';
+
+    margin-left: 5px;
+
+    color: #ff74af;
+}
+
+.module__news-item .col__240
+{
+    width: 240px;
+    margin-right: 25px;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+.module__news-item__img
+{
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.module__news-item p,
+.module__news-item__date
+{
+    font-size: 13px;
+}
+
+.module__news-item p
+{
+    padding-bottom: 10px;
 }
 
 .module__notification
@@ -5207,6 +5566,11 @@ main
 
 @media screen and (max-width: 1024px)
 {
+    .module__nav__contacts
+    {
+        padding-left: 0;
+    }
+
     .module__stat__col,
     .module__about-odds_padding
     {
@@ -5500,6 +5864,120 @@ main
 
 @media screen and (max-width: 752px)
 {
+    .col__50_map
+    {
+        width: calc(100% + 40px) !important;
+        margin: 0 -20px;
+        padding: 0 !important;
+    }
+
+    .module__nav__contacts .col__50
+    {
+        padding-top: 15px;
+    }
+
+    .module__nav__contacts
+    {
+                flex-direction: column-reverse;
+
+        margin: 0;
+
+        -webkit-box-direction: reverse;
+           -moz-box-direction: reverse;
+             -o-box-direction: reverse;
+        -webkit-box-orient: vertical;
+           -moz-box-orient: vertical;
+             -o-box-orient: vertical;
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+    }
+
+    .module__nav__contacts .button
+    {
+        font-size: 13px;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .module__nav__contacts:last-child
+    {
+                flex-direction: column;
+
+        border-top: 1px solid #d1d1d1;
+
+        -webkit-box-orient: vertical;
+           -moz-box-orient: vertical;
+             -o-box-orient: vertical;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+
+    .module__nav__contacts .col__50
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .module__nav__loader
+    {
+        padding: 0 0 20px 0;
+    }
+
+    .module__news-item__row
+    {
+        margin-bottom: 15px;
+    }
+
+    .module__news-item__str,
+    .module__news-item__str-2
+    {
+        font-size: 16px !important;
+
+        display: block;
+
+        margin: 0;
+    }
+
+    .module__news-item .col__240
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .module__news-item
+    {
+        padding: 20px;
+    }
+
+    .module__news-item .row
+    {
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+           -moz-box-orient: vertical;
+             -o-box-orient: vertical;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+
+    .module__nav p,
+    .module__nav span
+    {
+        font-size: 13px;
+    }
+
+    .module__nav .col__100 ul
+    {
+        padding-left: 30px;
+    }
+
+    .module__nav .module__contanier h4
+    {
+        margin: 0 0 15px 0;
+    }
+
     .module__info-odds h4
     {
         margin: 10px 0;
@@ -5524,7 +6002,7 @@ main
 
     .module__info-odds__form
     {
-        width: calc(100% + 40px);
+        width: calc(100% + 40px) !important;
         margin: 0 -20px !important;
         padding: 15px 20px 20px 20px;
     }
@@ -5556,7 +6034,7 @@ main
 
     .module__info-odds__slider-row
     {
-        margin: 0 0 30px 0;
+        margin: 0 0 15px 0 !important;
         padding-bottom: 20px;
 
         border-bottom: 1px solid #d6d6d6;
@@ -5585,7 +6063,7 @@ main
 
     .title
     {
-        margin: 15px 0;
+        margin: 20px 0 15px 0;
     }
 
     .module__nav
@@ -5915,6 +6393,11 @@ main
         padding: 20px;
     }
 
+    .module__contanier h2:first-child
+    {
+        margin-top: 13px;
+    }
+
     .module__location__col
     {
         width: 100%;
@@ -6208,5 +6691,185 @@ main
     .module__registration .col__50
     {
         padding: 20px 15px 20px 15px;
+    }
+}
+
+@-moz-keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+
+    50%
+    {
+        -webkit-transform: rotateZ(360deg);
+           -moz-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+             -o-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+
+        opacity: 1;
+
+        -ms-filter: none;
+            filter: none;
+    }
+
+    100%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+}
+
+@-webkit-keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+
+    50%
+    {
+        -webkit-transform: rotateZ(360deg);
+           -moz-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+             -o-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+
+        opacity: 1;
+
+        -ms-filter: none;
+            filter: none;
+    }
+
+    100%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+}
+
+@-o-keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+
+    50%
+    {
+        -webkit-transform: rotateZ(360deg);
+           -moz-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+             -o-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+
+        opacity: 1;
+
+        -ms-filter: none;
+            filter: none;
+    }
+
+    100%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+}
+
+@keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
+    }
+
+    50%
+    {
+        -webkit-transform: rotateZ(360deg);
+           -moz-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+             -o-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+
+        opacity: 1;
+
+        -ms-filter: none;
+            filter: none;
+    }
+
+    100%
+    {
+        -webkit-transform: rotateZ(0deg);
+           -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+             -o-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+
+        opacity: .5;
+
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+            filter: alpha(opacity=50);
     }
 }

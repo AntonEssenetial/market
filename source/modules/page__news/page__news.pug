@@ -1,0 +1,17 @@
+include ../module__nav/module__nav
+include ../module__news-item/module__news-item
+
+
+mixin page__news(data)
+
+  +module__nav()
+    .module__contanier
+      h2.title Последние новости
+      .col__100 
+        +module__news-item()
+        +module__news-item()
+        +module__news-item()
+        +module__news-item()
+        +module__news-item()
+        .module__nav__loader.row.center-c
+          +icon('loader')

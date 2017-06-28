@@ -6,13 +6,16 @@
         url: about
       -
         title: Информация для СМИ
-        url: information
+        url: info
       -
         title: Информация для партнеров
-        url: partners
+        url: partner
       -
         title: Правила и акции
         url: rules
+      -
+        title: Пользовательское соглашение
+        url: terms
       -
         title: Новости
         url: news

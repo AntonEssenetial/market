@@ -2,10 +2,63 @@
   padding-top 40px
   padding-bottom 30px
   
+  &__col 
+    margin 0px 0 20px 0
+  
+  &__loader 
+    padding-top 10px
+    
+  &__str-3 
+    color $dark
+    margin 0 0 10px 0
+    display: block
+  
+  &__str-4
+    display: block
+  
+  .icon_loader 
+    width 35px 
+    height @width
+    color $text
+    animation spin 2s infinite ease-in
+  
+  .col__100
+    p 
+      span 
+        regular()
+      a 
+        color $text 
+        hover()
+      a.pink 
+        color $pink
+    ul 
+      padding-left 40px
+    li 
+      font-size 14px
+      display flex
+      font-size 13px
+      margin-bottom 5px
+      +before('')
+        width 3px 
+        height 3px 
+        background: black
+        display inline-block
+        border-radius(50%)
+        left -6px
+        position: relative 
+        top 8px
+        static()
+    li.none:before
+      display: none
+    
+  
   p 
     a 
       color $pink
       decor()
+    
+    strong 
+      color $dark
   
   &__str 
     semi()
@@ -31,10 +84,91 @@
       color $dark
       semi()
     
+    h4 
+      margin 10px 0 20px 0
+    
   .iframe-wrapper
     top 3px
     margin-bottom 30px
     
 .module__contanier
   padding-left 30px
+  
+.icon_pdf
+  static()
+  margin-right 25px
     
+.module__nav .col__100 .module__nav__list
+  margin-bottom 10px
+  padding-left 0px
+  li 
+    display flex
+    font-size 13px
+    margin-bottom 5px
+    +before('')
+      width 3px 
+      height 3px 
+      background: black
+      display inline-block
+      border-radius(50%)
+      left -6px
+      position: relative 
+      top 8px
+      static()
+      
+  a 
+    font-size 13px
+    decor()
+
+    
+.module__nav__small p 
+  font-size 13px
+  
+.module__nav__contacts
+  padding-left 30px
+  margin 0 0 20px 0
+  input, 
+  textarea
+    background transparent
+    
+  textarea
+    height 105px
+    
+  .button 
+    margin-top 10px
+    min-width 300px
+    
+  .col_margin-40 
+    margin-right 40px
+    
+    
+  img 
+    display: block
+    width 100%
+    height auto
+    
+  h2 
+    margin-bottom 20px
+  
+  .col_padding 
+    padding-top 50px
+    
+    p, a 
+      font-size 13px
+      
+    a 
+      color $dark
+      &:hover 
+        opacity 0.8
+
+@keyframes spin
+  0%
+    transform rotateZ(0deg)
+    opacity: .5
+  50% 
+    transform rotateZ(360deg)
+    opacity 1
+  100%
+    transform rotateZ(0deg)
+    opacity .5
+  

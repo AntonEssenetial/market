@@ -46,32 +46,56 @@
       meta: default
       og: default
 
-    partnership:
-      title: Partnership
+    rules:
+      title: Правила и акции
       mobile: true
       meta: default
       og: default
 
-    faq:
-      title: Faq
+    terms:
+      title: Пользовательское соглашение
       mobile: true
       meta: default
       og: default
 
-    support:
-      title: Support
+    news:
+      title: Новости
       mobile: true
       meta: default
       og: default
 
-    registration:
-      title: Registration
+    contacts:
+      title: Контакты
       mobile: true
       meta: default
       og: default
 
     cabinet:
       title: Cabinet
+      mobile: true
+      meta: default
+      og: default
+
+    search:
+      title: Поиск
+      mobile: true
+      meta: default
+      og: default
+
+    shop:
+      title: Магазины
+      mobile: true
+      meta: default
+      og: default
+
+    review:
+      title: Отзывы
+      mobile: true
+      meta: default
+      og: default
+
+    odds:
+      title: Акции
       mobile: true
       meta: default
       og: default

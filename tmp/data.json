@@ -22,24 +22,28 @@
 				"url": "partner"
 			},
 			{
-				"title": "Faq",
-				"url": "faq"
+				"title": "Резултаты поиска",
+				"url": "search"
 			},
 			{
-				"title": "Support",
-				"url": "support"
+				"title": "Отзывы",
+				"url": "review"
 			},
 			{
-				"title": "Contacts",
+				"title": "Контакты",
 				"url": "contacts"
 			},
 			{
-				"title": "Rules",
-				"url": "rules"
+				"title": "Пользовательское соглашение",
+				"url": "terms"
 			},
 			{
-				"title": "Registration",
-				"url": "registration"
+				"title": "Магазины",
+				"url": "shop"
+			},
+			{
+				"title": "Акции",
+				"url": "odds"
 			},
 			{
 				"title": "Cabinet01",
@@ -56,38 +60,6 @@
 			{
 				"title": "Cabinet04",
 				"url": "cabinet04"
-			},
-			{
-				"title": "Cabinet05",
-				"url": "cabinet05"
-			},
-			{
-				"title": "Cabinet06",
-				"url": "cabinet06"
-			},
-			{
-				"title": "Cabinet07",
-				"url": "cabinet07"
-			},
-			{
-				"title": "Cabinet08",
-				"url": "cabinet08"
-			},
-			{
-				"title": "Cabinet09",
-				"url": "cabinet09"
-			},
-			{
-				"title": "Cabinet10",
-				"url": "cabinet10"
-			},
-			{
-				"title": "Cabinet11",
-				"url": "cabinet11"
-			},
-			{
-				"title": "Cabinet12",
-				"url": "cabinet12"
 			},
 			{
 				"title": "Elements",
@@ -133,15 +105,19 @@
 			},
 			{
 				"title": "Информация для СМИ",
-				"url": "information"
+				"url": "info"
 			},
 			{
 				"title": "Информация для партнеров",
-				"url": "partners"
+				"url": "partner"
 			},
 			{
 				"title": "Правила и акции",
 				"url": "rules"
+			},
+			{
+				"title": "Пользовательское соглашение",
+				"url": "terms"
 			},
 			{
 				"title": "Новости",
@@ -229,32 +205,56 @@
 			"meta": "default",
 			"og": "default"
 		},
-		"partnership": {
-			"title": "Partnership",
+		"rules": {
+			"title": "Правила и акции",
 			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
-		"faq": {
-			"title": "Faq",
+		"terms": {
+			"title": "Пользовательское соглашение",
 			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
-		"support": {
-			"title": "Support",
+		"news": {
+			"title": "Новости",
 			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
-		"registration": {
-			"title": "Registration",
+		"contacts": {
+			"title": "Контакты",
 			"mobile": true,
 			"meta": "default",
 			"og": "default"
 		},
 		"cabinet": {
 			"title": "Cabinet",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"search": {
+			"title": "Поиск",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"shop": {
+			"title": "Магазины",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"review": {
+			"title": "Отзывы",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"odds": {
+			"title": "Акции",
 			"mobile": true,
 			"meta": "default",
 			"og": "default"

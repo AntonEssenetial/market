@@ -1,0 +1,12 @@
+mixin module__news-item(data)
+  - var bemClass = 'module__news-item'
+  .module__news-item&attributes(attributes)
+    div(class=bemClass + '__row').row
+      span(class=bemClass + '__str') Добавлен новый магазин
+      span(class=bemClass + '__str-2') INTIMISSIMI
+    .row 
+      .col__240
+        img(src='assets/images/news/1.jpg' class=bemClass + '__img' alt='Добавлен новый магазин') 
+      .col__right.auto__width
+        p Svakom Betty, розовый <br> Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.
+        span(class=bemClass + '__date') 21.05.2017  16:45

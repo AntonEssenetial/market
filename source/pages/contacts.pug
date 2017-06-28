@@ -12,16 +12,16 @@ include ../modules/module__registration/module__registration
 include ../modules/module__notification/module__notification
 include ../modules/module__location/module__location
 include ../modules/module__mobile-blocks/module__mobile-blocks
-include ../modules/page__partner/page__partner
+include ../modules/page__contacts/page__contacts
 
-- var pageId = 2;
-- var subId = 2;
+- var pageId = 6;
+- var subId = 6;
 
 doctype html
 html(lang=config.lang)
 
   head
-    +head(head.partner)
+    +head(head.contacts)
 
   +page().main_bg
     +inject('header')
@@ -29,8 +29,8 @@ html(lang=config.lang)
         account: true
       })
 
-    +inject('page__partner')
-      +page__partner()
+    +inject('page__contacts')
+      +page__contacts()
 
     +inject('footer')
       +footer({
