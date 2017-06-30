@@ -1,2 +1,18 @@
+include ../module__s-item/module__s-item
+include ../module__catalog/module__catalog
+include ../module__catalog-menu/module__catalog-menu
+
 mixin page__shop(data)
+  
+  .page__search
+    .container
+      +module__s-item-3()
+
+      .row 
+
+        +module__catalog-menu()
+
+        +module__catalog({
+          catalog: true
+        })
     

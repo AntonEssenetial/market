@@ -26,6 +26,10 @@
 				"url": "search"
 			},
 			{
+				"title": "Резултаты поиска 2",
+				"url": "search-2"
+			},
+			{
 				"title": "Отзывы",
 				"url": "review"
 			},

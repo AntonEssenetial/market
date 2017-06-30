@@ -1,0 +1,78 @@
+.module__search-result
+  
+  .icon_filter 
+    color white
+    width 20px 
+    height @width
+    margin auto
+    
+  .icon_cross
+    color $grey
+    width 8px 
+    height @width
+    cursor pointer
+    position: relative 
+    top 0px
+    &:hover 
+      color $pink
+      
+  &__str-2 
+    color $text
+    font-size 14px
+    margin-right 20px
+    white-space: nowrap;
+    
+  &__result
+    padding 30px 30px 25px 30px
+    border-bottom 1px solid $dash-border
+    background: white
+    
+  &__str 
+    font-size 15px
+    semi()
+    display: block
+    margin 0 0 10px 0
+    
+  &__row-s 
+    padding-bottom 5px
+    margin-top 15px
+    
+  &__filter 
+    display: flex
+    background: $pink
+    width 50px 
+    height 43px
+    border-radius(3px)
+    margin-left 10px
+    
+
+  &__items
+    box-shadow: 0 0 20px rgba(136, 136, 136, 0.1);
+
+  .jq-selectbox__select-text
+    width auto !important
+    
+  .form__label 
+  .form__input 
+    margin 0px
+    
+  .select_custom
+    height 47px
+    
+  .form__input 
+    width 70%
+    background transparent
+    
+
+  &__row 
+    margin-bottom 20px
+    
+  &__loader 
+    background: white
+    padding 25px 0
+
+  .icon_loader 
+    width 35px 
+    height @width
+    color $text
+    animation spin 2s infinite ease-in

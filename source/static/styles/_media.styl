@@ -11,9 +11,26 @@
 +width-max(1170px)
   .module__about-subscribe >.container
     background-image none
+  .module__s-item__str-4
+    font-size 14px
+  .module__s-item__img
+    margin-right 20px
+    width 120px 
+    height @width
+  .module__s-item__wrap
+    padding 20px
 
 
 +width-max(1024px)
+  .module__news-item .col__240
+  .module__search-result .form__input
+    width: 100%;
+    margin-bottom: 15px;
+  .result.hidden 
+    display block
+  .module__s-item__img
+    width 160px 
+    height @width
   .module__nav__contacts
     padding-left 0px
   .module__stat__col
@@ -51,6 +68,8 @@
   .module__header-location
   .header__row
   .module__nav__side
+  .module__search
+  .module__search-result__row
     display: none
   .module__bottom-cart__str
   .module__bottom-cart__str-2
@@ -150,6 +169,55 @@
 
 
 +width-max(752px)
+  .module__s-item__available
+    font-size 13px 
+    text-align left
+  .module__s-item__row-2.hidden
+    padding 0 20px 20px 20px
+  .module__s-item__img
+    margin-right 15px
+  .module__s-item__rate-stars
+    margin 4px 0
+  .module__rate .jq-star svg
+  .module__rate .jq-star
+    width 15px !important 
+    height @width
+  .module__search-popup
+    h2 
+      margin-bottom 10px
+      margin-top 5px
+    .button 
+      margin-top 20px
+  .form__input, 
+  .form__select
+  .select_custom 
+  .select .jq-selectbox__select-text
+    height 44px
+  .select_custom 
+    width 100%
+    margin-top 10px
+    margin-bottom 17px
+  .module__s-item__row-2 .col
+    padding-right 10px
+  .module__search-result__items
+  .module__search-result__loader
+    margin 0 -20px
+  .module__s-item__top-row
+    flex-direction column
+    align-items: baseline;
+  .module__search-result__loader
+    padding 15px 0
+  .page__search
+    padding 15px 0 0 0px
+  .module__s-item__img
+    width 80px 
+    height @width
+  .module__s-item__link
+    font-size 16px
+  .module__s-item__str-4
+    font-size 14px
+  .module__s-item__str-3
+    margin 0px
   .col__50_map 
     padding 0px !important
     margin 0 -20px
@@ -180,6 +248,7 @@
     display: block
     margin 0px
   .module__news-item .col__240
+  .module__search-result .form__input
     width 100%
     margin-bottom 15px
   .module__news-item
@@ -332,6 +401,10 @@
   .module__bottom-cart__top
   .module__order__form
   .desktop
+  .icon_watch
+  .icon_time
+  .module__s-item__descr
+  .module__s-item__rate
     display: none
   .module__discount .jsSlick3
   .module__discount__slider
@@ -361,6 +434,9 @@
     color $pink !important
   .hidden 
     display: block
+  .module__search__str
+    font-size 14px
+    margin 0px
 
 +width-max(660px)
   .module__location__col
@@ -485,6 +561,13 @@
 
 // iPhone 6
 +width-max(375px)
+  .module__search__col
+    padding 14px 20px 0px 20px
+    .button 
+      width calc(100% + 40px)
+      border-radius 0px
+      margin 20px -20px 0 -20px
+  .button
   .modal_ord 
     .button_close
       top 24px

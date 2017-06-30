@@ -1,2 +1,12 @@
+include ../module__search/module__search
+include ../module__search-result/module__search-result
+
 mixin page__search(data)
-    
+  
+  .page__search
+    .container
+      .row
+
+        +module__search()
+
+        +module__search-result(data)

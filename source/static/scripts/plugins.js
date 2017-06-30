@@ -68,6 +68,11 @@
 //= require slick/slick.min.js
 
 
+// Rating
+// ---------------------------------------------------------------------------
+//= require rating/jquery.star-rating-svg.min.js
+
+
 // Nicescroll
 // ---------------------------------------------------------------------------
 //= require nicescroll/jquery.nicescroll.min.js
