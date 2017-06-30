@@ -1,2 +1,137 @@
 .module__catalog
-  //
+  
+  &__title 
+    background: white
+    padding 25px 30px
+    border-bottom 1px solid $dash-border
+    
+  &__news 
+    background: white
+    
+  &__news &__loader 
+    padding 25px 0
+  
+  .form__label_search
+    margin 0px
+    width 100%
+    input
+      border-radius 0px
+      margin 0px
+      height 50px
+      border none
+      width 100%
+      padding-right 40px
+      
+  .form__label_search:after
+    top 15px
+    
+  &__top 
+    margin-bottom 30px
+    position: relative
+    background: white
+    
+  img 
+    display: block
+    width 100%
+    height auto
+    
+  &__search 
+    width 100%
+    
+  &__m-search.active input 
+    display block
+    
+  &__m-search.active &__search-b
+    background: $pink 
+    .icon 
+      color white 
+    
+  &__m-search 
+    display: none
+    position absolute
+    right 0px
+    width 100%
+    input 
+      position: absolute 
+      display none
+      height 50px
+      border none
+      border-radius 0px
+      left 0px
+      width calc( 100% - 50px)
+
+  &__search-b
+    height 50px
+    width 50px
+    static()
+    background: white
+    display flex
+    cursor pointer
+    position: absolute
+    right 0px 
+    top 0px
+    z-index: 1
+    
+    .icon 
+      color $dark
+      width 20px 
+      height @width
+      margin auto
+      
+  &__str
+    font-size 16px
+    color $dark
+    semi()
+    
+  &__bread 
+    padding 0 20px
+    margin 20px 0
+    
+  &__link 
+    font-size 13px
+    color $dark
+    
+  &__str-2
+    font-size 13px 
+    color $pink
+    
+  &__sep 
+    margin 0 4px
+    
+  &__order 
+    border-bottom 1px solid $dash-border
+    padding 20px 30px
+    
+    a 
+      color $pink
+      decor()
+    
+  .icon_icon1
+    color #d5d5d5
+    width 50px 
+    height @width
+    margin-right 15px
+    
+  &__back 
+    border 1px solid $pink
+    border-radius 3px
+    width 35px 
+    height @width
+    display flex
+    margin-right 20px
+    .icon 
+      color $pink
+      width 35px 
+      height 20px
+      transform rotateZ(90deg)
+      margin auto
+      
+  .select .jq-selectbox__select-text
+    width 100% !important
+      
+.module__s-item__tool_mobile
+  top: -1px !important;
+  z-index: 2 !important;
+  left: 0px !important;
+  display: none !important;
+  width: 100% !important;

@@ -1,4 +1,13 @@
 ---
-  side-nav:
+  sideNav:
     default:
+      -
+        url: shop
+        name: Товары
+      -
+        url: odds
+        name: Акции
+      -
+        url: review
+        name: Отзывы
       

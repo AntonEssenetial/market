@@ -1,0 +1,39 @@
+mixin module__catalog-item(data)
+  - var bemClass = 'module__catalog-item'
+  .module__catalog-item&attributes(attributes)
+    
+    div(class=bemClass + '__card')
+      div(class=bemClass + '__img')
+        img(src="assets/images/catalog/1.jpg", alt="")
+        div(class=bemClass + '__zoom').animated.fadeIn
+          img(src="assets/images/catalog/3.jpg", alt="Spanish")
+          .module__catalog-item__cont
+            span.module__catalog-item__str Комплект Obsessive Adoria
+            p Комплект Белья Spanish Красный, OS (42-46) размер 42-46, красный с черной сеткой трикотах (хлопок и полиэстер)
+          .module__catalog-item__bottom
+            .row.between.center.module__catalog-item__row
+              .row.center 
+                span.module__cart__decr - 
+                span.module__cart__count 1
+                span.module__cart__incr +
+              span.module__catalog-item__str-2 389 Р
+            .row 
+              .col__50.col_margin-10
+                a(href="").button.button_md Заказать
+              .col__50
+                a(href="" data-remodal-target="modal-8").button.button_md.button_tr Нашли дешевле?
+      div(class=bemClass + '__cont')
+        span(class=bemClass + '__str') Комплект Obsessive Adoria
+        p Комплект Obsessive Adoria set размер L/XL, цвет черный
+      div(class=bemClass + '__bottom')
+        .row.between.center(class=bemClass + '__row') 
+          .row.center 
+            span.module__cart__decr -
+            span.module__cart__count 1
+            span.module__cart__incr +
+          span(class=bemClass + '__str-2') 389 Р
+        .row 
+          .col__50.col_margin-10
+            a(href="").button Заказать
+          .col__50
+            a(href="" data-remodal-target="modal-8").button.button_tr Нашли дешевле?

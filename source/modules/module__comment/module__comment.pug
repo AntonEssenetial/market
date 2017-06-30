@@ -1,0 +1,47 @@
+include ../module__rate/module__rate
+
+mixin module__comment(data)
+  - var bemClass = 'module__comment'
+  .module__comment&attributes(attributes)
+    div(class=bemClass + '__item').row
+      div(class=bemClass + '__img')
+        img(src="assets/images/user/1.jpg", alt="JohnDoe")
+      .col 
+        div(class=bemClass + '__row').row.center.wrap
+          span(class=bemClass + '__str') JohnDoe
+          .row(class=bemClass + '__i-row') 
+            +icon('hand').dislike
+            span(class=bemClass + '__str-2') 16 мая, 20:46
+        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+    -for (var x = 0 ; x < 6; x ++)
+      div(class=bemClass + '__item').row
+        div(class=bemClass + '__img')
+          img(src="assets/images/user/1.jpg", alt="JohnDoe")
+        .col 
+          div(class=bemClass + '__row').row.center.wrap
+            span(class=bemClass + '__str') JohnDoe
+            .row(class=bemClass + '__i-row') 
+              +icon('hand').like
+              span(class=bemClass + '__str-2') 16 мая, 20:46
+          p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+
+mixin module__comment-popup(data)
+  - var bemClass = 'module__comment-popup'
+  div.module__comment-popup
+    div(class=bemClass + '__wrapper')
+      h2 Оставить отзыв
+      form(class=bemClass + '__row')
+        .row.between
+          .col 
+            span(class=bemClass + '__str') Понравилось или нет?
+            .row 
+              a(hrfe='' class=bemClass + '__like')
+                +icon('hand')
+              a(hrfe='' class=bemClass + '__dislike')
+                +icon('hand')
+          .col.ta-right 
+            span(class=bemClass + '__str') Ваша оценка
+            +module__rate()
+        label().form__label
+          textarea(placeholder='Опишите в деталях свой опыт, связанный с последним заказом в этом магазине...').form__area
+        button.button.button_lg Оставить отзыв

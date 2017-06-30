@@ -19,9 +19,20 @@
     height @width
   .module__s-item__wrap
     padding 20px
+  .module__catalog-item
+    width 50%
+
+
++width-max(1057px)
+  .module__s-item__row-2
+    display: none
+  .module__s-item__row-3
+    display: flex
 
 
 +width-max(1024px)
+  .module__s-item_catalog
+    padding 20px
   .module__news-item .col__240
   .module__search-result .form__input
     width: 100%;
@@ -54,6 +65,7 @@
   .header 
     position: relative
   .module__mobile-cart
+  .module__catalog__m-search
     display: block
   .module__top__nav
   .module__discount__row
@@ -70,6 +82,8 @@
   .module__nav__side
   .module__search
   .module__search-result__row
+  .module__catalog__search
+  .module__catalog-menu_news
     display: none
   .module__bottom-cart__str
   .module__bottom-cart__str-2
@@ -137,12 +151,30 @@
     bottom 20px
   .sandwitch
     display: block
+  .module__news-item_catalog
+    padding 20px
+    border-bottom 1px solid $dash-border
+    p 
+      padding 0px
+    .col__240 
+      width 240px
+      margin-bottom 0px 
 
 // iPad 
 // +width-max(900px)
 
 
 +width-max(868px)
+  .module__catalog-item
+    width 100%
+  .module__s-item__wrp
+    overflow-y hidden
+    width 100%
+  .module__s-item .col_bordered
+    border none
+    margin 0
+  .module__s-item__row-3
+    width 800px
   .module__location__content
     flex-wrap wrap
   .module__location__col
@@ -168,7 +200,118 @@
 //+width-max(768px)
 
 
++width-max(800px)
+  .module__catalog__title
+    border-top 1px solid $dash-border
+  .reset
+    padding-bottom 20px
+  .module__compare__col 
+    img
+      margin 0 auto 0 0
+    .module__rate 
+      justify-content flex-start
+    .module__s-item__rate
+      display: block
+      text-align left
+  .module__compare__bottom
+    margin 10px 0
+  .module__compare__col
+    padding 20px 20px 0 20px
+    .button
+      border-radius 0px
+      width calc(100% + 40px)
+      height 50px
+      line-height @height
+      margin 0 -20px
+  .modal_compare .button_close
+    top 25px
+  .module__compare__top
+    padding 20px
+    h2 
+      font-size 18px
+  .module__compare__str-3
+    margin-bottom 5px
+  .module__compare__img
+    margin-bottom 15px 
+    width 100%
+    height auto
+  .module__compare__row-2
+    padding 20px
+  .module__compare__row-2
+  .module__compare__row
+    flex-direction column
+  .module__compare__col
+    width 100%
+  .module__s-item__tool_mobile.active
+    display: block !important
+    z-index 2 !important
+  .module__s-item_catalog
+    border-bottom 1px solid $dash-border
+  .module__catalog-menu
+    border-top 1px solid $dash-border
+  .page__search_reset
+    padding-top 0px !important
+    > .container 
+      padding 0px
+  .module__s-item_catalog
+    margin 0px
+  .module__catalog__top
+    position: relative
+    margin-bottom 0px
+    menu 
+      width calc(100% - 50px)
+      li 
+        flex 1
+      a 
+        width 100%
+        padding 0px
+  .f__row
+    display none
+    padding 0px
+    margin 0px
+  .f__row_visible 
+    display flex
+    .module__catalog-item
+      margin-bottom 20px
+    .f__col 
+      padding-left 20px 
+      padding-right 20px
+  .module__catalog-menu
+    width 100%
+    margin 0px
+  .page__row 
+    flex-direction column-reverse
+
+
 +width-max(752px)
+  .module__comment__i-row 
+    margin-bottom 5px
+  .module__comment__str
+    margin-bottom 5px
+    margin-right 10px
+  .module__comment .like
+  .module__comment .dislike
+    margin-left 0px
+  .module__comment__img
+    width 50px 
+    height @width
+    margin-right 15px
+    img 
+      width 100%
+      height auto
+  .module__comment__item p
+    padding-bottom 20px
+  .module__comment
+    padding 20px 20px 0 20px
+  .module__comment__item
+    border-bottom 1px solid $dash-border
+  .module__catalog__title .select_custom
+    margin-bottom 5px
+  .module__catalog__news .module__catalog__loader
+    padding 15px 0
+  .module__catalog__title
+    padding 20px
+    border-top 1px solid $dash-border
   .module__s-item__available
     font-size 13px 
     text-align left
@@ -203,6 +346,7 @@
   .module__search-result__loader
     margin 0 -20px
   .module__s-item__top-row
+  .module__catalog__rev-row
     flex-direction column
     align-items: baseline;
   .module__search-result__loader
@@ -437,6 +581,10 @@
   .module__search__str
     font-size 14px
     margin 0px
+  .module__catalog__m-row
+    flex-direction column
+  .module__catalog__order
+    padding 20px
 
 +width-max(660px)
   .module__location__col
@@ -465,6 +613,18 @@
     width 112px
   .footer__str
     font-size 13px
+
++width-max(500px)
+  .modal_comment
+    width 100%
+  .module__comment-popup
+    padding 20px 20px 0 20px
+    .button 
+      border-radius 0px
+      margin 0 -20px
+      width calc(100% + 40px)
+      font-size 12px
+
 
 // iPohne 6+
 +width-max(414px)
@@ -536,9 +696,9 @@
   .module__subscribe .col__40
     display: none
   .module__subscribe
-    height 479px
+    height 460px
     background image-url('3.png') no-repeat center bottom
-    background-position-y: 170px;
+    background-position-y: 150px;
     background-color white
   .module__registration__str-3
     font-size 13px
@@ -548,7 +708,7 @@
   .module__subscribe_pink 
     background-color transparent
     background-position bottom
-    height 590px
+    height 570px
   .module__about-subscribe 
     > .container
       padding 0px
@@ -556,6 +716,7 @@
       padding 20px 20px 0 20px
   .module__about-odds__content
     padding 10px 0 0 0
+  
 
 
 

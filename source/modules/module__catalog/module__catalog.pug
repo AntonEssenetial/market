@@ -1,4 +1,94 @@
+include ../side-nav/side-nav
+include ../module__compare/module__compare
+include ../module__catalog-item/module__catalog-item
+include ../module__news-item/module__news-item
+include ../select/select
+include ../module__comment/module__comment
+
 mixin module__catalog(data)
   - var bemClass = 'module__catalog'
-  .module__catalog&attributes(attributes)
+  .module__catalog&attributes(attributes).auto__width
     
+    div(class=bemClass + '__top').row 
+      +side-nav(sideNav.default)
+      div(class=bemClass + '__search') 
+        label().form__label.form__label_search
+          input(type="text", placeholder='Поиск товара по Артикулу или Наименованию').form__input
+      div(class='module__s-item__tool').animated.fadeIn.module__s-item__tool_mobile
+        span(class='module__s-item__str-6') Адрес
+        span(class='module__s-item__str-7') Москва, Бульвар Энтузиастов, 2
+        span(class='module__s-item__str-7') Москва, Комсомольский проспект, 24c1
+        span(class='module__s-item__str-7') Москва, Никольская, 12
+        span(class='module__s-item__str-7') Москва, Ярцевская, 19
+        span(class='module__s-item__str-8') Юридическая информация
+        span(class='module__s-item__str-7') ИНН 7710873933
+      div(class=bemClass + '__m-search')
+        div(class=bemClass + '__search-b').jsSearch
+          +icon('search')
+        form(action="")
+          input(type="text", placeholder='Поиск').input__search
+
+    
+    if data.catalog
+      .f__row  
+        -for (var x = 0; x < 12; x ++)
+          +module__catalog-item().f__col
+      div(class=bemClass + '__loader').row.center-c.desktop
+        +icon('loader')
+
+    else if data.visible
+      div(class=bemClass + '__bread').row.center
+        a(hrfe='' class=bemClass + '__back') 
+          +icon('down')
+        .col 
+          span(class=bemClass + '__str') Каталог товаров
+          .row 
+            a(class=bemClass + '__link') Секс-игрушки 
+            span(class=bemClass + '__sep') >
+            span(class=bemClass + '__str-2') Страпоны
+      .f__row.f__row_visible  
+        -for (var x = 0; x < 12; x ++)
+          +module__catalog-item().f__col
+      div(class=bemClass + '__loader').row.center-c.reset
+        +icon('loader')
+
+    else if data.news
+      
+      div(class=bemClass + '__news') 
+        div(class=bemClass + '__title') 
+          h2 Акции INTIMISSIMI
+
+        -for (var x = 0 ; x < 6; x ++)
+          +module__news-item-2()
+
+
+        div(class=bemClass + '__loader').row.center-c
+          +icon('loader')
+
+    else
+      div(class=bemClass + '__news') 
+        div(class=bemClass + '__title')
+          .row.center.between(class=bemClass + '__rev-row') 
+            h2 Отзывы о магазине INTIMISSIMI
+            +select('custom')
+              option(value='Все отзывы о магазине') Все отзывы о магазине
+              option(value='Все отзывы о магазине 2') Все отзывы о магазине 2
+
+        div(class=bemClass + '__order').row.center
+          +icon('icon1')
+          div(class=bemClass + '__m-row').row
+            a(href="" data-remodal-target="modal-9") Сделайте заказ, 
+            span(class=bemClass + '__str-4') чтобы оставить отзыв
+
+        +module__comment()
+
+        +modal({id:"modal-9", close:true}).modal_comment
+          +module__comment-popup()
+
+
+        div(class=bemClass + '__loader').row.center-c
+          +icon('loader')
+
+
+    +modal({id:"modal-8", close:true}).modal_location.modal_compare
+      +module__compare()

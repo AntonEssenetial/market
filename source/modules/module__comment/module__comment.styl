@@ -1,0 +1,101 @@
+.module__comment
+  padding 30px 30px 0px 30px
+  
+  &__item 
+    margin 5px 0 20px 0
+    &:last-child 
+      margin 0px
+    p 
+      padding-bottom 10px
+
+  &__img 
+    width 66px 
+    height @width 
+    border-radius(50%)
+    overflow: hidden
+    static()
+    margin-right 25px
+    
+    img 
+      display: block
+      width @width 
+      height @width
+      static()
+      
+  .icon 
+    width 17px 
+    height @width
+    margin 0 10px
+    
+  &__str 
+    font-size 15px
+    semi()
+    color $dark
+    
+  &__str-2 
+    font-size 13px 
+    color #b3b2b2
+    
+  &__row 
+    margin-bottom 10px
+    
+  .like 
+    color #21bf7a
+    
+  .dislike 
+    color #ff7474
+    transform rotateZ(180deg)
+    
+
+.module__comment-popup
+  padding 25px 30px 30px 30px
+  
+  h2 
+    margin 0px 0px 20px 0
+  
+  &__like 
+  &__dislike
+    background: #06a93c
+    border-radius(50%) 
+    width 28px 
+    height @width
+    display flex
+    margin-right 5px
+    cursor pointer
+    statc()
+    &:hover 
+      opacity: 0.8
+      trs()
+    .icon 
+      margin auto
+      color white
+      width 16px 
+      height @width
+      
+  &__dislike 
+    background #e45252
+    .icon 
+      transform rotateZ(180deg)
+      
+  &__str 
+    margin-bottom 15px 
+    font-size 13px
+    display: block
+    
+  .module__rate 
+    padding-top 3px
+    
+  textarea 
+    height 190px
+    margin-top 20px
+    
+  .button 
+    width 100%
+    font-size 14px
+    
+  .button_close
+    top 35px
+      
+.modal_comment
+  width 480px
+     

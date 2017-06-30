@@ -1,0 +1,86 @@
+.module__catalog-item
+  width 33.3%
+  margin-bottom 30px
+  position: relative
+  
+
+  &__img:hover &__zoom
+    display: block
+
+  
+  .button 
+    padding 0px
+    width 100%
+    min-width: auto
+
+  &__cont 
+    background: $soft
+    padding 15px
+    
+  &__str
+    font-size 16px
+    color $dark
+    display block
+    margin 0 0 6px 0
+    position: relative
+    top -2px
+    
+  p 
+    padding 0px
+    
+  &__bottom 
+    background: white
+    padding 15px
+    
+  .button_tr 
+    font-size 10px
+    regular()
+    
+  &__str-2 
+    font-size 18px
+    color $dark
+    
+  .module__cart__count 
+    font-size 18px
+    position: relative 
+    top -1px
+    
+  &__row 
+    margin 0 0 10px 0
+    
+  .col_margin-10
+    margin-right 15px
+  
+  &__zoom 
+    width 355px
+    margin auto
+    box-shadow 0 0 10px rgba(0,0,0, 0.2)
+    position: absolute
+    right 12px 
+    top 0px
+    z-index: 1
+    display none
+    .button 
+      min-width auto
+      width 100%
+      padding 0px
+      font-size 12px
+      
+    .button_tr 
+      regular()
+      
+    .module__catalog-item__bottom
+    .module__catalog-item__cont 
+      padding 20px
+      
+    .col_margin-10
+      margin-right 20px
+      
+    p 
+      padding 0px
+    
+.icon_loader
+  width: 35px;
+  height: 35px;
+  animation: spin 2s infinite ease-in;
+  color: #605f60;

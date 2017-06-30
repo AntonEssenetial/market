@@ -46,6 +46,10 @@
 				"url": "shop"
 			},
 			{
+				"title": "Магазины моб.",
+				"url": "shop-2"
+			},
+			{
 				"title": "Акции",
 				"url": "odds"
 			},
@@ -340,8 +344,21 @@
 			}
 		]
 	},
-	"side-nav": {
-		"default": null
+	"sideNav": {
+		"default": [
+			{
+				"url": "shop",
+				"name": "Товары"
+			},
+			{
+				"url": "odds",
+				"name": "Акции"
+			},
+			{
+				"url": "review",
+				"name": "Отзывы"
+			}
+		]
 	},
 	"static-menu": {
 		"default": null

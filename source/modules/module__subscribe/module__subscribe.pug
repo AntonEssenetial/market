@@ -23,7 +23,17 @@ mixin module__subscribe(data)
               a(href="").button Уведомить
           div(class=bemClass + '__apps').row 
             a(href="").app
+              +svg({
+                name: 'apple-grey',
+                width: 130,
+                height: 42
+              })
             a(href="").google
+              +svg({
+                name: 'android-grey',
+                width: 130,
+                height: 42
+              })
 
 
 mixin module__subscribe-2(data)
@@ -48,6 +58,16 @@ mixin module__subscribe-2(data)
                     input(type="radio", name='device').input__radio
                     +icon('android')
               a(href="").button Уведомить
-          div(class=bemClass + '__apps').row 
+          div(class=bemClass + '__apps').row
             a(href="").app
+              +svg({
+                name: 'apple-pink',
+                width: 130,
+                height: 42
+              })
             a(href="").google
+              +svg({
+                name: 'android-pink',
+                width: 130,
+                height: 42
+              })

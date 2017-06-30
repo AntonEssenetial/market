@@ -34,6 +34,9 @@ pageList:
       title: Магазины
       url: shop
     - 
+      title: Магазины моб.
+      url: shop-2
+    - 
       title: Акции
       url: odds
     - 

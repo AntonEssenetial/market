@@ -15,7 +15,7 @@ include ../modules/module__mobile-blocks/module__mobile-blocks
 include ../modules/page__shop/page__shop
 
 
-
+- var sub = 0;
 
 doctype html
 html(lang=config.lang)
@@ -30,7 +30,10 @@ html(lang=config.lang)
       })
 
     +inject('page__shop')
-      +page__shop()
+      +page__shop({
+        catalog: true,
+        men: true
+      })
 
     +inject('footer')
       +footer({

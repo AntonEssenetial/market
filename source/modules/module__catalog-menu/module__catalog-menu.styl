@@ -1,2 +1,56 @@
 .module__catalog-menu
-  //
+  width 312px
+  margin-right 30px
+  
+  &__container 
+    background: #f7f7f7
+    padding 25px 30px 30px 30px
+    
+  &__str 
+    font-size 18px
+    semi()
+    color $dark
+    border-bottom 1px solid #ececec
+    display: block
+    padding-bottom 20px
+    
+  &__list
+    border-bottom 1px solid #ececec
+    
+  &__list.open &__title 
+    color $pink
+    
+  &__title 
+    padding 20px 0
+    font-size 15px 
+    color $dark
+    semi()
+    display: flex
+    justify-content space-between
+    align-items: center;
+    
+    span 
+      display: none
+      
+  &__list:hover 
+    .icon 
+      color $pink
+      
+  &__list.open .icon 
+    transform rotateZ(180deg)
+    color $pink
+    
+  &__link 
+    font-size 13px
+    hover()
+    padding 5px 0
+    
+  &__ul 
+    padding 0 0 8px 0
+    position: relative 
+    top -10px
+
+  .icon 
+    width 20px 
+    height 15px
+    color $text

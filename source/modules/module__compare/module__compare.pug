@@ -1,0 +1,38 @@
+mixin module__compare(data)
+  - var bemClass = 'module__compare'
+  .module__compare&attributes(attributes)
+    div(class=bemClass + '__top') 
+      h2 Сверка цен по магазинам
+    div(class=bemClass + '__content') 
+      div(class=bemClass + '__row').row
+        div(class=bemClass + '__row-2').row
+          .col
+            div(class=bemClass + '__img')
+              img(src="assets/images/catalog/2.jpg", alt="Массажная свеча")
+          .col.auto__width
+            span(class=bemClass + '__str-3') Массажная свеча
+            p Массажная свеча "DONA" от известного бренда SYSTEM JO Products станет прекрасным подарком для пары - проведите этот вечер незабываемо!
+            ul
+              li - Возбуждающая массажная свеча обеспечит горячий чувственный массаж;
+              li - Легко тает, превращаясь в теплое массажное масло;
+              li - Не обжигает, а лишь разогревает - температура плавления ниже, чем у обычной свечи;
+              li - Съедобная и безопасная при проглатывании формула;
+              li - Приятный вкус и запах;
+              li - Содержит природные афродизиаки;
+              li - Не оставляет жирных следов;
+              li - Увлажняет и питает кожу;
+              li - Не подходит для использования в качестве лубриканта.
+        div(class=bemClass + '__col').static
+          img(src="assets/images/brand/1.png", alt="intimshop")
+          +module__rate()
+          p.module__s-item__rate 127 оценок
+            spna.module__s-item__str-2 1244
+            | отзывы
+          div(class=bemClass + '__bottom').row.between
+            .row.center 
+              span.module__cart__decr -
+              span.module__cart__count 1
+              span.module__cart__incr +
+            span.module__catalog-item__str-2 389 Р
+          .row.end 
+            a(href="").button В корзину

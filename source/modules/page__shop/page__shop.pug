@@ -4,15 +4,18 @@ include ../module__catalog-menu/module__catalog-menu
 
 mixin page__shop(data)
   
-  .page__search
+  .page__search.page__search_reset
     .container
       +module__s-item-3()
 
-      .row 
+      .row.page__row
 
-        +module__catalog-menu()
+        if data.men
+          +module__catalog-menu()
+        else if data.news
+          +module__catalog-menu().module__catalog-menu_news
+        else 
+          +module__catalog-menu().module__catalog-menu_news
 
-        +module__catalog({
-          catalog: true
-        })
+        +module__catalog(data)
     
