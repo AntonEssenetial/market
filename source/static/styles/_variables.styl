@@ -134,7 +134,7 @@ $button-lg-width       = 250px
 $button-lg-height      = 53px
 $button-lg-font-size   = 16px
 $button-lg-font-weight = normal 
-$button-lg-padding     = 0px
+$button-lg-padding     = 0px 20px
 // Button xs
 $button-md-width       = auto
 $button-md-height      = 42px
@@ -190,7 +190,7 @@ $button-hover  =  #f4589a
 
 
 // Input colors - readonly - disabled - succes - error
-$BGreadonly      =  #f9f8f6
+$BGreadonly      =  #f2f2f2
 $BGdisabled      =  #fafafa
 $border-disabled =  #d1d1d1
 $Dcolor          =  #6a6969
@@ -310,21 +310,21 @@ button:disabled
 input[type='text']:read-only
   box-shadow       : none !important
   background-color : $BGreadonly
-  color            : $readonly
-  border           : 1px solid $readonly
+  color            : $dark
+  border           : 1px solid #f2f2f2
   &:focus
     border-color   : $readonly
-    color          : $readonly
+    color          : $dark
 
 // Firefox
 input[readonly]
   box-shadow       : none !important
   background-color : $BGreadonly
-  color            : $readonly
-  border           : 1px solid $readonly
+  color            : $dark
+  border           : 1px solid #f2f2f2
   &:focus
     border-color   : $readonly
-    color          : $readonly
+    color          : $dark
     
 input[type='button']:disabled,
 input[type='checkbox']:disabled,
@@ -677,7 +677,7 @@ button
     border-color $button-border-hover-color
     trs()
 .button_lg
-  width $button-lg-width
+  min-width $button-lg-width
   height $button-lg-height
   line-height $button-lg-height
   font-size $button-lg-font-size

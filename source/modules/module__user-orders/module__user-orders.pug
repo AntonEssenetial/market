@@ -1,0 +1,623 @@
+mixin module__user-orders(data)
+  - var bemClass = 'module__user-orders'
+  .module__user-orders&attributes(attributes)
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__item-wrap')  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 23 мая, сегодня
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row
+            div(class=bemClass + '__img')
+              img(src="assets/images/account/1.jpg", alt="account")
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between.center
+                .col
+                  span(class=bemClass + '__str-2') INTIMISSIMI
+                  span(class=bemClass + '__str-3').desktop Заказ #3135329 оформлен сегодня в 19:28
+                  span(class=bemClass + '__str-3').hidden #3135329 от 20.01.17 19:28
+                .col 
+                  div(class=bemClass + '__status').accepted 
+                    span.hid Заказ принят
+                    span.vis Принят
+              div(class=bemClass + '__col-2').desktop
+                span(class=bemClass + '__str-4') Сумма заказа / Бонусов
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+                div(class=bemClass + '__row-2').row.center 
+                  div(class=bemClass + '__round')
+                    .row 
+                      +icon('hand').white
+                      +icon('hand').white.down
+                  span(class=bemClass + '__str-7') Вы сможете оставить отзыв <br> после Исполнения заказа
+          div(class=bemClass + '__col-2').hidden.module__user-orders__col-2_mob
+            .row.between
+              .col
+                span(class=bemClass + '__str-4') Сумма / Бонусов
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+              div(class=bemClass + '__row-2').row.center 
+                div(class=bemClass + '__round')
+                  .row 
+                    +icon('hand').white
+                    +icon('hand').white.down
+                span(class=bemClass + '__str-7') Оставить отзыв <br> после Исполнения
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+
+
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__item-wrap')  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 22 мая, вчера
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row
+            div(class=bemClass + '__img')
+              img(src="assets/images/account/2.jpg", alt="account")
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between.center
+                .col
+                  span(class=bemClass + '__str-2') Adult Toys
+                  span(class=bemClass + '__str-3').desktop Заказ #3135329 оформлен сегодня в 19:28
+                  span(class=bemClass + '__str-3').hidden #3135329 от 20.01.17 19:28
+                .col 
+                  div(class=bemClass + '__status').applied Исполнен
+              div(class=bemClass + '__col-2').desktop
+                span(class=bemClass + '__str-4') Сумма заказа / Кешбек
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+                div(class=bemClass + '__row-2').row.center 
+                  .row 
+                    +icon('hand').like
+                    +icon('hand').dislike
+                  a(href='' class=bemClass + '__str-7') Оставьте отзыв <br>о работе магазина по заказу
+          div(class=bemClass + '__col-2').hidden.module__user-orders__col-2_mob
+            .row.between
+              .col
+                span(class=bemClass + '__str-4') Сумма / Бонусов
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+              div(class=bemClass + '__row-2').row.center 
+                .row 
+                  +icon('hand').like
+                  +icon('hand').dislike
+                a(href='' class=bemClass + '__str-7') Оставьте отзыв <br>о магазине
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+      div(class=bemClass + '__item-wrap')  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 22 мая, вчера
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row
+            div(class=bemClass + '__img')
+              img(src="assets/images/account/3.jpg", alt="account")
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between.center
+                .col
+                  span(class=bemClass + '__str-2') Твой ИНТИМ
+                  span(class=bemClass + '__str-3').desktop Заказ #3135329 оформлен сегодня в 19:28
+                  span(class=bemClass + '__str-3').hidden #3135329 от 20.01.17 19:28
+                .col 
+                  div(class=bemClass + '__status').applied Исполнен
+              div(class=bemClass + '__col-2').desktop
+                span(class=bemClass + '__str-4') Сумма заказа / Кешбек
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+                div(class=bemClass + '__row-2').row.center 
+                  .row.center 
+                    div(class=bemClass + '__green') 
+                      +icon('hand')
+                    span(class=bemClass + '__str-11') Понравилось
+                    div(class=bemClass + '__exclame') 
+                      +icon('exclame')
+                      div(class=bemClass + '__tip')
+                        span(class=bemClass + '__str-12') Ответ магазина на ваш отзыв
+                        span(class=bemClass + '__str-3') Будем рады Вас видеть снова и дарим Вам скидку на следующую покупку в размере 5%
+          div(class=bemClass + '__col-2').hidden.module__user-orders__col-2_mob
+            .row.between
+              .col
+                span(class=bemClass + '__str-4') Сумма / Бонусов
+                .row.center 
+                  span(class=bemClass + '__str-5') 1000 Р  
+                  span(class=bemClass + '__str-6') (10)
+              div(class=bemClass + '__row-2').row.center 
+                .row.center 
+                  div(class=bemClass + '__green') 
+                    +icon('hand')
+                  span(class=bemClass + '__str-11') Понравилось
+                  div(class=bemClass + '__exclame') 
+                    +icon('exclame')
+                    div(class=bemClass + '__tip')
+                      span(class=bemClass + '__str-12') Ответ магазина на ваш отзыв
+                      span(class=bemClass + '__str-3') Будем рады Вас видеть снова и дарим Вам скидку на следующую покупку в размере 5%
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+
+
+    div(class=bemClass + '__loader').row.center-c
+      +icon('loader')
+
+
+mixin module__user-orders-2(data)
+  - var bemClass = 'module__user-orders'
+  .module__user-orders&attributes(attributes)
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__item-wrap')  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 23 мая, сегодня
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row.module__user-orders__cont_reset
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between
+                div(class=bemClass + '__col-3') 
+                  .row
+                    span(class=bemClass + '__str-18') Заказ #3135329
+                    span(class=bemClass + '__whait') ожидает обработки
+                  .col 
+                    div(class=bemClass + '__row-4').row
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('icon2')
+                        .col
+                          span(class=bemClass + '__str-14') Оплачен картой
+                          span(class=bemClass + '__str-15') **** 4259
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('card')
+                        .col
+                          span(class=bemClass + '__str-14') Доставка
+                          span(class=bemClass + '__str-15') Курьером
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('rub')
+                        .col
+                          span(class=bemClass + '__str-14') Сумма заказа
+                          span(class=bemClass + '__str-20') 1000 Р
+                  .col 
+                    .row 
+                      img(src="assets/images/user/1.jpg", alt="user" class=bemClass + '__img-2') 
+                      .col 
+                        span(class=bemClass + '__str-16') Иванов Иван Иванович
+                        span(class=bemClass + '__str-17') Москва, Пушкинская, дом 45, стр 1, кв 445 
+                        span(class=bemClass + '__str-17') +7 916 123 45 67
+                .col.desktop
+                  div(class=bemClass + '__status')
+                    span Принят
+                  div(class=bemClass + '__status')
+                    span Отменен
+                  div(class=bemClass + '__status')
+                    span Доставлен
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+          div(class=bemClass + '__stat-mob').row.hidden
+            div(class=bemClass + '__status')
+              span Принят
+            div(class=bemClass + '__status')
+              span Отменен
+            div(class=bemClass + '__status')
+              span Доставлен
+
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__item-wrap')  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 23 мая, сегодня
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row.module__user-orders__cont_reset
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between
+                div(class=bemClass + '__col-3') 
+                  .row
+                    span(class=bemClass + '__str-18') Заказ #3135329
+                    span(class=bemClass + '__whait').whiat_accepetd принят
+                  .col 
+                    div(class=bemClass + '__row-4').row
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('icon2')
+                        .col
+                          span(class=bemClass + '__str-14') Оплачен картой
+                          span(class=bemClass + '__str-15') **** 4259
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('card')
+                        .col
+                          span(class=bemClass + '__str-14') Доставка
+                          span(class=bemClass + '__str-15') Курьером
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('rub')
+                        .col
+                          span(class=bemClass + '__str-14') Сумма заказа
+                          span(class=bemClass + '__str-20') 1000 Р
+                  .col 
+                    .row 
+                      img(src="assets/images/user/1.jpg", alt="user" class=bemClass + '__img-2') 
+                      .col 
+                        span(class=bemClass + '__str-16') Иванов Иван Иванович
+                        span(class=bemClass + '__str-17') Москва, Пушкинская, дом 45, стр 1, кв 445 
+                        span(class=bemClass + '__str-17') +7 916 123 45 67
+                .col.desktop
+                  div(class=bemClass + '__status').accepted
+                    span Принят
+                  div(class=bemClass + '__status')
+                    span Отменен
+                  div(class=bemClass + '__status')
+                    span Доставлен
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+          div(class=bemClass + '__stat-mob').row.hidden
+            div(class=bemClass + '__status').accepted
+              span Принят
+            div(class=bemClass + '__status')
+              span Отменен
+            div(class=bemClass + '__status')
+              span Доставлен
+
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__item-wrap').module__user-orders__item_canceled  
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 23 мая, сегодня
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row.module__user-orders__cont_reset
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between
+                div(class=bemClass + '__col-3') 
+                  .row
+                    span(class=bemClass + '__str-18') Заказ #3135329
+                    span(class=bemClass + '__whait').whiat_canceled отменен
+                  .col 
+                    div(class=bemClass + '__row-4').row
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('icon2')
+                        .col
+                          span(class=bemClass + '__str-14') Оплачен картой
+                          span(class=bemClass + '__str-15') **** 4259
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('card')
+                        .col
+                          span(class=bemClass + '__str-14') Доставка
+                          span(class=bemClass + '__str-15') Курьером
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('rub')
+                        .col
+                          span(class=bemClass + '__str-14') Сумма заказа
+                          span(class=bemClass + '__str-20') 1000 Р
+                  .col 
+                    .row 
+                      img(src="assets/images/user/1.jpg", alt="user" class=bemClass + '__img-2') 
+                      .col 
+                        span(class=bemClass + '__str-16') Иванов Иван Иванович
+                        span(class=bemClass + '__str-17') Москва, Пушкинская, дом 45, стр 1, кв 445 
+                        span(class=bemClass + '__str-17') +7 916 123 45 67
+                .col.desktop
+                  div(class=bemClass + '__status')
+                    span Принят
+                  div(class=bemClass + '__status').canceled
+                    span Отменен
+                  div(class=bemClass + '__status')
+                    span Доставлен
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+          div(class=bemClass + '__stat-mob').row.hidden
+            div(class=bemClass + '__status')
+              span Принят
+            div(class=bemClass + '__status').canceled
+              span Отменен
+            div(class=bemClass + '__status')
+              span Доставлен
+      div(class=bemClass + '__item-wrap')
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') 23 мая, сегодня
+        div(class=bemClass + '__cont-wrap') 
+          div(class=bemClass + '__cont').row.module__user-orders__cont_reset
+            div(class=bemClass + '__col').auto__width
+              div(class=bemClass + '__row').row.between
+                div(class=bemClass + '__col-3') 
+                  .row
+                    span(class=bemClass + '__str-18') Заказ #3135329
+                    span(class=bemClass + '__whait').whiat_accepted принят
+                  .col 
+                    div(class=bemClass + '__row-4').row
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('icon2')
+                        .col
+                          span(class=bemClass + '__str-14') Оплачен картой
+                          span(class=bemClass + '__str-15') **** 4259
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('card')
+                        .col
+                          span(class=bemClass + '__str-14') Доставка
+                          span(class=bemClass + '__str-15') Курьером
+                      div(class=bemClass + '__ord-item').row 
+                        div(class=bemClass + '__icon')
+                          +icon('rub')
+                        .col
+                          span(class=bemClass + '__str-14') Сумма заказа
+                          span(class=bemClass + '__str-20') 1000 Р
+                  .col 
+                    .row 
+                      img(src="assets/images/user/1.jpg", alt="user" class=bemClass + '__img-2') 
+                      .col 
+                        span(class=bemClass + '__str-16') Иванов Иван Иванович
+                        span(class=bemClass + '__str-17') Москва, Пушкинская, дом 45, стр 1, кв 445 
+                        span(class=bemClass + '__str-17') +7 916 123 45 67
+                .col.desktop
+                  div(class=bemClass + '__status')
+                    span Принят
+                  div(class=bemClass + '__status')
+                    span Отменен
+                  div(class=bemClass + '__status').applied 
+                    span Доставлен
+          div(class=bemClass + '__bottom').jsDetails
+            .row.between
+              span(class=bemClass + '__str') Детали заказа
+              +icon('down')
+          div(class=bemClass + '__details')
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/4.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row').row.center.between
+              .row.center
+                img(src="assets/images/catalog/5.jpg", alt="durex")
+                span(class=bemClass + '__str-4') Презервативы Durex Light 3шт
+              .col
+                span(class=bemClass + '__str-4').desktop 1 шт
+                span(class=bemClass + '__str-4').hidden 1 шт
+                span(class=bemClass + '__str-8') 280 Р
+            div(class=bemClass + '__d-row-2').row
+              +icon('icon2')
+              .col.auto__width
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Стоимость доставки
+                  span(class=bemClass + '__str-3') бесплатно
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Сумма заказа
+                  span(class=bemClass + '__str-8') 560 Р
+                div(class=bemClass + '__d-row-3').row.between
+                  span(class=bemClass + '__str-4') Оплачено бонусами
+                  .row.center
+                    span(class=bemClass + '__str-8') 160
+                    +icon('sh')
+            div(class=bemClass + '__d-row-4').row.between
+              span(class=bemClass + '__str-10') Итого:
+              span(class=bemClass + '__str-9') 840 Р
+          div(class=bemClass + '__stat-mob').row.hidden
+            div(class=bemClass + '__status')
+              span Принят
+            div(class=bemClass + '__status')
+              span Отменен
+            div(class=bemClass + '__status').applied 
+              span Доставлен
+
+    div(class=bemClass + '__loader').row.center-c
+      +icon('loader')

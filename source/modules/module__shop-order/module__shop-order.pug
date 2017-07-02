@@ -1,0 +1,7 @@
+include ../module__user-orders/module__user-orders
+
+mixin module__shop-order(data)
+  - var bemClass = 'module__shop-order'
+  .module__shop-order&attributes(attributes)
+    
+    +module__user-orders-2().module__user-orders_shop

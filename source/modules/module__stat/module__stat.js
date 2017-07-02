@@ -12,7 +12,7 @@
             slidertoscroll: 2,
             responsive: [
                 {
-                    breakpoint: 1920,
+                    breakpoint: 6000,
                     settings: "unslick"
                 },
                 {

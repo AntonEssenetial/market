@@ -1,5 +1,45 @@
 include ../module__rate/module__rate
 
+mixin module__comment-2(data)
+  - var bemClass = 'module__comment'
+  .module__comment&attributes(attributes)
+    div(class=bemClass + '__item')
+      .row
+        div(class=bemClass + '__img')
+          img(src="assets/images/user/1.jpg", alt="JohnDoe")
+        .col 
+          div(class=bemClass + '__row').row.center.wrap
+            span(class=bemClass + '__str') JohnDoe
+            .row(class=bemClass + '__i-row') 
+              +icon('hand').dislike
+              span(class=bemClass + '__str-2') 16 мая, 20:46
+          p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+          a(hrfe='' class=bemClass + '__link') Ответить
+      div(class=bemClass + '__item')
+        .row
+          div(class=bemClass + '__img').square
+            img(src="assets/images/account/6.jpg", alt="JohnDoe")
+          .col 
+            div(class=bemClass + '__row').row.center.wrap
+              span(class=bemClass + '__str') Ответ магазина
+              .row(class=bemClass + '__i-row') 
+                +icon('hand').dislike
+                span(class=bemClass + '__str-2') 16 мая, 20:46
+            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+            a(hrfe='' class=bemClass + '__link') Редактировать
+    -for (var x = 0 ; x < 6; x ++)
+      div(class=bemClass + '__item').row
+        div(class=bemClass + '__img')
+          img(src="assets/images/user/1.jpg", alt="JohnDoe")
+        .col 
+          div(class=bemClass + '__row').row.center.wrap
+            span(class=bemClass + '__str') JohnDoe
+            .row(class=bemClass + '__i-row') 
+              +icon('hand').like
+              span(class=bemClass + '__str-2') 16 мая, 20:46
+          p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+          a(hrfe='' class=bemClass + '__link') Ответить
+
 mixin module__comment(data)
   - var bemClass = 'module__comment'
   .module__comment&attributes(attributes)

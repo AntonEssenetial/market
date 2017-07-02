@@ -13,3 +13,33 @@
     
   .button:last-child 
     margin-left 15px
+    
+  &__link 
+    font-size 13px
+    
+  &__userpick 
+    width 50px 
+    height @width
+    margin-left 20px
+    
+    img 
+      display: block
+      border-radius(50%)
+      width 50px 
+      height @width
+      
+  &__userpick_shop img
+    border-radius 0px
+  
+  &__str 
+    display: block
+    color $dark
+    
+  &__link 
+    decor()
+    position: relative 
+    top -2px
+    
+.module__user
+  margin-left auto
+  text-align: right

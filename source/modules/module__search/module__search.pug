@@ -1,50 +1,51 @@
 mixin module__search(data)
   - var bemClass = 'module__search'
   .module__search&attributes(attributes)
-    h2 Магазины и товары
-    div(class=bemClass + '__col') 
-      span(class=bemClass + '__str') Поиск товара
-      label().form__label
-        input(type="text", placeholder='Артикул или название товара').form__input
-      span(class=bemClass + '__str')  Мин. сумма заказа
-      label().form__label
-        .row.center
-          input(type="text", placeholder='от').form__input
-          span(class=bemClass + '__sep') -
-          input(type="text", placeholder='до').form__input
-      span(class=bemClass + '__str') Мин. сумма заказа
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Оплата картой онлайн
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Оплата картой курьеру
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Новые магазины
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | С бесплатной доставкой
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | С акциями
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Экспресс доставка
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Круглосуточная доставка
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Выбор блогиров
+    .sticky
+      h2 Магазины и товары
+      div(class=bemClass + '__col') 
+        span(class=bemClass + '__str') Поиск товара
+        label().form__label
+          input(type="text", placeholder='Артикул или название товара').form__input
+        span(class=bemClass + '__str')  Мин. сумма заказа
+        label().form__label
+          .row.center
+            input(type="text", placeholder='от').form__input
+            span(class=bemClass + '__sep') -
+            input(type="text", placeholder='до').form__input
+        span(class=bemClass + '__str') Мин. сумма заказа
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Оплата картой онлайн
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Оплата картой курьеру
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Новые магазины
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | С бесплатной доставкой
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | С акциями
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Экспресс доставка
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Круглосуточная доставка
+        label().label__checkbox
+          input(type="checkbox").input__checkbox
+          i
+          | Выбор блогиров
 
 mixin module__search2(data)
   - var bemClass = 'module__search'

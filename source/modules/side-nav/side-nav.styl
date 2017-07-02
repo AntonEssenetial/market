@@ -11,6 +11,7 @@
     background: #fafafa;
     padding 0 35px
     border-right 1px solid $dash-border
+    position: relative
     &:hover 
       background: $pink
       color white
@@ -18,3 +19,19 @@
   &__item_active &__link 
     background: $pink 
     color white
+    
+  &__msg 
+    background: $green
+    color white
+    font-size 13px
+    width 20px 
+    height @width
+    border-radius(50%)
+    text-align: center
+    line-height @width
+    position: absolute
+    top 15px
+    right 0px
+    
+  &__item
+    position: relative

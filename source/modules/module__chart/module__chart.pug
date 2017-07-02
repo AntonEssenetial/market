@@ -1,0 +1,48 @@
+mixin module__chart(data)
+  - var bemClass = 'module__chart'
+  .module__chart&attributes(attributes)
+    .row 
+      .chart__coll.chart_yellow
+        span(class=bemClass + '__bar' style='width: 30%').bar_yellow
+        span(class=bemClass + '__str') 100 000
+      .chart__coll.chart_green
+        span(class=bemClass + '__bar').bar_green
+        span(class=bemClass + '__str') 300 000
+      .chart__coll.chart_pink
+        span(class=bemClass + '__bar').bar_pink
+        span(class=bemClass + '__str') 500 000
+    .row 
+      .col__33
+        span(class=bemClass + '__str-2') 1 уровень
+        span(class=bemClass + '__str-3') 1 %
+      .col__33
+        span(class=bemClass + '__str-2') 2 уровень
+        span(class=bemClass + '__str-3') 2 %
+      .col__33
+        span(class=bemClass + '__str-2') 3 уровень
+        span(class=bemClass + '__str-3') 3 %
+
+
+mixin module__chart2(data)
+  - var bemClass = 'module__chart'
+  .module__chart&attributes(attributes)
+    .row 
+      .chart__coll.chart_yellow
+        span(class=bemClass + '__bar' style='width: 100%').bar_yellow
+        span(class=bemClass + '__str') 100 000
+      .chart__coll.chart_green
+        span(class=bemClass + '__bar' style='width: 100%').bar_green
+        span(class=bemClass + '__str') 300 000
+      .chart__coll.chart_pink
+        span(class=bemClass + '__bar' style='width: 30%').bar_pink
+        span(class=bemClass + '__str') 500 000
+    .row 
+      .col__33
+        span(class=bemClass + '__str-2') 1 уровень
+        span(class=bemClass + '__str-3') 1 %
+      .col__33
+        span(class=bemClass + '__str-2') 2 уровень
+        span(class=bemClass + '__str-3') 2 %
+      .col__33
+        span(class=bemClass + '__str-2') 3 уровень
+        span(class=bemClass + '__str-3') 3 %

@@ -1,0 +1,59 @@
+include ../module__shop-chart/module__shop-chart
+include ../module__comment/module__comment
+include ../module__rate/module__rate
+
+mixin module__shop-statistic(data)
+  - var bemClass = 'module__shop-statistic'
+  .module__shop-statistic&attributes(attributes)
+    div(class=bemClass + '__item').jsParent
+      div(class=bemClass + '__top')
+        div(class=bemClass + '__row').row.between.center.module__shop-statistic__row_reset
+          div(class=bemClass + '__str') Прибыль магазина
+          div(class=bemClass + '__tabs').row 
+            span(class=bemClass + '__tab').jsTab.jsActive За год
+            span(class=bemClass + '__tab').jsTab За месяц
+            span(class=bemClass + '__tab').jsTab За неделю
+      div(class=bemClass + '__chart')
+        .jsCont.jsActive
+          +module__shop-chart()
+        .jsCont
+          +module__shop-chart-2()
+        .jsCont
+          +module__shop-chart-3()
+      div(class=bemClass + '__profit').row
+        div(class=bemClass + '__item-p')
+          span(class=bemClass + '__str-2') Прибыль за все время
+          span(class=bemClass + '__str-3') 1 020 124 Р
+        div(class=bemClass + '__item-p')
+          span(class=bemClass + '__str-2') Прибыль за месяц
+          span(class=bemClass + '__str-3') 120 124 Р
+        div(class=bemClass + '__item-p')
+          span(class=bemClass + '__str-2') Прибыль за неделю
+          span(class=bemClass + '__str-3') 20 998 Р
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__top')
+        div(class=bemClass + '__row')
+          div(class=bemClass + '__str') Отзывы
+      div(class=bemClass + '__cont')
+        div(class=bemClass + '__c-row').row.between
+          div(class=bemClass + '__c-item').row.center
+            +icon('hand').like 
+            .col
+              span(class=bemClass + '__str-2') Положительные
+              span(class=bemClass + '__str-3') 1700
+          div(class=bemClass + '__c-item').row.center
+            +icon('hand').dislike
+            .col
+              span(class=bemClass + '__str-2') Отрицательные
+              span(class=bemClass + '__str-3') 17
+          div(class=bemClass + '__c-item').row.center
+            .col
+              span(class=bemClass + '__str-2').desktop Оценка магазина
+              span(class=bemClass + '__str-2').hidden Рейтинг
+              +module__rate-2()
+              span(class=bemClass + '__str-4') 127 оценок
+
+        +module__comment-2()
+        
+        div(class=bemClass + '__loader').row.center-c
+          +icon('loader')

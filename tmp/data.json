@@ -358,6 +358,31 @@
 				"url": "review",
 				"name": "Отзывы"
 			}
+		],
+		"account": [
+			{
+				"url": "cabinet01",
+				"name": "Мои заказы"
+			},
+			{
+				"url": "cabinet02",
+				"name": "Настройки профиля"
+			},
+			{
+				"url": "cabinet03",
+				"name": "Бонусы и реферальная система"
+			}
+		],
+		"shop": [
+			{
+				"url": "cabinet04",
+				"name": "Статистика магазина"
+			},
+			{
+				"url": "cabinet05",
+				"name": "Заказы",
+				"msg": true
+			}
 		]
 	},
 	"static-menu": {

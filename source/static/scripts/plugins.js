@@ -83,6 +83,11 @@
 //= require nicescroll/jquery.nicescroll.min.js
 
 
+// Nicescroll
+// ---------------------------------------------------------------------------
+//= require sticky/jquery.sticky.js
+
+
 // From styler
 // ---------------------------------------------------------------------------
 //= require formstyler/jquery.formstyler.min.js

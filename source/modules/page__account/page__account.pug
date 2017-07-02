@@ -1,2 +1,65 @@
+include ../module__user-account/module__user-account
+include ../heading/heading
+include ../module__user-orders/module__user-orders
+include ../module__user-settings/module__user-settings
+include ../module__user-referral/module__user-referral
+include ../module__shop-account/module__shop-account
+
 mixin page__account(data)
+  
+  .page__account
+    .container
+      .row 
+
+        if data.userAccount
+          +module__user-account()
+        else 
+
+        if data.userAccount 
+          .module__user-content.auto__width
+            +heading({
+              title: 'Мои заказы'
+            })
+            +module__user-orders()
+        else
+
+
+mixin page__account-2(data)
+  
+  .page__account
+    .container
+      .row 
+
+        if data.userAccount
+          +module__user-account()
+        else 
+          +module__shop-account()
+
+        if data.userAccount 
+          .module__user-content.auto__width
+            +heading({
+              title: 'Настройки профиля'
+            })
+            +module__user-settings()
+        else
+
+
+mixin page__account-3(data)
+  
+  .page__account
+    .container
+      .row 
+
+        if data.userAccount
+          +module__user-account()
+        else 
+
+        if data.userAccount 
+          .module__user-content.auto__width
+            +heading({
+              title: 'Бонусы и реферальная система'
+            })
+            +module__user-referral()
+        else
+
     

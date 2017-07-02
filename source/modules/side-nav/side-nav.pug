@@ -8,3 +8,5 @@ mixin side-nav(data)
         else
           li.side-nav__item
             a.side-nav__link(href=item.url + '.html')= item.name
+            if item.msg == true 
+              span.side-nav__msg 2

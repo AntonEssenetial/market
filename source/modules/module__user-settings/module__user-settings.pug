@@ -1,0 +1,65 @@
+mixin module__user-settings(data)
+  - var bemClass = 'module__user-settings'
+  form(action="").module__user-settings&attributes(attributes)
+    div(class=bemClass + '__row').row 
+      div(class=bemClass + '__item').col__50.col_margin-30
+        div(class=bemClass + '__top')
+          span(class=bemClass + '__str') Фото профиля
+        div(class=bemClass + '__file')
+          div(class=bemClass + '__file-wrap') 
+            img(src="assets/images/account/empty.jpg", alt="")
+            div(class=bemClass + '__file-col') 
+              input(type="file").form__file
+              button.button.button_md выберите
+            a(href="" class=bemClass + '__link') удалить
+      div(class=bemClass + '__item').col__50
+        div(class=bemClass + '__top')       
+          span(class=bemClass + '__str') Адрес доставки
+        div(class=bemClass + '__form') 
+          label().form__label
+            input(type="text", placeholder='Имя').form__input
+          label().form__label
+            input(type="text", placeholder='Номер телефона').form__input
+          label().form__label
+            input(type="text", placeholder='Город').form__input
+          label().form__label
+            input(type="text", placeholder='Улица').form__input
+          label().form__label
+            .row 
+              input(type="text", placeholder='Дом').form__input.input__adr.input__adr_left
+              input(type="text", placeholder='Корп/стр').form__input.input__adr.input__adr_center
+              input(type="text", placeholder='Кв/офис').form__input.input__adr.input__adr_right
+          label().form__label
+            textarea(placeholder='Комментарий').form__area
+    div(class=bemClass + '__col')
+      div(class=bemClass + '__top') 
+        span(class=bemClass + '__str') Контактные данные
+      div(class=bemClass + '__row-2').row 
+        div(class=bemClass + '__form').col__50
+          label().form__label
+            input(type="text", placeholder='Имя').form__input
+          label().form__label
+            input(readonly type="text", value='johndoe@domainname.com').form__input
+          .row.center
+            label().form__label.form__label_220
+              input(type='text' placeholder='Код Google Authentificator').form__input
+            a(href="").f__link Изменить почту
+          label().form__label
+            input(readonly type="text", value='+79161234567').form__input
+          .row.center
+            label().form__label.form__label_180
+              input(type='text' placeholder='Новый пароль').form__input
+            span.form__span от 8 до 32 символов буквы и цифры
+          .row.center
+            label().form__label.form__label_180.form__label_180_reset
+              input(type='text' placeholder='Пароль еще раз').form__input
+            +icon('accept')
+        .col__50.module__user-settings__form_grey
+          div(class=bemClass + '__form')
+            p Для изменения почты Вам потребуется установить приложение Google Authenticator для <a href=''>Android</a> или <a href=''>iOS</a>, отсканировать QR код и ввести полученные цифры в поле «Код GA»
+            .row 
+              img(src="assets/images/account/qr.jpg", alt="qr" class=bemClass + '__qr')
+              .col 
+                span(class=bemClass + '__str-2') Secret Key
+                span(class=bemClass + '__str-3') UZGHRY$GNDLIPWQR
+

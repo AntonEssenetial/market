@@ -8,7 +8,9 @@ mixin footer(data)
   footer.footer&attributes(attributes)
     .container
       div(class=bemClass + '__row').row 
-        +module__logo()
+        +module__logo({
+          plus: true
+        })
         div(class=bemClass + '__loc')
           .row.center(class=bemClass + '__b-row') 
             .row

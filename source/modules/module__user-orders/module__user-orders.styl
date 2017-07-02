@@ -1,0 +1,414 @@
+.module__user-orders
+  
+  &__str
+    font-size 15px 
+    color $dark
+    text-transform: uppercase
+    
+  &__top 
+    padding 30px
+    background: white
+    border-bottom 1px solid $dash-border
+    
+  &__item 
+    background white
+    box-shadow 0 0 2px rgba(0,0,0, 0.0.5)
+    margin-bottom 30px
+    
+  &__cont 
+    padding 30px
+    
+  &__cont-wrap:hover 
+    box-shadow 0 0 20px rgba(0,0,0, 0.1)
+    trs()
+    
+  &__img 
+    width 160px 
+    height @width
+    margin-right 30px
+    static()
+    
+    img 
+      width 100%
+      height auto
+      display: block
+      
+  &__str-2 
+    color $pink
+    font-size 24px
+    semi()
+    display: block
+    position: relative 
+    top -4px
+    
+  &__str-3
+    color $dark
+    font-size 13px
+    
+  &__row 
+    margin-bottom 15px
+    
+  &__str-4 
+    font-size 13px
+    
+  &__str-5 
+    font-size 18px
+    color $dark
+    
+  &__str-6 
+    font-size 14px
+    margin-left 5px
+    
+  &__round
+    background: #aeadad
+    border-radius(50%)
+    width 30px 
+    height @width
+    margin-right 10px
+    
+  .white 
+    width 15px 
+    height @width
+    margin-top 7px
+      
+  .down 
+    transform rotateZ(180deg)
+    
+  &__str-7 
+    font-size 13px 
+    line-height 16px
+    
+  &__row-2 
+    margin-top 12px
+
+  .icon_down 
+    width 18px
+    height 18px
+    cursor pointer
+    &:hover 
+      color $pink
+    
+  &__bottom 
+    padding 30px
+    background: $soft
+    cursor pointer
+    &:hover .icon 
+      color $pink
+    
+  &__status 
+    font-size 13px
+    color $dark
+    height 35px 
+    line-height @height
+    border-radius(20px)
+    padding 0 25px
+    display flex
+    border 1px solid $border
+    .vis 
+      display: none
+    span 
+      font-size 13px
+      color $dark
+      margin-left 3px
+    +before()
+      content ''
+      width 7px 
+      height @width 
+      border-radius(50%)
+      background: $border
+      display: block
+      position: relative 
+      top 14px
+      left -10px
+    
+  .accepted 
+    background: #ffc215
+    border-color #ffc215
+    color white
+    +before()
+      background: white
+    span 
+      color white
+    
+  .applied 
+    background: #06a93c
+    border-color #06a93c
+    color white
+    +before()
+      background: white
+    span 
+      color white
+      
+  .canceled
+    background: #d0d0d0
+    border-color #d0d0d0
+    color white
+    +before()
+      background: white
+    span 
+      color white
+    
+  &__details 
+    background: $soft
+    padding 0 30px 30px 30px
+    display: none
+    
+  &__details.active 
+    display: block
+  
+  &__bottom.active 
+    .icon 
+      color $pink
+      transform rotateZ(180deg)
+    
+  &__d-row-4
+    border-top 1px solid $dash-border
+    padding 20px 0 0 0
+    
+  &__str-10 
+    text-transform: uppercase
+    
+  &__str-9
+    color $dark
+    semi()
+    font-size 18px
+    
+  &__d-row-2 
+    border-top 1px solid $dash-border
+    padding 5px 0
+    
+  &__d-row 
+    border-top 1px solid $dash-border
+    padding 10px 0
+    img 
+      display block
+      width 45px 
+      height @width
+      margin-right 15px
+      
+  &__str-8 
+    color $dark
+    
+  .icon_icon2 
+    width 37px 
+    height @width
+    color #d7d7d7
+    margin 10px 24px 10px 0
+    static()
+    
+  .icon_sh 
+    width 17px 
+    height @width
+    color $pink
+    margin-left 5px
+    
+  &__d-row-3 
+    margin 10px 0
+    
+  .like
+    width 18px 
+    height @width 
+    color #21bf7a
+    
+  .dislike 
+    width 18px 
+    height @width
+    color #e45252
+    transform rotateZ(180deg)
+    margin 0 15px 0 8px
+    
+  &__green 
+    background: #06a93c
+    width 30px 
+    height @width 
+    border-radius(50%)
+    display: flex
+    static()
+  
+    .icon 
+      color white
+      width 16px 
+      height @width
+      margin auto
+      
+  &__str-11 
+    color #06a93c
+    font-size 13px
+    margin 0 10px
+    
+  .icon_exclame 
+    color #06a93c
+    width 16px 
+    height @width
+    
+  &__tip 
+    position absolute
+    background: white
+    box-shadow 0 0 20px rgba(0,0,0, 0.2)
+    width 320px
+    padding 15px 20px
+    left -355px
+    top -8px
+    margin-top 20px 
+    opacity: 0 
+    visibility hidden
+    trs()
+    +after()
+      triangle(20px, 10px, top, white)
+      right 20px
+      top -10px
+      position: absolute
+    
+  &__str-12 
+    margin-bottom 10px
+    
+  &__exclame 
+    position: relative
+    height 16px
+  
+  &__exclame:hover &__tip 
+    margin-top 0px 
+    opacity: 1 
+    visibility visible 
+    trs()
+    
+  &__ord-item 
+    padding-right 30px
+    
+  &__icon
+    width 30px 
+    height @width
+    border-radius(50%)
+    background: #d0d0d0
+    display flex
+    position: relative 
+    top 2px
+    static()
+    margin-right 15px
+    
+    .icon 
+      width 18px 
+      height @width
+      margin auto
+      color white
+      static()
+      
+  &__str-18
+    font-size 24px 
+    semi()
+    color $dark
+    
+  &__whait
+    color $dark
+    margin-left 5px
+    
+  &__str-15 
+    font-size 15px 
+    color $dark
+    display: block
+    
+  &__str-20 
+    semi()
+    font-size 16px
+    color $dark
+    
+  &__str-14 
+    margin 0 0 5px 0
+    display: block
+    
+  .module__user-orders__img-2
+    width 30px 
+    height @width
+    margin-right 10px
+    position: relative 
+    top 7px
+    
+  &__str-16 
+    font-size 13px 
+    
+  &__str-17
+    font-size 16px 
+    color $dark
+    display: block
+    margin 2px 0
+    
+  &__row-4 
+    margin 15px 0
+    
+  &__cont_reset 
+    padding-top 25px
+    padding-bottom 10px
+   
+  .whiat_accepetd
+    color #daa100 
+  
+  .whiat_canceled
+    color #aeadad
+    text-decoration: line-through;
+    
+  .whiat_accepted 
+    color $green
+    
+    
+.module__user-orders_shop
+  
+  .module__user-orders__status
+    margin-bottom 10px
+    
+.module__user-orders__item_canceled
+  .module__user-orders__str-18
+    text-decoration: line-through
+  .module__user-orders__str-18
+  .module__user-orders__str-14
+  .module__user-orders__str-15
+  .module__user-orders__str-16
+  .module__user-orders__str-17
+  .module__user-orders__str-20
+  .module__user-orders__str
+    color #aeadad
+    
+.form__input_shop
+  background-color transparent
+  margin 0px
+  width 252px
+  margin-right 30px
+  position: relative
+  top 15px
+  
+.jsShowSearch
+  width 50px
+  height 47px
+  right 20px
+  position: absolute
+  z-index: 1
+  top 7px
+  cursor pointer
+  display flex
+  background: #F2F2F1
+  
+  .icon 
+    width 20px 
+    height @width
+    margin auto
+    
+.m-show
+  width calc(100% - 20px)
+  position absolute
+  left 20px
+  
+.m-show.active 
+  .icon 
+    color $pink
+  input
+    display: block !important
+
+.form__input-shop-m
+  background: #F2F2F1
+  border none
+  position: absolute
+  display: none
+  left 0px
+  width calc(100% - 50px)
+    
+.module__main-review__slide   
+  height 100% !important

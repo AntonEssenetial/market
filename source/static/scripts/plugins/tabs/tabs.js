@@ -7,7 +7,7 @@ function functionTabs(tab, tabActive, tabContent, parentDiv){
 
     jsTab.click(function() {
         $(this).closest(jsParent).find(jsTab).removeClass(jsTabActive).eq($(this).index()).addClass(jsTabActive);
-        $(this).closest(jsParent).find(jsContent).removeClass('jsActive animated fadeInRight').eq($(this).index()).addClass('jsActive animated fadeInRight');
+        $(this).closest(jsParent).find(jsContent).removeClass('jsActive animated fadeIn').eq($(this).index()).addClass('jsActive animated fadeIn');
     }).eq(0);
 
 }

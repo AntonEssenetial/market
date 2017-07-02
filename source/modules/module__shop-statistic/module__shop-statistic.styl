@@ -1,0 +1,101 @@
+.module__shop-statistic
+  
+  &__cont 
+    background: white
+    
+  &__row 
+    background: white
+    padding 30px 
+    border-bottom 1px solid $dash-border
+  
+    &_reset 
+      padding 17px 30px
+    
+  &__str
+    font-size 15px 
+    text-transform: uppercase
+    semi()
+    
+  &__loader 
+    padding 30px 0
+    
+  &__chart 
+    background: white
+    
+  &__tab 
+    height 45px 
+    line-height @height
+    width 96px
+    text-align: center
+    border 1px solid $border
+    &:nth-child(1)
+      border-radius(3px 0 0 3px)
+    &:nth-child(3)
+      border-radius(0px 3px 3px 0px)
+    &:nth-child(2)
+      border-left none
+      border-right none
+    
+  .jsActive 
+    background: $pink
+    color white
+    border-color $pink
+    
+  &__str-2 
+    font-size 13px
+    
+  &__str-3
+    font-size 24px
+    color $dark
+    display: block
+    semi()
+    
+  &__profit 
+    background: $soft
+    padding 40px 30px
+    
+  &__item 
+    margin-bottom 30px
+    
+  &__item-p 
+    width 33.3%
+    border-right 1px solid $border
+    padding 0 7.1%
+    &:last-child 
+      border none
+  
+  &__str-4 
+    font-size 13px
+    color #aeadad
+      
+  &__c-row 
+    padding 30px 30px 0 30px 
+      
+  &__c-item
+    background: $soft
+    width 30.5%
+    padding 20px 30px
+    .icon 
+      width 36px 
+      height @width
+      static()
+      margin-right 20px
+    &:last-child
+      text-align: center
+      .col 
+        margin 0 auto
+    
+    .module__rate-static
+      margin 8px 0
+      position: relative 
+      top 3px
+    .jq-star
+      cursor default
+      
+    .like 
+      color #21bf7a
+      
+    .dislike
+      color #ff7474
+      transform rotateZ(180deg)
+    

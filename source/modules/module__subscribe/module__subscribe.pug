@@ -22,13 +22,13 @@ mixin module__subscribe(data)
                     +icon('android')
               a(href="").button Уведомить
           div(class=bemClass + '__apps').row 
-            a(href="").app
+            button(disabled).app
               +svg({
                 name: 'apple-grey',
                 width: 130,
                 height: 42
               })
-            a(href="").google
+            button(disabled).google
               +svg({
                 name: 'android-grey',
                 width: 130,
@@ -59,13 +59,13 @@ mixin module__subscribe-2(data)
                     +icon('android')
               a(href="").button Уведомить
           div(class=bemClass + '__apps').row
-            a(href="").app
+            button(disabled).app
               +svg({
                 name: 'apple-pink',
                 width: 130,
                 height: 42
               })
-            a(href="").google
+            button(disabled).google
               +svg({
                 name: 'android-pink',
                 width: 130,

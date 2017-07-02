@@ -1,2 +1,43 @@
+include ../heading/heading
+include ../module__shop-account/module__shop-account
+include ../module__shop-statistic/module__shop-statistic
+include ../module__shop-order/module__shop-order
+
 mixin page__shop-account(data)
+  
+  .page__account
+    .container
+      .row 
+
+        +module__shop-account()
+
+        .module__shop-content.auto__width
+          +heading({
+            title: 'Статистика магазина'
+          })
+
+          +module__shop-statistic()
+
+mixin page__shop-account-2(data)
+  
+  .page__account
+    .container
+      .row 
+
+        +module__shop-account()
+
+        .module__shop-content.auto__width
+          .module__shop-content__row.row.between
+            +heading({
+              title: 'Заказы'
+            })
+            form(action="").d-show
+              input(type="text", placeholder='Поиск по номеру заказа').form__input.form__input_shop
+            form(action="").row.m-show
+              input(type="text", placeholder='поиск по номеру заказа').form__input.form__input-shop-m
+              .jsShowSearch
+                +icon('search')
+          +module__shop-order()
+
+
     

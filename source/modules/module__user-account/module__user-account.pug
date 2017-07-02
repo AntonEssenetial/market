@@ -1,0 +1,52 @@
+include ../side-nav/side-nav
+
+mixin module__user-account(data)
+  - var bemClass = 'module__user-account'
+  .module__user-account&attributes(attributes)
+    div(class=bemClass + '__wrap') 
+      div(class=bemClass + '__img')
+        img(src="assets/images/user/2.jpg", alt="userpic")
+      span(class=bemClass + '__str') Дженсен Эклс
+      div(class=bemClass + '__row').row.cneter.between
+        span(class=bemClass + '__str-2') Отзывов:
+        span(class=bemClass + '__str-3') 17
+      div(class=bemClass + '__row').row.center.between
+        span(class=bemClass + '__str-2') Бонусный баланс:
+        .row.center
+          span(class=bemClass + '__str-3') 100
+          +icon('sh')
+      div(class=bemClass + '__row').row.center.between
+        span(class=bemClass + '__str-3') Бонусный баланс:
+        .row.center
+          span(class=bemClass + '__str-3') 300
+          +icon('sh').icon_pink
+      span(class=bemClass + '__str-2') Кешбэк и рефбек выплачиваются в течении месяца после доставки заказа
+      a(href="").button.button_md Заказать выплату бонусов
+      +side-nav(sideNav.account)
+
+mixin module__user-account-2(data)
+  - var bemClass = 'module__user-account'
+  .module__user-account-m&attributes(attributes)
+    div(class=bemClass + '__wrap')
+      .row.center.row-am
+        div(class=bemClass + '__img')
+          img(src="assets/images/user/2.jpg", alt="userpic")
+        span(class=bemClass + '__str') Дженсен Эклс
+        a(href="")
+          +icon('power')
+      div(class=bemClass + '__row').row.cneter.between
+        span(class=bemClass + '__str-2') Отзывов:
+        span(class=bemClass + '__str-3') 17
+      div(class=bemClass + '__row').row.center.between
+        span(class=bemClass + '__str-2') Бонусный баланс:
+        .row.center
+          span(class=bemClass + '__str-3') 100
+          +icon('sh')
+      div(class=bemClass + '__row').row.center.between
+        span(class=bemClass + '__str-3') Бонусный баланс:
+        .row.center
+          span(class=bemClass + '__str-3') 300
+          +icon('sh').icon_pink
+      span(class=bemClass + '__str-2') Кешбэк и рефбек выплачиваются в течении месяца после доставки заказа
+      a(href="").button.button_md Заказать выплату бонусов
+      +side-nav(sideNav.account)

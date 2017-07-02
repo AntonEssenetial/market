@@ -1,0 +1,77 @@
+include ../module__chart/module__chart
+include ../select/select
+
+mixin module__user-referral(data)
+  - var bemClass = 'module__user-referral'
+  .module__user-referral&attributes(attributes)
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__top') 
+        span(class=bemClass + '__str') Бонусная программа
+      div(class=bemClass + '__cont')
+        +module__chart()
+
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__top') 
+        span(class=bemClass + '__str') Реферальная система
+      div(class=bemClass + '__cont').module__user-referral__cont_border
+        span(class=bemClass + '__str-2') Ваша реферальная ссылка
+        div(class=bemClass + '__row-3').row.center
+          div(class=bemClass + '__link') https://eromall.ru?=ref:login
+          a(href="").button.button_md Скопировать
+
+      div(class=bemClass + '__cont')
+        +module__chart2()
+
+    div(class=bemClass + '__item')
+      div(class=bemClass + '__top') 
+        span(class=bemClass + '__str') Статистика
+      div(class=bemClass + '__cont')
+        div(class=bemClass + '__row ').row.between
+          .col__48
+            div(class=bemClass + '__sel') 
+              span(class=bemClass + '__str-3') Начислено
+              .row.center 
+                span(class=bemClass + '__str-4') 1000
+                +icon('sh')
+                +select('custom')
+                  option(value='Всего') Всего
+                  option(value='За последний месяц') За последний месяц 
+                  option(value='За последние 2 месяца') За последние 2 месяца 
+                  option(value='За последние 3 месяца') За последние 3 месяца 
+                  option(value='За полгода') За полгода 
+                  option(value='За год') За год 
+          .col__48
+            div(class=bemClass + '__sel') 
+              span(class=bemClass + '__str-3') Выплачено
+              .row.center 
+                span(class=bemClass + '__str-4') 1000
+                +icon('sh').sh_pink
+                +select('custom')
+                  option(value='Всего') Всего
+                  option(value='За последний месяц') За последний месяц 
+                  option(value='За последние 2 месяца') За последние 2 месяца 
+                  option(value='За последние 3 месяца') За последние 3 месяца 
+                  option(value='За полгода') За полгода 
+                  option(value='За год') За год 
+
+        div(class=bemClass + '__table') 
+          div(class=bemClass + '__row-2').row.between.center
+            .col
+              span(class=bemClass + '__str-3') Логин пользователя
+              span(class=bemClass + '__str-3').hidden 01.01.2017  16:45
+            span(class=bemClass + '__str-3').desktop 01.01.2017  16:45
+            span(class=bemClass + '__str-5') 280 Р
+          div(class=bemClass + '__row-2').row.between.center
+            .col
+              span(class=bemClass + '__str-3') Логин пользователя
+              span(class=bemClass + '__str-3').hidden 01.01.2017  16:45
+            span(class=bemClass + '__str-3').desktop 01.01.2017  16:45
+            span(class=bemClass + '__str-5') 280 Р
+          div(class=bemClass + '__row-2').row.between.center
+            .col
+              span(class=bemClass + '__str-3') Логин пользователя
+              span(class=bemClass + '__str-3').hidden 01.01.2017  16:45
+            span(class=bemClass + '__str-3').desktop 01.01.2017  16:45
+            span(class=bemClass + '__str-5') 280 Р
+
+        a(href="").button.button_lg.button_tr Показать остальное

@@ -1,4 +1,6 @@
 include ../footer-nav/footer-nav
+include ../module__user-account/module__user-account
+include ../module__shop-account/module__shop-account
 
 mixin module__mobile-blocks(data)
   - var bemClass = 'module__mobile-blocks'
@@ -6,7 +8,27 @@ mixin module__mobile-blocks(data)
   .module__mobile-blocks&attributes(attributes)
     div(class=bemClass + '__menu') 
       if data.mobAccount
+        +module__user-account-2()
+        div(class=bemClass + '__loc').loc_reset
+          div(class=bemClass + '__loc-row').row.center
+            +icon('marker')
+            a(hrfe='' class=bemClass + '__link' data-remodal-target="modal-5") Москва
+        div(class=bemClass + '__nav')
+          span(class=bemClass + '__str') Меню проекта
+          +footer-nav(footerNav.default).footer-nav_border
+          span(class=bemClass + '__str') Каталог
+          +footer-nav2(footerNav.serv)
       else if data.mobShop
+        +module__shop-account-2()
+        div(class=bemClass + '__loc').loc_reset
+          div(class=bemClass + '__loc-row').row.center
+            +icon('marker')
+            a(hrfe='' class=bemClass + '__link' data-remodal-target="modal-5") Москва
+        div(class=bemClass + '__nav')
+          span(class=bemClass + '__str') Меню проекта
+          +footer-nav(footerNav.default).footer-nav_border
+          span(class=bemClass + '__str') Каталог
+          +footer-nav2(footerNav.serv)
       else
         div(class=bemClass + '__reg').row
           a(href="" data-remodal-target="modal-2").button Вход

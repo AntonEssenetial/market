@@ -10,11 +10,29 @@ mixin header(data)
     .container
       .row.center
         +sandwitch()
-        +module__logo()   
+        +module__logo({
+          plus: false
+        })   
         +module__header-location()
         +module__mobile-cart()
-        if data.account
-        if data.shop
+        if data.saccount
+          .module__user
+            .row.center
+              .col 
+                span(class=bemClass + '__str') INTIMISSIMI
+                a(href='#' class=bemClass + '__link') выйти
+              div(class=bemClass + '__userpick').header__userpick_shop
+                a(href="cabinet04.html")
+                  img(src="assets/images/account/4.jpg", alt="userpick")
+        else if data.shopM
+          .module__user
+            .row.center
+              .col 
+                span(class=bemClass + '__str') Дженсен Эклс
+                a(href='#' class=bemClass + '__link') выйти
+              div(class=bemClass + '__userpick')
+                a(href="cabinet01.html")
+                  img(src="assets/images/user/2.jpg", alt="userpick")
         else
           div(class=bemClass + '__row').row 
             a(href="#" data-remodal-target="modal-2").button Вход
