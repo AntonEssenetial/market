@@ -29,4 +29,13 @@
     });
 
 
+    // Button icons
+    $('.button_icon').click(function(event) {
+        $('.button_icon').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+
+
+
 })();

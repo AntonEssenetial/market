@@ -14,11 +14,9 @@ mixin module__subscribe(data)
                 label().form__label
                   input(type="text").form__input
                 div(class=bemClass + '__check-row').row.center  
-                  label().label__radio
-                    input(type="radio", name='device').input__radio
+                  span.button_icon
                     +icon('apple')
-                  label().label__radio
-                    input(type="radio", name='device').input__radio
+                  span.button_icon
                     +icon('android')
               a(href="").button Уведомить
           div(class=bemClass + '__apps').row 
@@ -51,11 +49,9 @@ mixin module__subscribe-2(data)
                 label().form__label
                   input(type="text").form__input
                 div(class=bemClass + '__check-row').row.center  
-                  label().label__radio
-                    input(type="radio", name='device').input__radio
+                  span.button_icon
                     +icon('apple')
-                  label().label__radio
-                    input(type="radio", name='device').input__radio
+                  span.button_icon
                     +icon('android')
               a(href="").button Уведомить
           div(class=bemClass + '__apps').row

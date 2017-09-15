@@ -4,3 +4,8 @@ mixin module__logo(data)
     a(href='home.html' class=bemClass + '__link')
     if data.plus 
       .plus-a
+        +svg({
+          name: 'pl',
+          width: 37,
+          height: 45
+        })

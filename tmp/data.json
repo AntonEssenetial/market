@@ -50,6 +50,10 @@
 				"url": "shop-2"
 			},
 			{
+				"title": "Магазин",
+				"url": "shop-3"
+			},
+			{
 				"title": "Акции",
 				"url": "odds"
 			},
@@ -68,6 +72,10 @@
 			{
 				"title": "Cabinet04",
 				"url": "cabinet04"
+			},
+			{
+				"title": "Cabinet05",
+				"url": "cabinet05"
 			},
 			{
 				"title": "Elements",
@@ -93,17 +101,6 @@
 				"title": "Page"
 			}
 		]
-	},
-	"config": {
-		"projectName": "Eromall",
-		"lang": "en",
-		"path": {
-			"favicons": "assets/favicons",
-			"styles": "assets/css",
-			"scripts": "assets/javascripts",
-			"images": "assets/images",
-			"fonts": "assets/fonts"
-		}
 	},
 	"footerNav": {
 		"default": [
@@ -160,6 +157,93 @@
 			{
 				"title": "Интим подарки",
 				"url": "presents"
+			}
+		]
+	},
+	"config": {
+		"projectName": "Eromall",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
+	},
+	"mainMenu": {
+		"default": [
+			{
+				"title": "О нас",
+				"url": "about",
+				"submenu": false
+			},
+			{
+				"title": "Информация для СМИ",
+				"url": "info",
+				"submenu": false
+			},
+			{
+				"title": "Информация для партнеров",
+				"url": "partner",
+				"submenu": false
+			},
+			{
+				"title": "Правила и акции",
+				"url": "rules",
+				"submenu": false
+			},
+			{
+				"title": "Пользовательское соглашение",
+				"url": "terms",
+				"submenu": false
+			},
+			{
+				"title": "Новости",
+				"url": "news",
+				"submenu": false
+			},
+			{
+				"title": "Контакты",
+				"url": "contacts",
+				"submenu": false
+			}
+		],
+		"account": [
+			{
+				"title": "Account",
+				"url": "cabinet01",
+				"submenu": false
+			},
+			{
+				"title": "Invest",
+				"url": "cabinet02",
+				"submenu": false
+			},
+			{
+				"title": "Withdrawal",
+				"url": "cabinet03",
+				"submenu": false
+			},
+			{
+				"title": "Operations",
+				"url": "cabinet04",
+				"submenu": false
+			},
+			{
+				"title": "Partners",
+				"url": "cabinet05",
+				"submenu": false
+			},
+			{
+				"title": "Settings",
+				"url": "cabinet06",
+				"submenu": false
+			},
+			{
+				"title": "Exit",
+				"url": false,
+				"submenu": false
 			}
 		]
 	},
@@ -267,82 +351,6 @@
 			"meta": "default",
 			"og": "default"
 		}
-	},
-	"mainMenu": {
-		"default": [
-			{
-				"title": "О нас",
-				"url": "about",
-				"submenu": false
-			},
-			{
-				"title": "Информация для СМИ",
-				"url": "info",
-				"submenu": false
-			},
-			{
-				"title": "Информация для партнеров",
-				"url": "partner",
-				"submenu": false
-			},
-			{
-				"title": "Правила и акции",
-				"url": "rules",
-				"submenu": false
-			},
-			{
-				"title": "Пользовательское соглашение",
-				"url": "terms",
-				"submenu": false
-			},
-			{
-				"title": "Новости",
-				"url": "news",
-				"submenu": false
-			},
-			{
-				"title": "Контакты",
-				"url": "contacts",
-				"submenu": false
-			}
-		],
-		"account": [
-			{
-				"title": "Account",
-				"url": "cabinet01",
-				"submenu": false
-			},
-			{
-				"title": "Invest",
-				"url": "cabinet02",
-				"submenu": false
-			},
-			{
-				"title": "Withdrawal",
-				"url": "cabinet03",
-				"submenu": false
-			},
-			{
-				"title": "Operations",
-				"url": "cabinet04",
-				"submenu": false
-			},
-			{
-				"title": "Partners",
-				"url": "cabinet05",
-				"submenu": false
-			},
-			{
-				"title": "Settings",
-				"url": "cabinet06",
-				"submenu": false
-			},
-			{
-				"title": "Exit",
-				"url": false,
-				"submenu": false
-			}
-		]
 	},
 	"sideNav": {
 		"default": [

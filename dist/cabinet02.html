@@ -8,7 +8,7 @@
     <meta content="Put value here" name="keywords" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="robots" content="noodp, noydir" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta name="HandheldFriendly" content="true" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
@@ -234,7 +234,11 @@
           <div class="footer__row row">
             <div class="module__logo">
               <a class="module__logo__link" href="home.html"></a>
-              <div class="plus-a"></div>
+              <div class="plus-a">
+                <svg class="icon icon_pl" width="37" height="45">
+                  <image width="37" height="45" xlink:href="assets/images/svg/pl.svg"></image>
+                </svg>
+              </div>
             </div>
             <div class="footer__loc">
               <div class="row center footer__b-row">
@@ -357,13 +361,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col__right">
+              <div class="col__right row">
                 <span class="module__bottom-cart__up jsCart">
                   <svg class="icon icon_up">
                     <use xlink:href="assets/images/icons.svg#up"></use>
                   </svg>
                 </span>
                 <a class="button button_md" href="">Оформить заказ</a>
+                <span class="module__bottom-cart__close jsCartClose">
+                  <svg class="icon icon_cross">
+                    <use xlink:href="assets/images/icons.svg#cross"></use>
+                  </svg>
+                </span>
               </div>
             </div>
           </div>
@@ -1050,45 +1059,60 @@
                 <label class="form__label">
                   <input class="form__input" type="text" placeholder="Имя" /> </label>
                 <label class="form__label">
+                  <input class="form__input" type="text" placeholder="Email" /> </label>
+                <label class="form__label">
                   <input class="form__input" type="text" placeholder="Номер телефона" /> </label>
-                <label class="form__label">
-                  <input class="form__input" type="text" placeholder="Город" /> </label>
-                <label class="form__label">
-                  <input class="form__input" type="text" placeholder="Улица" /> </label>
-                <label class="form__label">
-                  <div class="row">
-                    <input class="form__input input__adr input__adr_left" type="text" placeholder="Дом" />
-                    <input class="form__input input__adr input__adr_center" type="text" placeholder="Корп/стр" />
-                    <input class="form__input input__adr input__adr_right" type="text" placeholder="Кв/офис" /> </div>
-                </label>
+                <div class="module__order-form__form-row row">
+                  <button class="button button_js active">Наличными</button>
+                  <button class="button button_js">Картой онлайн</button>
+                </div>
+                <div class="jsParent">
+                  <div class="module__order-form__form-row row">
+                    <button class="jsTab button button_js active">Курьером</button>
+                    <button class="jsTab button button_js">Самовывоз</button>
+                  </div>
+                  <div class="module__order-form__cont">
+                    <div class="jsCont jsActive">
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Город" /> </label>
+                      <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Улица" /> </label>
+                      <div class="form__label">
+                        <div class="row">
+                          <input class="form__input input__adr input__adr_left" type="text" placeholder="Дом" />
+                          <input class="form__input input__adr input__adr_center" type="text" placeholder="Корп/стр" />
+                          <input class="form__input input__adr input__adr_right" type="text" placeholder="Кв/офис" /> </div>
+                      </div>
+                    </div>
+                    <div class="jsCont">
+                      <label class="form__label">
+                        <select class="select select_custom">
+                          <option new="new">Select</option>
+                          <option new="new">Selecc 2</option>
+                          <option new="new">Selecc 3</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                </div>
                 <label class="form__label">
                   <textarea class="form__area" placeholder="Комментарий"></textarea>
                 </label>
-                <div class="module__order-form__form-row row">
-                  <label class="label__radio label__radio_right">
-                    <input class="input__radio" checked="checked" type="radio" name="pay" />
-                    <i>Наличными</i>
-                  </label>
-                  <label class="label__radio label__radio_left">
-                    <input class="input__radio" type="radio" name="pay" />
-                    <i>Картой онлайн</i>
-                  </label>
+                <div class="form__label">
+                  <div class="row row_50 between">
+                    <input class="form__input" type="text" placeholder="Промо-кoд" />
+                    <button class="button" disabled="disabled">Применить</button>
+                  </div>
                 </div>
-                <div class="module__order-form__form-row row">
-                  <label class="label__radio label__radio_right">
-                    <input class="input__radio" checked="checked" type="radio" name="delivery" />
-                    <i>Курьером</i>
-                  </label>
-                  <label class="label__radio label__radio_left">
-                    <input class="input__radio" type="radio" name="delivery" />
-                    <i>Самовывоз</i>
-                  </label>
+                <div class="form__label">
+                  <div class="row row_50 between">
+                    <input class="form__input" type="text" placeholder="Есть бонусы?" />
+                    <button class="button" disabled="disabled">Применить</button>
+                  </div>
                 </div>
-                <span class="module__order-form__str">нажав кнопку "заказать товар" вы будете автоматически зарегистрированы в сервисе и блаблабла)</span>
-                <label class="label__checkbox">
-                  <input class="input__checkbox" type="checkbox" />
-                  <i></i>Оплатить бонусами </label>
                 <button class="button button_lg">Заказать товар</button>
+                <hr class="module__order-form__hr" />
+                <span class="module__order-form__str">нажав кнопку "заказать товар" вы будете автоматически зарегистрированы в сервисе и блаблабла)</span>
               </form>
             </div>
           </div>

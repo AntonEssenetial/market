@@ -57,11 +57,17 @@ $(function() {
         cart = $('.module__bottom-cart'),
         wHeight = parseInt($(window).height())-146,
         container = $('.jsScrollContainer'),
-        body = $('html');
+        body = $('html'),
+        close = $('.jsCartClose'),
+        closed = 'jsClosed';
+
+    close.click(function(event) {
+        cart.addClass(closed);
+    });
 
     button.click(function(event) {
         $(this).toggleClass('active');
-        body.toggleClass('cart-opend');
+        //body.toggleClass('cart-opend');
         cart.toggleClass('opend');
     });
 
@@ -271,6 +277,24 @@ $(function() {
 
 })();
 
+// module__order-form
+(function() {
+
+    functionTabs('.jsTab', 'jsActive', '.jsCont', '.jsParent')
+
+    var input = $('.row_50 input'),
+        button = $('.row_50 .button');
+
+    input.on('keyup', function(){
+        if($(this).val().length > 0) {
+            $(this).next(button).prop('disabled', false)
+        } else {
+            $(this).next(button).prop('disabled', true)
+        }
+    });
+
+})();
+
 // module__order
 (function() {
 
@@ -290,11 +314,12 @@ $(function() {
 
     $('.module__rate').starRating({
         starSize: 20,
-        strokeWidth: 30,
-        strokeColor: '#ff74af',
+        strokeWidth: 15,
+        strokeColor: '#d14480',
         initialRating: 2,
         emptyColor: '#ffffff',
         hoverColor: '#ff74af',
+        useFullStars: true,
         starGradient: {
             start: '#ff74af',
             end: '#ff74af'
@@ -304,7 +329,7 @@ $(function() {
     $('.module__rate-static').starRating({
         starSize: 20,
         readOnly: true,
-        strokeWidth: 30,
+        strokeWidth: 15,
         strokeColor: '#ff74af',
         initialRating: 2,
         emptyColor: '#ffffff',
@@ -320,8 +345,43 @@ $(function() {
 // module__s-item
 (function() {
 
-    $('.jsTool').click(function(event) {
-        $('.module__s-item__tool').toggleClass('active');
+
+    $('.button_js').click(function(event) {
+        $(this).closest('.module__order-form__form-row').find('.button').removeClass('active')
+        $(this).addClass('active');
+        return false;
+
+    });
+
+
+    function desktop(){
+        var container = $('.module__s-item__tool');
+
+        $('.jsTool').click(function(event) {
+            $(this).find(container).addClass('active')
+        });
+
+        $(document).mouseup(function (e) {
+            if (container.has(e.target).length === 0){
+                container.removeClass('active');
+            }
+        });
+    }
+
+    function mobile() {
+        var container = $('.module__s-item__tool');
+
+        $('.jsTool').click(function(event) {
+            container.toggleClass('active')
+        });
+    }
+
+    $(window).on('load resize', function(){
+        if($(window).width() <= 1024) {
+            mobile();
+        } else {
+            desktop();
+        }
     });
 
 })();
@@ -2378,6 +2438,15 @@ $(function() {
             );
         }
     });
+
+
+    // Button icons
+    $('.button_icon').click(function(event) {
+        $('.button_icon').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+
 
 
 })();

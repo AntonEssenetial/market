@@ -39,6 +39,32 @@
 
 
 +width-max(1024px)
+  .locked
+    overflow: auto !important;
+    height: 100% !important;
+    body 
+      overflow: auto !important;
+      height: 100% !important;
+    body, 
+    .page__wrapper 
+      overflow hidden !important
+    .remodal-wrapper
+      -webkit-overflow-scrolling: initial;
+      top 0px
+      bottom auto 
+      position: absolute
+
+
+  .module__mobile-blocks__menu
+    padding-bottom 100px
+  .module__logo__link
+    transition none !important
+  .label__checkbox i
+    display: none
+    background: white
+  input[type=checkbox]
+    display: block
+    background: white
   .row-am
     .module__user-account__img
     a
@@ -203,6 +229,7 @@
   .module__s-item__wrp
     overflow-y hidden
     width 100%
+    padding-bottom 15px
   .module__s-item .col_bordered
     border none
     margin 0
@@ -317,6 +344,19 @@
 
 
 +width-max(752px)
+
+  .module__catalog__rev-row .button 
+    margin-top 10px
+  .module__stat__item
+    padding 0px
+  .module__stat .icon
+    margin 0px
+  .module__stat__col
+    text-align: center
+  .module__subscribe .module__subscribe__apps
+    margin-top: 85px; 
+  .module__subscribe_pink .module__subscribe__apps
+    margin-top: 105px;
   input.module__cart__count
     width 25px
     position: relative 
@@ -373,15 +413,14 @@
     flex-direction column
     align-items: baseline;
   .module__shop-statistic__profit
-    padding 20px
+    padding 20px 10px
   .module__shop-statistic__item-p
     border none
     width 100%
-    &:nth-child(2)
-    &:nth-child(3)
-      display: none
+    .module__shop-statistic__str-2
+      font-size 10px
     .module__shop-statistic__str-3
-      font-size 24px
+      font-size 16px
       margin-top 3px
   .module__shop-statistic__loader
     padding 15px 0
@@ -539,7 +578,7 @@
   .plus-a 
     position: absolute
     right 20px
-    bottom: 106px;
+    bottom: 34px;
   .module__comment__i-row 
     margin-bottom 5px
   .module__comment__str
@@ -798,8 +837,10 @@
       padding 0 10px
   .module__bottom-cart__mobile
     display: block
+  .footer__row
+    position: relative
   .footer__soc
-    padding: 20px 0;
+    padding: 20px 0 70px 0;
   .module__discount
     border-bottom 1px solid $pink
   .module__discount__row
@@ -848,6 +889,12 @@
     flex-direction column
   .module__catalog__order
     padding 20px
+  .input__checkbox
+    width 32px
+  .remodal-wrapper:after
+    min-height 100vh
+  .m-show
+    top 2px
 
 +width-max(660px)
   .module__location__col
@@ -866,6 +913,8 @@
     
 
 +width-max(660px)
+  .modal_location .button_close
+    top: 23px;
   .module__location__col
     width 100%
   .footer__row
@@ -911,7 +960,7 @@
     height 15px
   .button_close
     right 15px
-    top 31px
+    top 25px
   .module__registration h2
     margin-bottom 20px
   .module__registration .col__50
@@ -928,7 +977,7 @@
   .footer__link
     font-size 13px
   .footer__soc
-    padding 20px 0
+    padding 20px 0 70px 0
   .module__socials .icon
     width 30px 
     height @width
@@ -942,7 +991,7 @@
   .module__top__col
     padding 70px 20px
   .module__main-review__cont
-    margin: 40% auto 0 auto;
+    margin: 20% auto 10% auto;
   .module__main-review__str-2
     font-size 30px
   .jsSlick4
@@ -1016,6 +1065,8 @@
 
 // iPhone 4 5 and 4s 5S
 +width-max(320px)
+  .module__user-orders__tip
+    right -20px
   .module__user-settings .form__label_220
     width 200px
   .module__user-settings .form__label_180

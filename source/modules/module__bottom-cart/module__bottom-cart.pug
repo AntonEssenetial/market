@@ -17,10 +17,12 @@ mixin module__bottom-cart(data)
                   | , из
                   a(href='' class=bemClass + '__link') 2 
                   | магазинов
-          .col__right
+          .col__right.row
             span(class=bemClass + '__up').jsCart 
               +icon('up')
             a(href="").button.button_md Оформить заказ
+            span(class=bemClass + '__close').jsCartClose
+              +icon('cross')
     div(class=bemClass + '__bottom') 
       .container  
         div(class=bemClass + '__items') 

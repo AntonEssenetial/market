@@ -5,11 +5,17 @@
         cart = $('.module__bottom-cart'),
         wHeight = parseInt($(window).height())-146,
         container = $('.jsScrollContainer'),
-        body = $('html');
+        body = $('html'),
+        close = $('.jsCartClose'),
+        closed = 'jsClosed';
+
+    close.click(function(event) {
+        cart.addClass(closed);
+    });
 
     button.click(function(event) {
         $(this).toggleClass('active');
-        body.toggleClass('cart-opend');
+        //body.toggleClass('cart-opend');
         cart.toggleClass('opend');
     });
 

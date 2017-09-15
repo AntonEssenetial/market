@@ -1,6 +1,8 @@
 .page_mobile-menu
   .module__mobile-blocks  
     opacity 1
+    overflow-y: scroll;
+    visibility visible
 .module__mobile-blocks
   trs()
   position: fixed;
@@ -8,9 +10,9 @@
   left 0px
   bottom: 0;
   min-height: 100vh;
-  overflow-y: scroll;
   z-index: 0;
   opacity: 0;
+  visibility hidden
   width 265px
   background: #ffffff
   box-shadow inset -4px -2px 5px 0 rgba(0, 0, 0, 0.02)

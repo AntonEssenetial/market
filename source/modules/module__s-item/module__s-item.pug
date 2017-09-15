@@ -99,23 +99,23 @@ mixin module__s-item(data)
             .col
               span(class=bemClass + '__str-3') Оплата картой
               span(class=bemClass + '__str-4') Онлайн, курьеру
-      div(class=bemClass + '__row-2').hidden
-        .row.between
-          .col
-            span(class=bemClass + '__str-3') Мин.заказ
-            span(class=bemClass + '__str-4') 1000 Р
-          .col
-            span(class=bemClass + '__str-3') Доставка
-            span(class=bemClass + '__str-4') 0р
-          .col
-            span(class=bemClass + '__str-3') Время
-            .row.center 
-              span(class=bemClass + '__str-4') 1 часа
-              +icon('watch')
-              +icon('time')
-          .col
-            span(class=bemClass + '__str-3') Оплата
-            span(class=bemClass + '__str-4') курьеру
+    div(class=bemClass + '__row-2').hidden
+      .row.between
+        .col
+          span(class=bemClass + '__str-3') Мин.заказ
+          span(class=bemClass + '__str-4') 1000 Р
+        .col
+          span(class=bemClass + '__str-3') Доставка
+          span(class=bemClass + '__str-4') 0р
+        .col
+          span(class=bemClass + '__str-3') Время
+          .row.center 
+            span(class=bemClass + '__str-4') 1 часа
+            +icon('watch')
+            +icon('time')
+        .col
+          span(class=bemClass + '__str-3') Оплата
+          span(class=bemClass + '__str-4') курьеру
 
 
 mixin module__s-item-3(data)
@@ -149,10 +149,13 @@ mixin module__s-item-3(data)
             span(class=bemClass + '__str-4') Бесплатно
           .col
             span(class=bemClass + '__str-3') Время доставки
-            .row.center 
+            .row.center.jsTool
               span(class=bemClass + '__str-4') до 1 часа
               +icon('watch')
               +icon('time')
+              div(class=bemClass + '__tool').animated.fadeIn
+                span(class=bemClass + '__str-6') Заголовок
+                span(class=bemClass + '__str-7') Заголовок текст с описанием тултипа Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца.
           .col.col_bordered
             span(class=bemClass + '__str-3') Оплата картой
             span(class=bemClass + '__str-4') Онлайн, курьеру

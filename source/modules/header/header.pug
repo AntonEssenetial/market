@@ -35,5 +35,10 @@ mixin header(data)
                   img(src="assets/images/user/2.jpg", alt="userpick")
         else
           div(class=bemClass + '__row').row 
+            a(href="order.html" class=bemClass + '__btn').button.row.center.header__btn_active
+              +icon('com')
+              span(class=bemClass + '__count') 3
+            a(href="order.html" class=bemClass + '__btn').button.button_tr.row.center
+              +icon('com')
             a(href="#" data-remodal-target="modal-2").button Вход
             a(href="#" data-remodal-target="modal-1").button.button_tr Регистрация

@@ -13,7 +13,6 @@ main
   background: #f2f2f2
   
 .page__wrapper 
-  z-index: 1
   position: relative
 .page_mobile-menu
   .page__wrapper 
@@ -49,4 +48,32 @@ input.module__cart__count
   height auto
   padding 0px
   text-align: center;
+  
+.m-show
+  display: none
+
+.page__row
+  z-index 1
+  position relative
+  
+.modal-wrapper
+  box-shadow 0 0 10px rgba(0,0,0, 0.2)
+  
+.input__adr_center
+  border-left 1px solid transparent !important
+  border-right 1px solid transparent !important
+  &:focus 
+    border-color $pink !important
+    
+.module__search-result 
+  .form__label_search input
+    line-height initial
+    
+.form__label_search input
+  line-height initial
+  
+.plus-a 
+  width 33px 
+  height 42px
+  
   

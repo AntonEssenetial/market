@@ -1,3 +1,5 @@
+include ../select/select
+
 mixin module__order-form(data)
   - var bemClass = 'module__order-form'
   .module__order-form&attributes(attributes)
@@ -6,35 +8,43 @@ mixin module__order-form(data)
       label().form__label
         input(type="text", placeholder='Имя').form__input
       label().form__label
+        input(type="text", placeholder='Email').form__input
+      label().form__label
         input(type="text", placeholder='Номер телефона').form__input
-      label().form__label
-        input(type="text", placeholder='Город').form__input
-      label().form__label
-        input(type="text", placeholder='Улица').form__input
-      label().form__label
-        .row 
-          input(type="text", placeholder='Дом').form__input.input__adr.input__adr_left
-          input(type="text", placeholder='Корп/стр').form__input.input__adr.input__adr_center
-          input(type="text", placeholder='Кв/офис').form__input.input__adr.input__adr_right
+      div(class=bemClass + '__form-row').row
+        button.button.button_js.active Наличными
+        button.button.button_js Картой онлайн
+      .jsParent
+        div(class=bemClass + '__form-row').row
+          button.jsTab.button.button_js.active Курьером
+          button.jsTab.button.button_js Самовывоз
+        div(class=bemClass + '__cont')
+          .jsCont.jsActive
+            label().form__label
+              input(type="text", placeholder='Город').form__input
+            label().form__label
+              input(type="text", placeholder='Улица').form__input
+            .form__label
+              .row 
+                input(type="text", placeholder='Дом').form__input.input__adr.input__adr_left
+                input(type="text", placeholder='Корп/стр').form__input.input__adr.input__adr_center
+                input(type="text", placeholder='Кв/офис').form__input.input__adr.input__adr_right
+          .jsCont
+            label().form__label
+              +select('custom')
+                option('new') Select
+                option('new') Selecc 2
+                option('new') Selecc 3
       label().form__label
         textarea(placeholder='Комментарий').form__area
-      div(class=bemClass + '__form-row').row
-        label().label__radio.label__radio_right
-          input(checked type="radio", name='pay').input__radio
-          i Наличными
-        label().label__radio.label__radio_left
-          input(type="radio", name='pay').input__radio
-          i Картой онлайн
-      div(class=bemClass + '__form-row').row
-        label().label__radio.label__radio_right
-          input(checked type="radio", name='delivery').input__radio
-          i Курьером
-        label().label__radio.label__radio_left
-          input(type="radio", name='delivery').input__radio
-          i Самовывоз
-      span(class=bemClass + '__str') нажав кнопку "заказать товар" вы будете автоматически зарегистрированы в сервисе и блаблабла)
-      label().label__checkbox
-        input(type="checkbox").input__checkbox
-        i
-        | Оплатить бонусами
+      .form__label
+        .row.row_50.between
+          input(type="text", placeholder='Промо-кoд').form__input
+          button(disabled).button Применить
+      .form__label
+        .row.row_50.between
+          input(type="text", placeholder='Есть бонусы?').form__input
+          button(disabled).button Применить
       button.button.button_lg Заказать товар
+      hr(class=bemClass + '__hr')
+      span(class=bemClass + '__str') нажав кнопку "заказать товар" вы будете автоматически зарегистрированы в сервисе и блаблабла)

@@ -28,13 +28,33 @@ mixin module__catalog(data)
         form(action="")
           input(type="text", placeholder='Поиск').input__search
 
-    
+
     if data.catalog
       .f__row  
         -for (var x = 0; x < 12; x ++)
           +module__catalog-item().f__col
       div(class=bemClass + '__loader').row.center-c.desktop
         +icon('loader')
+
+    else if data.singleShop 
+      div(class=bemClass + '__news') 
+        div(class=bemClass + '__title')
+          .row.center.between(class=bemClass + '__rev-row') 
+            h2 О магазине INTIMISSIMI
+            a(href='' class=bemClass + '__btn').button.button_tr На сайт
+        div(class=bemClass + '__map')
+          span(class=bemClass + '__str-3') NTIMISSIMI на карте
+          <iframe src="https://yandex.by/map-widget/v1/-/CBUziBTYwD" frameborder="0"></iframe>
+        div(class=bemClass + '__del')
+          span(class=bemClass + '__str-3') Варианты доставки
+          p Курьером - собственная служба доставки
+          p Самовывоз - более 15 магазинов по Москве и области
+        div(class=bemClass + '__share')
+          span(class=bemClass + '__str-3') Понравился магазин INTIMISSIMI? Расскажи друзьям!
+          div(class=bemClass + '__share-block')
+            <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+            <script src="//yastatic.net/share2/share.js"></script>
+            <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
 
     else if data.visible
       div(class=bemClass + '__bread').row.center

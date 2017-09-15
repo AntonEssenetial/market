@@ -1,12 +1,13 @@
 mixin module__item(data)
   - var bemClass = 'module__item'
   .module__item&attributes(attributes)
-    div(class=bemClass + '__img-wrap')
+    a(href="" class=bemClass + '__img-wrap')
       img(src="assets/images/shop/1.jpg", alt="Скидка на вибратор SVAKOM PURE")
     div(class=bemClass + '__cont')
       div(class=bemClass + '__heading')
-        span(class=bemClass + '__str-1') Скидка на вибратор
-        a(href='#' class=bemClass + '__str-2') SVAKOM PURE
+        a(href="#" class=bemClass + '__str-0') 
+          span(class=bemClass + '__str-1') Скидка на вибратор
+          span(class=bemClass + '__str-2') SVAKOM PURE
       p Svakom Betty, розовый Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца. 
       div(class=bemClass + '__disc').row.between 
         span(class=bemClass + '__str-3') Акция продлится до: 
@@ -17,12 +18,13 @@ mixin module__item(data)
           span(class=bemClass + '__str-6') 8008 Р
         a(href="").button Купить
   .module__item&attributes(attributes)
-    div(class=bemClass + '__img-wrap')
+    a(href="" class=bemClass + '__img-wrap')
       img(src="assets/images/shop/2.jpg", alt="Скидка на вибратор SVAKOM PURE")
     div(class=bemClass + '__cont')
       div(class=bemClass + '__heading')
-        span(class=bemClass + '__str-1') Скидки на все товары
-        a(href='#' class=bemClass + '__str-2') SVAKOM
+        a(href="#" class=bemClass + '__str-0') 
+          span(class=bemClass + '__str-1') Скидки на все товары
+          span(class=bemClass + '__str-2') SVAKOM
       p Svakom Betty, розовый Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца. 
       div(class=bemClass + '__disc').row.between 
         span(class=bemClass + '__str-3') Акция продлится до: 
@@ -32,12 +34,13 @@ mixin module__item(data)
           img(src="assets/images/brand/1.png", alt="")
         a(href="").button Купить
   .module__item&attributes(attributes)
-    div(class=bemClass + '__img-wrap')
+    a(href="" class=bemClass + '__img-wrap')
       img(src="assets/images/shop/3.jpg", alt="Скидка на вибратор SVAKOM PURE")
     div(class=bemClass + '__cont')
       div(class=bemClass + '__heading')
-        span(class=bemClass + '__str-1') Скидки на все товары
-        span(class=bemClass + '__str-2') INTIMISSIMI
+        a(href="#" class=bemClass + '__str-0') 
+          span(class=bemClass + '__str-1') Скидки на все товары
+          span(class=bemClass + '__str-2') INTIMISSIMI
       p Svakom Betty, розовый Вибратор с интелектуальным режимом вибрации со скидкой 15% только до конца месяца. 
       div(class=bemClass + '__disc').row.between 
         span(class=bemClass + '__str-3') Акция продлится до: 

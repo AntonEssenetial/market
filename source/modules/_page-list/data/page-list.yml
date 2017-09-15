@@ -37,6 +37,9 @@ pageList:
       title: Магазины моб.
       url: shop-2
     - 
+      title: Магазин
+      url: shop-3
+    - 
       title: Акции
       url: odds
     - 
@@ -51,6 +54,9 @@ pageList:
     - 
       title: Cabinet04
       url: cabinet04
+    - 
+      title: Cabinet05
+      url: cabinet05
     -
       title: Elements
       url: elements

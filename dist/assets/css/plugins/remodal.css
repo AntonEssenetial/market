@@ -14,11 +14,14 @@
 /* Hide scroll bar */
 
 html.remodal-is-locked {
-  overflow: hidden;
 
   -ms-touch-action: none;
   touch-action: none;
 }
+
+body {
+  padding-right: 0px !important;
+} 
 
 /* Anti FOUC */
 

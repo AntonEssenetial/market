@@ -463,7 +463,7 @@ select
     height 43px
     line-height @height
   &:after
-    background: url('../images/inputs/3.png') no-repeat center
+    background: url('../images/svg/search.svg') no-repeat center
     width 20px 
     height @width
     content ''
@@ -525,6 +525,7 @@ customCheckbox(customCheckbox = false)
       cursor pointer
       border 1px solid $dash-border
       margin-right 10px
+      z-index -1
       trs()
       +after('')
         trs()
@@ -553,6 +554,7 @@ customCheckbox(customCheckbox = false)
         left 5px
         top 2px
         opacity 0
+        z-index 0
         margin-top -20px
         display block
         border-bottom 1px solid $pink

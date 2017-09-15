@@ -1,2 +1,72 @@
 .module__order-form
-  //
+  
+  .button_lg 
+    margin-top 10px
+    
+  .form__label textarea
+    height 47px
+    line-height @height
+    padding-top 0px
+    padding-bottom 0px
+    
+  .select_custom
+    width 100%
+    
+  .jsCont 
+    z-index: 1
+    position: relative
+  
+  .row_50 
+    input
+    .button
+      width 48%
+      height 47px 
+      min-width 0px
+      margin 0px
+
+  &__form-row
+    margin-bottom 20px
+    
+  &__hr
+    margin 30px 0 25px 0
+    height 1px 
+    display: block
+    width 100%
+    background: $dash-border
+    border none
+    
+  &__str 
+    margin-bottom 20px
+    
+  .form__label 
+    position: relative 
+    input,
+    textarea 
+      position relative
+
+
+.button_js.active 
+  background: $pink
+  color white
+  border-color $pink
+  
+.button_js
+  border-color $border
+  background: white
+  color $dark
+  text-transform: none
+  height 47px 
+  line-height @height - 3px
+  text-align: left
+  regular()
+  font-size 14px
+  width 50% !important
+  margin 0px !important
+  padding 0 20px
+  
+  &:first-child 
+    border-right none
+    border-radius 3px 0 0 3px
+    
+  &:last-child 
+    border-radius 0 3px 3px 0
