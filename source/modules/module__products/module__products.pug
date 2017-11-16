@@ -1,0 +1,70 @@
+mixin module__products(data)
+  - var bemClass = 'module__products'
+  .module__products&attributes(attributes)
+    div(class=bemClass + '__head')
+      a(href='shop-4.html' class=bemClass + '__link').row.center
+        span 
+          +icon('down')
+        | назад к списку товаров
+    div(class=bemClass + '__items')
+      div(class=bemClass + '__item')
+        .row.between.al-end
+          .row
+            div(class=bemClass + '__img-wrap') 
+              img(class=bemClass + '__img' src=config.path.images + '/catalog/6.jpg' alt='image') 
+            .col 
+              span(class=bemClass + '__str') Комплект Obsessive Adoria
+              ul(class=bemClass + '__ul')
+                li(class=bemClass + '__list') Комплект Obsessive Adoria set
+                li(class=bemClass + '__list') размер L/XL, цвет черный
+                li(class=bemClass + '__list') 100% полиэстер
+              .desktop
+                span(class=bemClass + '__str-2') Лучшая цена
+                span(class=bemClass + '__str-3') INTIMMISIMI
+              .row.desktop 
+                p(class=bemClass + '__str-5') 127 оценок, <a href='' class='pink'>1244</a> отзыва
+          div(class=bemClass + '__row').row.center.desktop
+            span(class=bemClass + '__str-4') 389 Р
+            a(href="").button Заказать товар
+        div(class=bemClass + '__row-3').hidden
+          .row.center.between
+            .col
+              span(class=bemClass + '__str-2') Лучшая цена
+              span(class=bemClass + '__str-3') INTIMMISIMI
+              .row
+                p(class=bemClass + '__str-5') 127 оценок, <a href='' class='pink'>1244</a> отзыва
+            div(class=bemClass + '__col-2').col 
+              span(class=bemClass + '__str-4') 389 Р
+              a(href="").button Заказать
+      -for(var x = 0; x < 8; x++)
+        div(class=bemClass + '__item').row.between
+          div(class=bemClass + '__col').col.desktop 
+            a(href='' class=bemClass + '__it') INTIMISSIMI
+            p Магазин интимного женского белья. Быстрая доставка. Оплата наличными, картой.
+            div(class=bemClass + '__row-2').row 
+              p(class=bemClass + '__str-5') 127 оценок, <a href='' class='pink'>1244</a> отзыва
+          .col.hidden
+            div(class=bemClass + '__row-5').row.between.center 
+              .col 
+                a(href='' class=bemClass + '__it') INTIMISSIMI
+                div(class=bemClass + '__row-2').row 
+                  p(class=bemClass + '__str-5') 127 оценок, <br> <a href='' class='pink'>1244</a> отзыва
+              div(class=bemClass + '__row-4')
+                .row.between 
+                  .row.center
+                    span.module__cart__decr - 
+                    input(type='text' value='10' class='module__catalog-item__count')
+                    span.module__cart__incr +
+                  span.module__catalog-item__str-2 389 Р
+                a(href="").button Заказать товар
+            p Магазин интимного женского белья. Быстрая доставка. Оплата наличными, картой.
+          .col.desktop
+            div(class=bemClass + '__row-3').row.between
+              .row.center
+                span.module__cart__decr - 
+                input(type='text' value='10' class='module__catalog-item__count')
+                span.module__cart__incr +
+              span.module__catalog-item__str-2 389 Р
+            a(href="").button Заказать товар
+    .module__catalog__loader.row.center-c
+      +icon('loader')

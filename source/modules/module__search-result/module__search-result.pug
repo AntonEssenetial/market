@@ -1,19 +1,32 @@
 include ../select/select
 include ../module__s-item/module__s-item
+include ../side-nav/side-nav
+include ../module__catalog/module__catalog
+include ../module__products/module__products
 
 mixin module__search-result(data)
   - var bemClass = 'module__search-result'
   .module__search-result&attributes(attributes).auto__width
     .result.hidden 
-      h2 Магазины и товары 
-      div(class=bemClass + '__row-s').row
-        label.form__label.form__label_search
-          input(type="text").form__input
-        a(class=bemClass + '__filter' data-remodal-target="modal-7")
-          +icon('filter')
+      h2 Магазины и товары
+      if data.searchAndCatalog
+        div(class=bemClass + '__row-s').row.row_s-resp
+          .row
+            div(class=bemClass + '__nav')
+              +side-nav(sideNav.search)
+            a(class=bemClass + '__filter' data-remodal-target="modal-search")
+              +icon('filter')
+          a(href='#' data-remodal-target="modal-catalog").button.button_tr Каталог товаров
+      else
+        div(class=bemClass + '__row-s').row
+          div(class=bemClass + '__nav')
+            +side-nav(sideNav.search)
+          a(class=bemClass + '__filter' data-remodal-target="modal-7")
+            +icon('filter')
+
     div(class=bemClass + '__row').row.between.center
-      lable().form__label
-        input(type="text", placeholder='Поиск по названию магазина').form__input
+      div(class=bemClass + '__nav')
+        +side-nav(sideNav.search)
       +select('custom')
         option(value='По папулярности') По папулярности
         option(value='По поступлению') По поступлению
@@ -34,6 +47,12 @@ mixin module__search-result(data)
         +module__s-item-2()
         +module__s-item-2()
         +module__s-item-2()
+
+    else if data.catalog
+      +module__catalog-2(data)
+
+    else if data.listOfProducts
+      +module__products()
           
     else
       div(class=bemClass + '__items') 
@@ -43,8 +62,16 @@ mixin module__search-result(data)
         +module__s-item()
         +module__s-item()
   
-    div(class=bemClass + '__loader').row.center-c
-      +icon('loader')
+    if data.loader
+      div(class=bemClass + '__loader').row.center-c
+        +icon('loader')
 
     +modal({id:"modal-7", close:true}).modal_reg.modal_ord
       +module__search2()
+
+    if data.catalogModals
+      +modal({id:"modal-search", close:true}).modal_reg.modal_ord
+        +module__search-4()
+
+      +modal({id:"modal-catalog", close:true}).modal_reg.modal_ord
+        +module__search-5()

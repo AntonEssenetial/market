@@ -3,7 +3,8 @@
 		"data": [
 			{
 				"title": "Home",
-				"url": "home"
+				"url": "home",
+				"updated": true
 			},
 			{
 				"title": "Заказ",
@@ -23,11 +24,13 @@
 			},
 			{
 				"title": "Резултаты поиска",
-				"url": "search"
+				"url": "search",
+				"updated": true
 			},
 			{
 				"title": "Резултаты поиска 2",
-				"url": "search-2"
+				"url": "search-2",
+				"updated": true
 			},
 			{
 				"title": "Отзывы",
@@ -54,8 +57,23 @@
 				"url": "shop-3"
 			},
 			{
+				"title": "Магазин",
+				"url": "shop-4",
+				"new": true
+			},
+			{
+				"title": "Товар",
+				"url": "shop-5",
+				"new": true
+			},
+			{
 				"title": "Акции",
 				"url": "odds"
+			},
+			{
+				"title": 404,
+				"url": "404",
+				"new": true
 			},
 			{
 				"title": "Cabinet01",
@@ -101,6 +119,17 @@
 				"title": "Page"
 			}
 		]
+	},
+	"config": {
+		"projectName": "Eromall",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
 	},
 	"footerNav": {
 		"default": [
@@ -157,93 +186,6 @@
 			{
 				"title": "Интим подарки",
 				"url": "presents"
-			}
-		]
-	},
-	"config": {
-		"projectName": "Eromall",
-		"lang": "en",
-		"path": {
-			"favicons": "assets/favicons",
-			"styles": "assets/css",
-			"scripts": "assets/javascripts",
-			"images": "assets/images",
-			"fonts": "assets/fonts"
-		}
-	},
-	"mainMenu": {
-		"default": [
-			{
-				"title": "О нас",
-				"url": "about",
-				"submenu": false
-			},
-			{
-				"title": "Информация для СМИ",
-				"url": "info",
-				"submenu": false
-			},
-			{
-				"title": "Информация для партнеров",
-				"url": "partner",
-				"submenu": false
-			},
-			{
-				"title": "Правила и акции",
-				"url": "rules",
-				"submenu": false
-			},
-			{
-				"title": "Пользовательское соглашение",
-				"url": "terms",
-				"submenu": false
-			},
-			{
-				"title": "Новости",
-				"url": "news",
-				"submenu": false
-			},
-			{
-				"title": "Контакты",
-				"url": "contacts",
-				"submenu": false
-			}
-		],
-		"account": [
-			{
-				"title": "Account",
-				"url": "cabinet01",
-				"submenu": false
-			},
-			{
-				"title": "Invest",
-				"url": "cabinet02",
-				"submenu": false
-			},
-			{
-				"title": "Withdrawal",
-				"url": "cabinet03",
-				"submenu": false
-			},
-			{
-				"title": "Operations",
-				"url": "cabinet04",
-				"submenu": false
-			},
-			{
-				"title": "Partners",
-				"url": "cabinet05",
-				"submenu": false
-			},
-			{
-				"title": "Settings",
-				"url": "cabinet06",
-				"submenu": false
-			},
-			{
-				"title": "Exit",
-				"url": false,
-				"submenu": false
 			}
 		]
 	},
@@ -352,6 +294,82 @@
 			"og": "default"
 		}
 	},
+	"mainMenu": {
+		"default": [
+			{
+				"title": "О нас",
+				"url": "about",
+				"submenu": false
+			},
+			{
+				"title": "Информация для СМИ",
+				"url": "info",
+				"submenu": false
+			},
+			{
+				"title": "Информация для партнеров",
+				"url": "partner",
+				"submenu": false
+			},
+			{
+				"title": "Правила и акции",
+				"url": "rules",
+				"submenu": false
+			},
+			{
+				"title": "Пользовательское соглашение",
+				"url": "terms",
+				"submenu": false
+			},
+			{
+				"title": "Новости",
+				"url": "news",
+				"submenu": false
+			},
+			{
+				"title": "Контакты",
+				"url": "contacts",
+				"submenu": false
+			}
+		],
+		"account": [
+			{
+				"title": "Account",
+				"url": "cabinet01",
+				"submenu": false
+			},
+			{
+				"title": "Invest",
+				"url": "cabinet02",
+				"submenu": false
+			},
+			{
+				"title": "Withdrawal",
+				"url": "cabinet03",
+				"submenu": false
+			},
+			{
+				"title": "Operations",
+				"url": "cabinet04",
+				"submenu": false
+			},
+			{
+				"title": "Partners",
+				"url": "cabinet05",
+				"submenu": false
+			},
+			{
+				"title": "Settings",
+				"url": "cabinet06",
+				"submenu": false
+			},
+			{
+				"title": "Exit",
+				"url": false,
+				"submenu": false
+			}
+		]
+	},
 	"sideNav": {
 		"default": [
 			{
@@ -390,6 +408,16 @@
 				"url": "cabinet05",
 				"name": "Заказы",
 				"msg": true
+			}
+		],
+		"search": [
+			{
+				"url": "search",
+				"name": "Магазины"
+			},
+			{
+				"url": "shop-4",
+				"name": "Товары"
 			}
 		]
 	},

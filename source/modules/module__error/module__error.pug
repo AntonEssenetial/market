@@ -1,0 +1,10 @@
+mixin module__error(data)
+  - var bemClass = 'module__error'
+  .module__error&attributes(attributes).ta-center
+    div(class=bemClass + '__cont').ta-center
+      img(class=bemClass + '__img' src="assets/images/background/8.png", alt="404")
+      div(class=bemClass + '__text')
+        span(class=bemClass + '__str') 404
+        span(class=bemClass + '__str-2') Страница не найдена
+    .row.center-c
+      a(href="home.html").button.button_lg Вернуться на главную страницу

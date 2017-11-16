@@ -1,3 +1,5 @@
+include ../module__catalog-menu/module__catalog-menu
+
 mixin module__search(data)
   - var bemClass = 'module__search'
   .module__search&attributes(attributes)
@@ -54,9 +56,9 @@ mixin module__search2(data)
       div(class=bemClass + '__top') 
         h2 Фильтры и сортировка
       span(class=bemClass + '__str') Сортировать по:
-        +select('custom')
-          option(value='По популярности') По популярности
-          option(value='По популярности 2') По популярности 2
+      +select('custom')
+        option(value='По популярности') По популярности
+        option(value='По популярности 2') По популярности 2
 
       span(class=bemClass + '__str') Поиск товара
       label().form__label
@@ -101,3 +103,50 @@ mixin module__search2(data)
         i
         | Выбор блогиров
       button.button.button_lg применить
+
+mixin module__search-3(data)
+  - var bemClass = 'module__search'
+  .module__search&attributes(attributes)
+    .sticky
+      h2 Магазины и товары
+      div(class=bemClass + '__col') 
+        span(class=bemClass + '__str') Каталог товаров
+        label().form__label
+          input(type="text", placeholder='Артикул или название товара').form__input
+        span(class=bemClass + '__str')  Мин. сумма заказа
+        label().form__label
+          .row.center
+            input(type="text", placeholder='от').form__input
+            span(class=bemClass + '__sep') -
+            input(type="text", placeholder='до').form__input
+        +module__catalog-menu-2().module__catalog-menu_reset
+
+mixin module__search-4(data)
+  - var bemClass = 'module__search'
+  .module__search-popup&attributes(attributes).hidden
+    form(class=bemClass + '__col') 
+      div(class=bemClass + '__top') 
+        h2 Фильтры и сортировка
+      span(class=bemClass + '__str') Сортировать по:
+      +select('custom')
+        option(value='По популярности') По популярности
+        option(value='По популярности 2') По популярности 2
+
+      span(class=bemClass + '__str') Поиск товара
+      label().form__label
+        input(type="text", placeholder='Артикул или название товара').form__input
+      span(class=bemClass + '__str')  Мин. сумма заказа
+      .form__label
+        .row.center
+          input(type="text", placeholder='от').form__input
+          span(class=bemClass + '__sep') -
+          input(type="text", placeholder='до').form__input
+      button.button.button_lg применить
+
+mixin module__search-5(data)
+  - var bemClass = 'module__search'
+  .module__search-popup&attributes(attributes).hidden
+    form(class=bemClass + '__col') 
+      div(class=bemClass + '__top') 
+        h2 Каталог товаров
+      +module__catalog-menu-2().module__catalog-menu_reset

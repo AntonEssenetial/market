@@ -17,6 +17,7 @@
         $(this).toggleClass('active');
         //body.toggleClass('cart-opend');
         cart.toggleClass('opend');
+        cart.removeClass(closed);
     });
 
     if(body.hasClass('page_mobile-menu')) {

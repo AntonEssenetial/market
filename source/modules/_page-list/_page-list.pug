@@ -3,7 +3,22 @@ mixin page-list(data)
     h1.page-list__title= config.projectName
     ul.page-list__list
       each item in data
-        li.page-list__item
-          a(href=item.url + '.html').page-list__link= item.title
-          span.page-list__spacer  —
-          span.page-list__file-name= item.url + '.html'
+        if item.new === true
+          li.page-list__item
+            a(href=item.url + '.html').page-list__link= item.title
+            span.page-list__spacer  —
+            span.page-list__file-name= item.url + '.html'
+            span.page-list__spacer  —
+            span.page-list__new New template
+        else if item.updated === true
+          li.page-list__item
+            a(href=item.url + '.html').page-list__link= item.title
+            span.page-list__spacer  —
+            span.page-list__file-name= item.url + '.html'
+            span.page-list__spacer  —
+            span.page-list__new Template has been updated
+        else 
+          li.page-list__item
+            a(href=item.url + '.html').page-list__link= item.title
+            span.page-list__spacer  — 
+            span.page-list__file-name= item.url + '.html'

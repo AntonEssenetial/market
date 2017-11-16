@@ -57,3 +57,40 @@
   &__nav
     margin 0 auto
     absolute-center(998px, 48px)
+    
+  &__search
+    width 100%
+    margin 30px auto 0 auto
+    
+    input 
+      height 53px
+      margin 0px
+      
+    label 
+      margin 0px
+      
+    .button 
+      margin 0px
+      
+  .button_search 
+    width 53px 
+    height @width
+    display flex
+    border-radius 0 3px 3px 0
+    static()
+    min-width 0
+    padding 0px
+    
+    .icon 
+      width 26px 
+      height @width
+      margin auto 
+      &:hover 
+        color white 
+  
+  &__row 
+    margin-right 20px
+      
+  .form__input_s 
+    border-radius 3px 0 0 3px
+    font-size 18px

@@ -30,4 +30,12 @@
         url: cabinet05
         name: Заказы
         msg: true
+
+    search: 
+      -
+        url: search
+        name: Магазины
+      - 
+        url: shop-4 
+        name: Товары
       

@@ -112,3 +112,13 @@ mixin module__catalog(data)
 
     +modal({id:"modal-8", close:true}).modal_location.modal_compare
       +module__compare()
+
+
+mixin module__catalog-2(data)
+  - var bemClass = 'module__catalog'
+  .module__catalog&attributes(attributes).auto__width
+    .f__row  
+      -for (var x = 0; x < 12; x ++)
+        +module__catalog-item().f__col
+    div(class=bemClass + '__loader').row.center-c.desktop
+      +icon('loader')

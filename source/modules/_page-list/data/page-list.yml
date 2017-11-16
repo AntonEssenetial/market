@@ -3,6 +3,7 @@ pageList:
     -
       title: Home
       url: home
+      updated: true
     -
       title: Заказ
       url: order
@@ -18,9 +19,11 @@ pageList:
     -
       title: Резултаты поиска
       url: search
+      updated: true
     -
       title: Резултаты поиска 2
       url: search-2
+      updated: true
     -
       title: Отзывы
       url: review
@@ -40,8 +43,20 @@ pageList:
       title: Магазин
       url: shop-3
     - 
+      title: Магазин
+      url: shop-4
+      new: true
+    - 
+      title: Товар
+      url: shop-5
+      new: true
+    - 
       title: Акции
       url: odds
+    - 
+      title: 404
+      url: '404'
+      new: true
     - 
       title: Cabinet01
       url: cabinet01

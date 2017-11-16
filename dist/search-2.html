@@ -65,17 +65,17 @@
               </a>
             </div>
             <div class="header__row row">
-              <a class="header__btn button row center header__btn_active" href="order.html">
+              <span class="header__btn jsCart button row center header__btn_active">
                 <svg class="icon icon_com">
                   <use xlink:href="assets/images/icons.svg#com"></use>
                 </svg>
                 <span class="header__count">3</span>
-              </a>
-              <a class="header__btn button button_tr row center" href="order.html">
+              </span>
+              <span class="header__btn jsCart button button_tr row center">
                 <svg class="icon icon_com">
                   <use xlink:href="assets/images/icons.svg#com"></use>
                 </svg>
-              </a>
+              </span>
               <a class="button" href="#" data-remodal-target="modal-2">Вход</a>
               <a class="button button_tr" href="#" data-remodal-target="modal-1">Регистрация</a>
             </div>
@@ -131,10 +131,20 @@
               </div>
               <div class="module__search-result auto__width">
                 <div class="result hidden">
-                  <h2>Магазины и товары </h2>
+                  <h2>Магазины и товары</h2>
                   <div class="module__search-result__row-s row">
-                    <label class="form__label form__label_search">
-                      <input class="form__input" type="text" /> </label>
+                    <div class="module__search-result__nav">
+                      <menu class="side-nav">
+                        <ul class="menu row">
+                          <li class="side-nav__item">
+                            <a class="side-nav__link" href="search.html">Магазины</a>
+                          </li>
+                          <li class="side-nav__item">
+                            <a class="side-nav__link" href="shop-4.html">Товары</a>
+                          </li>
+                        </ul>
+                      </menu>
+                    </div>
                     <a class="module__search-result__filter" data-remodal-target="modal-7">
                       <svg class="icon icon_filter">
                         <use xlink:href="assets/images/icons.svg#filter"></use>
@@ -143,8 +153,18 @@
                   </div>
                 </div>
                 <div class="module__search-result__row row between center">
-                  <lable class="form__label">
-                    <input class="form__input" type="text" placeholder="Поиск по названию магазина" /> </lable>
+                  <div class="module__search-result__nav">
+                    <menu class="side-nav">
+                      <ul class="menu row">
+                        <li class="side-nav__item">
+                          <a class="side-nav__link" href="search.html">Магазины</a>
+                        </li>
+                        <li class="side-nav__item">
+                          <a class="side-nav__link" href="shop-4.html">Товары</a>
+                        </li>
+                      </ul>
+                    </menu>
+                  </div>
                   <select class="select select_custom">
                     <option value="По папулярности">По папулярности</option>
                     <option value="По поступлению">По поступлению</option>
@@ -622,11 +642,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="module__search-result__loader row center-c">
-                  <svg class="icon icon_loader">
-                    <use xlink:href="assets/images/icons.svg#loader"></use>
-                  </svg>
-                </div>
                 <div class="modal modal_reg modal_ord" data-remodal-id="modal-7">
                   <button class="button_close" data-remodal-action="close">
                     <svg class="icon icon_cross">
@@ -640,12 +655,11 @@
                           <div class="module__search__top">
                             <h2>Фильтры и сортировка</h2>
                           </div>
-                          <span class="module__search__str">Сортировать по:
-                            <select class="select select_custom">
-                              <option value="По популярности">По популярности</option>
-                              <option value="По популярности 2">По популярности 2</option>
-                            </select>
-                          </span>
+                          <span class="module__search__str">Сортировать по:</span>
+                          <select class="select select_custom">
+                            <option value="По популярности">По популярности</option>
+                            <option value="По популярности 2">По популярности 2</option>
+                          </select>
                           <span class="module__search__str">Поиск товара</span>
                           <label class="form__label">
                             <input class="form__input" type="text" placeholder="Артикул или название товара" /> </label>

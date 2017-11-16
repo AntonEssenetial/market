@@ -3,37 +3,61 @@ mixin module__catalog-item(data)
   .module__catalog-item&attributes(attributes)
     
     div(class=bemClass + '__card')
-      div(class=bemClass + '__img')
-        img(src="assets/images/catalog/1.jpg", alt="")
+      div(class=bemClass + '__img' style="background-image: url(assets/images/catalog/1.jpg)")
         div(class=bemClass + '__zoom').animated.fadeIn
           img(src="assets/images/catalog/3.jpg", alt="Spanish")
           .module__catalog-item__cont
             span.module__catalog-item__str Комплект Obsessive Adoria
             p Комплект Белья Spanish Красный, OS (42-46) размер 42-46, красный с черной сеткой трикотах (хлопок и полиэстер)
           .module__catalog-item__bottom
-            .row.between.center.module__catalog-item__row
+            //-.row.between.center.module__catalog-item__row
               .row.center 
                 span.module__cart__decr - 
                 input(type='text' value='100' class=bemClass + '__count')
                 span.module__cart__incr +
               span.module__catalog-item__str-2 389 Р
+            .row.between.center.module__catalog-item__row
+              .col 
+                span(class=bemClass + '__str-3') Лучшая цена
+                a(href='' class=bemClass + '__link') Intimisimi
+              .row.center 
+                .module__catalog-item__str-2 389 Р
+                .header__btn.button.button_tr
+                  +icon('com')
             .row 
-              .col__50.col_margin-10
+              //-.col__50.col_margin-10
                 a(href="").button.button_md Заказать
-              .col__50
+              .col__100
+                a(href="").button.button_md Товар в 101 магазине
+              //-.col__50
                 a(href="" data-remodal-target="modal-8").button.button_md.button_tr Нашли дешевле?
       div(class=bemClass + '__cont')
         span(class=bemClass + '__str') Комплект Obsessive Adoria
         p Комплект Obsessive Adoria set размер L/XL, цвет черный
       div(class=bemClass + '__bottom')
-        .row.between.center(class=bemClass + '__row') 
+        //-.row.between.center(class=bemClass + '__row') 
           .row.center 
             span.module__cart__decr -
             input(type='text' value='100' class=bemClass + '__count')
             span.module__cart__incr +
           span(class=bemClass + '__str-2') 389 Р
-        .row 
+        .row.between.center.module__catalog-item__row
+          .col 
+            span(class=bemClass + '__str-3') Лучшая цена
+            a(href='' class=bemClass + '__link') Intimisimi
+          .row.center 
+            .module__catalog-item__str-2 389 Р
+            .header__btn.button.button_tr
+              +icon('com')
+        //-.row 
           .col__50.col_margin-10
             a(href="").button Заказать
           .col__50
             a(href="" data-remodal-target="modal-8").button.button_tr Нашли дешевле?
+        .row 
+          //-.col__50.col_margin-10
+            a(href="").button.button_md Заказать
+          .col__100
+            a(href="").button.button_md Товар в 101 магазине
+          //-.col__50
+            a(href="" data-remodal-target="modal-8").button.button_md.button_tr Нашли дешевле?

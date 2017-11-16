@@ -15,7 +15,7 @@ include ../modules/module__mobile-blocks/module__mobile-blocks
 include ../modules/page__search/page__search
 
 
-
+- var sub = 0;
 
 doctype html
 html(lang=config.lang)
@@ -31,7 +31,10 @@ html(lang=config.lang)
 
     +inject('page__search')
       +page__search({
-        search: false
+        search: false,
+        loader: true,
+        searchAndCatalog: false,
+        catalogModals: false
       })
 
     +inject('footer')

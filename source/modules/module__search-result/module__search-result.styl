@@ -1,4 +1,6 @@
 .module__search-result
+  position relative 
+  z-index: 100
   
   .icon_filter 
     color white
@@ -76,3 +78,18 @@
     height @width
     color $text
     animation spin 2s infinite ease-in
+    
+  &__nav 
+    .side-nav__link
+      min-width 130px
+      padding 0 20px
+      
+  &_block 
+    .f__row
+      display flex
+      
+  &__row-s
+    .button_tr 
+      height 43px
+      margin-left 10px
+      line-height 43px

@@ -10,7 +10,16 @@ mixin module__top(data)
                 div(class=bemClass + '__col')
                   img(src='assets/images/background/1.png')
                   span(class=bemClass + '__str') Более 1000 брендов и магазинов на 1 сайте
-                a(href="").button.button_lg Поиск по магазинам
+                div(class=bemClass + '__search')
+                  div(class=bemClass + '__row-2').row.center 
+                    .auto__width
+                      form(action="")
+                        div(class=bemClass + '__row').row.center
+                          label().form__label
+                            input(type='text' placeholder='Поиск по сайту').form__input.form__input_s
+                          button.button.button_lg.button_search
+                            +icon('search')
+                    a(href='').button.button_lg Поиск по магазинам
       div(class=bemClass + '__nav') 
         span.slick-prev
           +icon('left')
