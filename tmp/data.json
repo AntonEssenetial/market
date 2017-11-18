@@ -101,25 +101,6 @@
 			}
 		]
 	},
-	"breadCrumbs": {
-		"default": [
-			{
-				"type": "link",
-				"title": "Home"
-			},
-			{
-				"type": "link",
-				"title": "Category"
-			},
-			{
-				"type": "link",
-				"title": "Subcategory"
-			},
-			{
-				"title": "Page"
-			}
-		]
-	},
 	"config": {
 		"projectName": "Eromall",
 		"lang": "en",
@@ -186,6 +167,25 @@
 			{
 				"title": "Интим подарки",
 				"url": "presents"
+			}
+		]
+	},
+	"breadCrumbs": {
+		"default": [
+			{
+				"type": "link",
+				"title": "Home"
+			},
+			{
+				"type": "link",
+				"title": "Category"
+			},
+			{
+				"type": "link",
+				"title": "Subcategory"
+			},
+			{
+				"title": "Page"
 			}
 		]
 	},

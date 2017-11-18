@@ -388,23 +388,23 @@ $(function() {
 })();
 
 // module__search
-(function() {
+// (function() {
 
-    var sticky = $(".sticky");
+//     var sticky = $(".sticky");
 
 
-    $(window).on('load resize', function(){
-        if($(window).width() <= 1050) {
-            sticky.unstick();
-        } else {
-            sticky.sticky({
-                topSpacing:90,
-                bottomSpacing: 490
-            });
-        }
-    });
+//     $(window).on('load resize', function(){
+//         if($(window).width() <= 1050) {
+//             sticky.unstick();
+//         } else {
+//             sticky.sticky({
+//                 topSpacing:90,
+//                 bottomSpacing: 490
+//             });
+//         }
+//     });
 
-})();
+// })();
 
 // module__shop-chart
 (function() {
